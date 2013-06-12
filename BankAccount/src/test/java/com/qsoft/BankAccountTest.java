@@ -25,6 +25,7 @@ public class BankAccountTest {
     public void setUp(){
         MockitoAnnotations.initMocks(this);
         BankAccount.bankAccountDAO = mockBankAccountDAO;
+        Transaction.transactionDAO = mockTransactionDAO;
     }
     /**
      * Check the returned BankAccountDTO is the passed BankAccountDTO or not
@@ -78,7 +79,6 @@ public class BankAccountTest {
         ArgumentCaptor<Long> longArgumentCaptor  = ArgumentCaptor.forClass(Long.class);
         ArgumentCaptor<Double> doubleArgumentCaptor = ArgumentCaptor.forClass(Double.class);
         ArgumentCaptor<String> stringArgumentCaptor1 = ArgumentCaptor.forClass(String.class);
-        mockTransactionDAO.deposit("1234567890",100000001l,100.0,"just a small test");
         verify(mockTransactionDAO,times(1)).deposit(stringArgumentCaptor.capture(),longArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());;
     }
 }
