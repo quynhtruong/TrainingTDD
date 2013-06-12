@@ -7,6 +7,7 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 import static junit.framework.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
@@ -68,8 +69,9 @@ public class BankAccountTest {
     }
 
     /**
-    1 * Check whether transactionDao is invoked
-     * Check whether the returned result is correct
+     *  Check whether the returned result is correct
+     *  Check whether the deposit of transactionDAO is invoked
+     * Check whether the argument for deposit medthod of transactionDAO is correct
      */
     @Test
     public void testHistoryTransaction(){
@@ -79,6 +81,10 @@ public class BankAccountTest {
         ArgumentCaptor<Long> longArgumentCaptor  = ArgumentCaptor.forClass(Long.class);
         ArgumentCaptor<Double> doubleArgumentCaptor = ArgumentCaptor.forClass(Double.class);
         ArgumentCaptor<String> stringArgumentCaptor1 = ArgumentCaptor.forClass(String.class);
-        verify(mockTransactionDAO,times(1)).deposit(stringArgumentCaptor.capture(),longArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());;
+        verify(mockTransactionDAO, times(1)).deposit(stringArgumentCaptor.capture(),longArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());;
+        assertEquals("1234567890",stringArgumentCaptor.getValue());
+        assertTrue(longArgumentCaptor.getValue()==100000001);
+        assertEquals(100.0,doubleArgumentCaptor.getValue());
+        assertEquals("just a small test",stringArgumentCaptor1.getValue());
     }
 }
