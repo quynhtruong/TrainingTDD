@@ -19,6 +19,7 @@ import static org.mockito.Mockito.verify;
  */
 public class BankAccountTest {
     @Mock BankAccountDAO mockBankAccountDAO;
+    @Mock TransactionDAO mockTransactionDAO;
 
     @Before
     public void setUp(){
@@ -62,6 +63,21 @@ public class BankAccountTest {
         ArgumentCaptor<String> stringArgumentCaptor  = ArgumentCaptor.forClass(String.class);
         ArgumentCaptor<Double> doubleArgumentCaptor  = ArgumentCaptor.forClass(Double.class);
         verify(mockBankAccountDAO,times(1)).deposit(stringArgumentCaptor.capture(),doubleArgumentCaptor.capture());
+
     }
 
+    /**
+    1 * Check whether transactionDao is invoked
+     * Check whether the returned result is correct
+     */
+    @Test
+    public void testHistoryTransaction(){
+        long dateOfTransaction = 100000001l;
+        BankAccountDTO bankAccountDTO  = BankAccount.deposit("1234567890",100.0,"just a small test");
+        ArgumentCaptor<String> stringArgumentCaptor = ArgumentCaptor.forClass(String.class);
+        ArgumentCaptor<Long> longArgumentCaptor  = ArgumentCaptor.forClass(Long.class);
+        ArgumentCaptor<Double> doubleArgumentCaptor = ArgumentCaptor.forClass(Double.class);
+        ArgumentCaptor<String> stringArgumentCaptor1 = ArgumentCaptor.forClass(String.class);
+        verify(mockTransactionDAO,times(1)).deposit(stringArgumentCaptor.capture(),longArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());;
+    }
 }

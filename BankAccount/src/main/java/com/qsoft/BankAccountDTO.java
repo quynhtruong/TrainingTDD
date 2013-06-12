@@ -1,6 +1,4 @@
 package com.qsoft;
-import java.util.Date;
-
 /**
  * Created with IntelliJ IDEA.
  * User: Quynh
@@ -11,7 +9,7 @@ import java.util.Date;
 public class BankAccountDTO {
     private final String accountNumber;
     private double balance;
-    public Date openTimestamp = new Date();
+    public long openTimestamp;
 
     public BankAccountDTO(String accountNumber) {
         this.accountNumber = accountNumber;
