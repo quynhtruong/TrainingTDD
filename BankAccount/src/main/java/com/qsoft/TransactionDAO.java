@@ -8,7 +8,6 @@ package com.qsoft;
  * To change this template use File | Settings | File Templates.
  */
 public class TransactionDAO {
-
     public void deposit(String accountName, Long opentime, Double amount, String description) {
     }
 }
