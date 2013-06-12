@@ -17,7 +17,8 @@ public class BankAccountDAO {
         //To change body of created methods use File | Settings | File Templates.
     }
 
-    public void deposit(String capture) {
+    public void deposit(String capture,double amount) {
         //To change body of created methods use File | Settings | File Templates.
     }
+
 }

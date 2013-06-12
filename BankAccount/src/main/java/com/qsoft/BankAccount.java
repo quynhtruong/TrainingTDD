@@ -24,7 +24,7 @@ public class BankAccount {
 
     public static BankAccountDTO deposit(String accountNumber, double amount, String decription) {
         BankAccountDTO bankAccountDTO = new BankAccountDTO(accountNumber);
-        bankAccountDAO.deposit(accountNumber);
+        bankAccountDAO.deposit(accountNumber,amount);
         bankAccountDTO.changeBalance(amount);
         return bankAccountDTO;
     }
