@@ -90,8 +90,8 @@ public class BankAccountTest {
     }
 
     /*
-     * Check whether the withdraw method of BankAcocuntDAO is invoked
-     * Check whether the transactuon method of TransactionDao is invoked
+     * Check whether the withdraw method of BankAcocountDAO is invoked
+     * Check whether the transaction method of TransactionDao is invoked
      */
     @Test
     public void testWithdraw(){
@@ -100,5 +100,6 @@ public class BankAccountTest {
         ArgumentCaptor<Double> doubleArgumentCaptor  = ArgumentCaptor.forClass(Double.class);
         ArgumentCaptor<String> stringArgumentCaptor1  = ArgumentCaptor.forClass(String.class);
         verify(mockBankAccountDAO,times(1)).withdraw(stringArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
+        verify(mockTransactionDAO,times(1)).withdraw(stringArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
     }
 }

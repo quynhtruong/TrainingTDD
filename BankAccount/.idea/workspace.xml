@@ -5,14 +5,14 @@
     <ignored path="BankAccount.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1370924034772" ignored="false" />
-    <file path="/BankAccountTest.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371106877577" ignored="false" />
+    <file path="/BankAccountTest.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371107093818" ignored="false" />
     <file path="/fragment.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371105402669" ignored="false" />
     <file path="/BankAccount.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371107008298" ignored="false" />
     <file path="/BankAccountDTO.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371106492230" ignored="false" />
     <file path="/BankAccountDAO.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371106807195" ignored="false" />
     <file path="/Dummy.txt" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1370932910030" ignored="false" />
     <file path="/Transaction.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371023177736" ignored="false" />
-    <file path="/TransactionDAO.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371024625052" ignored="false" />
+    <file path="/TransactionDAO.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371107115244" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,16 @@
       <file leaf-file-name="BankAccountTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="57" selection-start="4280" selection-end="4280" vertical-scroll-proportion="0.5814394">
+            <state line="99" column="99" selection-start="4526" selection-end="4526" vertical-scroll-proportion="0.6136364">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TransactionDAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/TransactionDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="95" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -119,11 +128,11 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/Transaction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/TransactionDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/BankAccountDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/BankAccountDAO.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/BankAccount.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/TransactionDAO.java" />
       </list>
     </option>
   </component>
@@ -675,13 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/TransactionDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="38" selection-start="174" selection-end="174" vertical-scroll-proportion="0.2513863">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/Transaction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="47" selection-start="235" selection-end="249" vertical-scroll-proportion="0.31423292">
@@ -710,9 +712,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/TransactionDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="95" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="57" selection-start="4280" selection-end="4280" vertical-scroll-proportion="0.5814394">
+        <state line="99" column="99" selection-start="4526" selection-end="4526" vertical-scroll-proportion="0.6136364">
           <folding />
         </state>
       </provider>

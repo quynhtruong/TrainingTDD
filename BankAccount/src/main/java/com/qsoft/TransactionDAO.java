@@ -9,6 +9,9 @@ package com.qsoft;
  */
 public class TransactionDAO {
     public void deposit(String accountName, Long opentime, Double amount, String description) {
-        return;
+    }
+
+    public void withdraw(String capture, Double capture1, String capture2) {
+
     }
 }
