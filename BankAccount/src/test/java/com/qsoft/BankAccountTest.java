@@ -28,6 +28,7 @@ public class BankAccountTest {
         BankAccount.bankAccountDAO = mockBankAccountDAO;
         Transaction.transactionDAO = mockTransactionDAO;
     }
+
     /**
      * Check the returned BankAccountDTO is the passed BankAccountDTO or not
      * Check whether save method of BankAccountDao is invoked or not
@@ -86,5 +87,17 @@ public class BankAccountTest {
         assertTrue(longArgumentCaptor.getValue()==100000001);
         assertEquals(100.0,doubleArgumentCaptor.getValue());
         assertEquals("just a small test",stringArgumentCaptor1.getValue());
+    }
+
+    /**
+     * * Check the returned valus is correct or not
+     * Check whether the withdraw method of DAO is invoked
+     */
+    @Test
+    public void testWithdraw(){
+        BankAccountDTO  bankAccountDTO  = BankAccount.deposit("1234567890",100.0,"just a small test");
+        BankAccountDTO bankAccountDTO1  = BankAccount.withdraw("1234567890",50.0,"just a small test second time");
+        assertEquals("1234567890",bankAccountDTO1.getAccountNumber());
+        assertEquals(50.0,bankAccountDTO1.getBalance());
     }
 }

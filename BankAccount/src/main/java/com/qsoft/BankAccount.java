@@ -30,4 +30,7 @@ public class BankAccount {
         return bankAccountDTO;
     }
 
+    public static BankAccountDTO withdraw(String accountNumber, double amount, String decription) {
+        return null;
+    }
 }
