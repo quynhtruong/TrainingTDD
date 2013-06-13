@@ -14,4 +14,8 @@ public class TransactionDAO {
     public void withdraw(String capture, Double capture1, String capture2) {
 
     }
+
+    public void save(String capture, Double capture1, String capture2) {
+        //To change body of created methods use File | Settings | File Templates.
+    }
 }

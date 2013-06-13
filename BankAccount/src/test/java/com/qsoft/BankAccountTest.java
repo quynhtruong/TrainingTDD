@@ -6,6 +6,8 @@ import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
+import java.util.List;
+
 import static junit.framework.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.times;
@@ -99,7 +101,26 @@ public class BankAccountTest {
         ArgumentCaptor<String> stringArgumentCaptor =  ArgumentCaptor.forClass(String.class);
         ArgumentCaptor<Double> doubleArgumentCaptor  = ArgumentCaptor.forClass(Double.class);
         ArgumentCaptor<String> stringArgumentCaptor1  = ArgumentCaptor.forClass(String.class);
-        verify(mockBankAccountDAO,times(1)).withdraw(stringArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
+        verify(mockBankAccountDAO, times(1)).withdraw(stringArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
         verify(mockTransactionDAO,times(1)).withdraw(stringArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
     }
+
+    /**
+     * Change the deposit and withdraw medthod of TransactionDao into save()
+     * test save() is invoked
+     */
+    @Test
+     public void testSaveMethodOfTransaction(){
+        BankAccountDTO bankAccountDTO = BankAccount.deposit("1234567890",100.0,"just a test of deposit");
+        BankAccountDTO bankAccountDTO1 = BankAccount.withdraw("1234567890",50.0,"just a test of withdraw");
+        ArgumentCaptor<String> stringArgumentCaptor  = ArgumentCaptor.forClass(String.class);
+        ArgumentCaptor<Double> doubleArgumentCaptor  = ArgumentCaptor.forClass(Double.class);
+        ArgumentCaptor<String> stringArgumentCaptor1  = ArgumentCaptor.forClass(String.class);
+        List<String> listArgument1 = stringArgumentCaptor.getAllValues();
+        List<Double> listArgument2 = doubleArgumentCaptor.getAllValues();
+        List<String> listArgument3 = stringArgumentCaptor1.getAllValues();
+        verify(mockTransactionDAO,times(1)).save(stringArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
+        verify(mockTransactionDAO,times(2)).save(stringArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
+    }
+
 }
