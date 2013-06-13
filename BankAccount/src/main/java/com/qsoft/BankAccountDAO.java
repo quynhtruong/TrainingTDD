@@ -21,4 +21,7 @@ public class BankAccountDAO {
         //To change body of created methods use File | Settings | File Templates.
     }
 
+    public void withdraw(String capture, Double capture1, String capture2) {
+        //To change body of created methods use File | Settings | File Templates.
+    }
 }

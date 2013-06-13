@@ -89,15 +89,16 @@ public class BankAccountTest {
         assertEquals("just a small test",stringArgumentCaptor1.getValue());
     }
 
-    /**
-     * * Check the returned valus is correct or not
-     * Check whether the withdraw method of DAO is invoked
+    /*
+     * Check whether the withdraw method of BankAcocuntDAO is invoked
+     * Check whether the transactuon method of TransactionDao is invoked
      */
     @Test
     public void testWithdraw(){
-        BankAccountDTO  bankAccountDTO  = BankAccount.deposit("1234567890",100.0,"just a small test");
         BankAccountDTO bankAccountDTO1  = BankAccount.withdraw("1234567890",50.0,"just a small test second time");
-        assertEquals("1234567890",bankAccountDTO1.getAccountNumber());
-        assertEquals(50.0,bankAccountDTO1.getBalance());
+        ArgumentCaptor<String> stringArgumentCaptor =  ArgumentCaptor.forClass(String.class);
+        ArgumentCaptor<Double> doubleArgumentCaptor  = ArgumentCaptor.forClass(Double.class);
+        ArgumentCaptor<String> stringArgumentCaptor1  = ArgumentCaptor.forClass(String.class);
+        verify(mockBankAccountDAO,times(1)).withdraw(stringArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
     }
 }
