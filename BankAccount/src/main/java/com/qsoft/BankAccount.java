@@ -33,6 +33,7 @@ public class BankAccount {
     public static BankAccountDTO withdraw(String accountNumber, double amount, String decription) {
         BankAccountDTO bankAccountDTO = new BankAccountDTO(accountNumber);
         bankAccountDAO.withdraw(accountNumber,amount,decription);
+        Transaction.transactionDAO.withdraw(accountNumber,amount,decription);
         return bankAccountDTO;
 
     }
