@@ -99,7 +99,6 @@ public class BankAccountTest {
         ArgumentCaptor<String> stringArgumentCaptor =  ArgumentCaptor.forClass(String.class);
         ArgumentCaptor<Double> doubleArgumentCaptor  = ArgumentCaptor.forClass(Double.class);
         ArgumentCaptor<String> stringArgumentCaptor1  = ArgumentCaptor.forClass(String.class);
-        mockBankAccountDAO.withdraw("advfad",121.0,"asadesfa");
         verify(mockBankAccountDAO,times(1)).withdraw(stringArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
     }
 }
