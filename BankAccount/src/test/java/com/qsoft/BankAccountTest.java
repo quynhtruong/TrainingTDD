@@ -138,7 +138,6 @@ public class BankAccountTest {
     public void testGetTransactionHistory(){
         List<Object> listTransaction = BankAccount.getTransaction("1234567890");
         ArgumentCaptor<String> stringArgumentCaptor =  ArgumentCaptor.forClass(String.class);
-        mockTransactionDAO.getTransactionHistory("1234567890");
         verify(mockTransactionDAO,times(1)).getTransactionHistory("1234567890");
 
     }

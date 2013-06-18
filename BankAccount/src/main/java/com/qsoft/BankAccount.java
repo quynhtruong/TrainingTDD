@@ -41,6 +41,7 @@ public class BankAccount {
     }
 
     public static List<Object> getTransaction(String accountNumber) {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        Transaction.transactionDAO.getTransactionHistory(accountNumber);
+        return null;
     }
 }
