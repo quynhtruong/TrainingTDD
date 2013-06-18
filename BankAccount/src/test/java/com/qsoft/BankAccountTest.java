@@ -152,7 +152,6 @@ public class BankAccountTest {
         ArgumentCaptor<String> stringArgumentCaptor =  ArgumentCaptor.forClass(String.class);
         ArgumentCaptor<Long> longArgumentCaptor = ArgumentCaptor.forClass(Long.class);
         ArgumentCaptor<Long> longArgumentCaptor1 = ArgumentCaptor.forClass(Long.class);
-        mockTransactionDAO.getTransactionHistory("sdad",2L,24982L);
         verify(mockTransactionDAO,times(1)).getTransactionHistory(stringArgumentCaptor.capture(),longArgumentCaptor.capture(),longArgumentCaptor1.capture());
     }
 }
