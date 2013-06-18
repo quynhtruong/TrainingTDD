@@ -40,8 +40,12 @@ public class BankAccount {
 
     }
 
-    public static List<Object> getTransaction(String accountNumber) {
+    public static List<Object> getTransactionsOccurred(String accountNumber) {
         Transaction.transactionDAO.getTransactionHistory(accountNumber);
         return null;
+    }
+
+    public static List<Object> getTransactionsOccurred(String accountName, int startTime, int endTime) {
+        return null;  //To change body of created methods use File | Settings | File Templates.
     }
 }

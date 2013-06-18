@@ -131,15 +131,27 @@ public class BankAccountTest {
     }
 
     /*
-        test whether getTransaction of transactionDao is invoked or not
-        test the arguments for getTransaction of transactionDAO
+        test whether getTransactionsOccurred of transactionDao is invoked or not
+        test the arguments for getTransactionsOccurred of transactionDAO
      */
     @Test
     public void testGetTransactionHistory(){
-        List<Object> listTransaction = BankAccount.getTransaction("1234567890");
+        List<Object> listTransaction = BankAccount.getTransactionsOccurred("1234567890");
         ArgumentCaptor<String> stringArgumentCaptor =  ArgumentCaptor.forClass(String.class);
         verify(mockTransactionDAO,times(1)).getTransactionHistory(stringArgumentCaptor.capture());
         assertEquals("1234567890",stringArgumentCaptor.getValue());
+    }
 
+    /*
+        test whether getTransactionsOccurred of transactionDao is invoked or not
+        test the arguments for getTransactionsOccurred of transactionDAO
+     */
+    @Test
+    public void testGetTransactionInAPeriodOfTime(){
+        List<Object> listTransaction = BankAccount.getTransactionsOccurred("1234567890",0,100001);
+        ArgumentCaptor<String> stringArgumentCaptor =  ArgumentCaptor.forClass(String.class);
+        ArgumentCaptor<Long> longArgumentCaptor = ArgumentCaptor.forClass(Long.class);
+        ArgumentCaptor<Long> longArgumentCaptor1 = ArgumentCaptor.forClass(Long.class);
+        verify(mockTransactionDAO,times(1)).getTransactionHistory(stringArgumentCaptor.capture(),longArgumentCaptor.capture(),longArgumentCaptor1.capture());
     }
 }

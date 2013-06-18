@@ -15,4 +15,8 @@ public class TransactionDAO {
     public void getTransactionHistory(String accountNumber) {
         //To change body of created methods use File | Settings | File Templates.
     }
+
+    public void getTransactionHistory(String accountName, Long startTime, Long endTime) {
+        //To change body of created methods use File | Settings | File Templates.
+    }
 }
