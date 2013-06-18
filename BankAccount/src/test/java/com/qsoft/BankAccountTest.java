@@ -139,7 +139,7 @@ public class BankAccountTest {
         List<Object> listTransaction = BankAccount.getTransaction("1234567890");
         ArgumentCaptor<String> stringArgumentCaptor =  ArgumentCaptor.forClass(String.class);
         verify(mockTransactionDAO,times(1)).getTransactionHistory(stringArgumentCaptor.capture());
-
+        assertEquals("1234567890",stringArgumentCaptor.getValue());
 
     }
 }
