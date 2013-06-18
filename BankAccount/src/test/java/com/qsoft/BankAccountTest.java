@@ -84,7 +84,7 @@ public class BankAccountTest {
         ArgumentCaptor<Long> longArgumentCaptor  = ArgumentCaptor.forClass(Long.class);
         ArgumentCaptor<Double> doubleArgumentCaptor = ArgumentCaptor.forClass(Double.class);
         ArgumentCaptor<String> stringArgumentCaptor1 = ArgumentCaptor.forClass(String.class);
-        verify(mockTransactionDAO, times(1)).deposit(stringArgumentCaptor.capture(),longArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());;
+        verify(mockTransactionDAO, times(1)).save(stringArgumentCaptor.capture(),longArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
         assertEquals("1234567890",stringArgumentCaptor.getValue());
         assertTrue(longArgumentCaptor.getValue()==100000001);
         assertEquals(100.0,doubleArgumentCaptor.getValue());
@@ -111,17 +111,19 @@ public class BankAccountTest {
      */
     @Test
      public void testSaveMethodOfTransaction(){
+        //assume that deposit method was right
         BankAccountDTO bankAccountDTO = BankAccount.deposit("1234567890",100.0,"just a test of deposit");
+
         BankAccountDTO bankAccountDTO1 = BankAccount.withdraw("1234567890",50.0,"just a test of withdraw");
         ArgumentCaptor<String> stringArgumentCaptor  = ArgumentCaptor.forClass(String.class);
+        ArgumentCaptor<Long> longArgumentCaptor  = ArgumentCaptor.forClass(Long.class);
         ArgumentCaptor<Double> doubleArgumentCaptor  = ArgumentCaptor.forClass(Double.class);
         ArgumentCaptor<String> stringArgumentCaptor1  = ArgumentCaptor.forClass(String.class);
         List<String> listArgument1 = stringArgumentCaptor.getAllValues();
         List<Double> listArgument2 = doubleArgumentCaptor.getAllValues();
         List<String> listArgument3 = stringArgumentCaptor1.getAllValues();
-        verify(mockTransactionDAO,times(1)).save(stringArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
-        verify(mockTransactionDAO,times(2)).save(stringArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
-        //to be continue...
+        verify(mockTransactionDAO,times(2)).save(stringArgumentCaptor.capture(),longArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
+
     }
 
 }
