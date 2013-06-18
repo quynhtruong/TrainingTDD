@@ -46,7 +46,7 @@ public class BankAccount {
     }
 
     public static List<Object> getTransactionsOccurred(String accountNumber, long startTime, long endTime) {
-        Transaction.transactionDAO.getTransactionHistory("asas",1L,2L);
+        Transaction.transactionDAO.getTransactionHistory(accountNumber,startTime,endTime);
         return null;  //To change body of created methods use File | Settings | File Templates.
     }
 }

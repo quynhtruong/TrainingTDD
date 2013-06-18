@@ -155,6 +155,6 @@ public class BankAccountTest {
         verify(mockTransactionDAO,times(1)).getTransactionHistory(stringArgumentCaptor.capture(),longArgumentCaptor.capture(),longArgumentCaptor1.capture());
         assertEquals("1234567890",stringArgumentCaptor.getValue());
         assertEquals((Long)0L,longArgumentCaptor.getValue());
-        assertEquals((Long)100001L,stringArgumentCaptor.getValue());
+        assertEquals((Long)100001L,longArgumentCaptor1.getValue());
     }
 }

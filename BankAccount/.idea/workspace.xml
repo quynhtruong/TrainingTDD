@@ -5,7 +5,7 @@
     <ignored path="BankAccount.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1370924034772" ignored="false" />
-    <file path="/BankAccountTest.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371540026491" ignored="false" />
+    <file path="/BankAccountTest.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371540078423" ignored="false" />
     <file path="/fragment.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371105402669" ignored="false" />
     <file path="/BankAccount.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371539938296" ignored="false" />
     <file path="/BankAccountDTO.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371106492230" ignored="false" />
@@ -74,7 +74,7 @@
       <file leaf-file-name="BankAccountTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="151" column="106" selection-start="7572" selection-end="7572" vertical-scroll-proportion="0.53296703">
+            <state line="152" column="100" selection-start="7659" selection-end="7659" vertical-scroll-proportion="0.5641026">
               <folding />
             </state>
           </provider>
@@ -92,7 +92,7 @@
       <file leaf-file-name="BankAccount.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/BankAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="69" selection-start="1819" selection-end="1819" vertical-scroll-proportion="0.0">
+            <state line="48" column="88" selection-start="1838" selection-end="1838" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -711,14 +711,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/BankAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="69" selection-start="1819" selection-end="1819" vertical-scroll-proportion="0.0">
+        <state line="48" column="88" selection-start="1838" selection-end="1838" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="106" selection-start="7572" selection-end="7572" vertical-scroll-proportion="0.53296703">
+        <state line="152" column="100" selection-start="7659" selection-end="7659" vertical-scroll-proportion="0.5641026">
           <folding />
         </state>
       </provider>
