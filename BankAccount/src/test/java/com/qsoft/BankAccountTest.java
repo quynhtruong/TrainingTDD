@@ -102,7 +102,7 @@ public class BankAccountTest {
         ArgumentCaptor<Double> doubleArgumentCaptor  = ArgumentCaptor.forClass(Double.class);
         ArgumentCaptor<String> stringArgumentCaptor1  = ArgumentCaptor.forClass(String.class);
         verify(mockBankAccountDAO, times(1)).withdraw(stringArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
-        verify(mockTransactionDAO,times(1)).withdraw(stringArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
+        verify(mockBankAccountDAO,times(1)).withdraw(stringArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
     }
 
     /**
@@ -130,4 +130,15 @@ public class BankAccountTest {
         assertEquals("just a test of withdraw",stringArgumentCaptor1.getAllValues().get(1));
     }
 
+    /*
+        test whether getTransaction of transactionDao is invoked or not
+        test the arguments for getTransaction of transactionDAO
+     */
+    @Test
+    public void testGetTransactionHistory(){
+        List<Object> listTransaction = BankAccount.getTransaction("1234567890");
+        ArgumentCaptor<String> stringArgumentCaptor =  ArgumentCaptor.forClass(String.class);
+        verify(mockTransactionDAO,times(1)).getTransactionHistory("1234567890");
+
+    }
 }

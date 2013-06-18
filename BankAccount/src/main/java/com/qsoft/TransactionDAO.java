@@ -8,14 +8,11 @@ package com.qsoft;
  * To change this template use File | Settings | File Templates.
  */
 public class TransactionDAO {
-    public void deposit(String accountName, Long opentime, Double amount, String description) {
-    }
-
-    public void withdraw(String capture, Double capture1, String capture2) {
-
-    }
-
     public void save(String capture, Long capture1, Double capture2, String capture3) {
+        //To change body of created methods use File | Settings | File Templates.
+    }
+
+    public void getTransactionHistory(String accountNumber) {
         //To change body of created methods use File | Settings | File Templates.
     }
 }

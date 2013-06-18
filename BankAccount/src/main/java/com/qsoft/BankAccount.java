@@ -1,5 +1,7 @@
 package com.qsoft;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Quynh
@@ -25,7 +27,7 @@ public class BankAccount {
     public static BankAccountDTO deposit(String accountNumber, double amount, String decription) {
         BankAccountDTO bankAccountDTO = new BankAccountDTO(accountNumber);
         bankAccountDAO.deposit(accountNumber,amount);
-        Transaction.transactionDAO.save(accountNumber,100000001l,amount,decription);
+        Transaction.transactionDAO.save(accountNumber, 100000001l, amount, decription);
         bankAccountDTO.changeBalance(amount);
         return bankAccountDTO;
     }
@@ -33,8 +35,12 @@ public class BankAccount {
     public static BankAccountDTO withdraw(String accountNumber, double amount, String decription) {
         BankAccountDTO bankAccountDTO = new BankAccountDTO(accountNumber);
         bankAccountDAO.withdraw(accountNumber,amount,decription);
-        Transaction.transactionDAO.save(accountNumber,100000001l,-amount,decription);
+        Transaction.transactionDAO.save(accountNumber, 100000001l, -amount, decription);
         return bankAccountDTO;
 
+    }
+
+    public static List<Object> getTransaction(String accountNumber) {
+        return null;  //To change body of created methods use File | Settings | File Templates.
     }
 }
