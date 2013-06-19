@@ -157,4 +157,16 @@ public class BankAccountTest {
         assertEquals((Long)0L,longArgumentCaptor.getValue());
         assertEquals((Long)100001L,longArgumentCaptor1.getValue());
     }
+
+    /*
+        check whether the getKClosestTransactions() method of transactionDao is invoked or not
+        check the argument for the method
+     */
+    @Test
+    public void testNClosestTransactions(){
+        List<Object> list = BankAccount.getKClosestTransactins(3);
+        ArgumentCaptor<Integer> argumentCaptor = ArgumentCaptor.forClass(Integer.class);
+        verify(mockTransactionDAO,times(1)).getKClosestTransactions(argumentCaptor.capture());
+    }
+
 }

@@ -49,4 +49,8 @@ public class BankAccount {
         Transaction.transactionDAO.getTransactionHistory(accountNumber,startTime,endTime);
         return null;  //To change body of created methods use File | Settings | File Templates.
     }
+
+    public static List<Object> getKClosestTransactins(int k) {
+        return null;  //To change body of created methods use File | Settings | File Templates.
+    }
 }
