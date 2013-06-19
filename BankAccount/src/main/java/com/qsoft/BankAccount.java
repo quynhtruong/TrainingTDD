@@ -51,6 +51,7 @@ public class BankAccount {
     }
 
     public static List<Object> getKClosestTransactins(int k) {
+        Transaction.transactionDAO.getKClosestTransactions(1);
         return null;  //To change body of created methods use File | Settings | File Templates.
     }
 }

@@ -113,8 +113,6 @@ public class BankAccountTest {
     @Test
      public void testSaveMethodOfTransaction(){
         //assume that deposit method was right
-        BankAccountDTO bankAccountDTO = BankAccount.deposit("1234567890",100.0,"just a test of deposit");
-
         BankAccountDTO bankAccountDTO1 = BankAccount.withdraw("1234567890",50.0,"just a test of withdraw");
         ArgumentCaptor<String> stringArgumentCaptor  = ArgumentCaptor.forClass(String.class);
         ArgumentCaptor<Long> longArgumentCaptor  = ArgumentCaptor.forClass(Long.class);
@@ -124,10 +122,10 @@ public class BankAccountTest {
         List<Double> listArgument2 = doubleArgumentCaptor.getAllValues();
         List<String> listArgument3 = stringArgumentCaptor1.getAllValues();
         verify(mockTransactionDAO,times(2)).save(stringArgumentCaptor.capture(),longArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
-        assertEquals("1234567890",stringArgumentCaptor.getAllValues().get(1));
-        assertEquals((Long)100000001L,longArgumentCaptor.getAllValues().get(1));
-        assertEquals(-50.0,doubleArgumentCaptor.getAllValues().get(1));
-        assertEquals("just a test of withdraw",stringArgumentCaptor1.getAllValues().get(1));
+        assertEquals("1234567890",stringArgumentCaptor.getAllValues().get(0));
+        assertEquals((Long)100000001L,longArgumentCaptor.getAllValues().get(0));
+        assertEquals(-50.0,doubleArgumentCaptor.getAllValues().get(0));
+        assertEquals("just a test of withdraw",stringArgumentCaptor1.getAllValues().get(0));
     }
 
     /*
@@ -167,6 +165,7 @@ public class BankAccountTest {
         List<Object> list = BankAccount.getKClosestTransactins(3);
         ArgumentCaptor<Integer> argumentCaptor = ArgumentCaptor.forClass(Integer.class);
         verify(mockTransactionDAO,times(1)).getKClosestTransactions(argumentCaptor.capture());
+
     }
 
 }
