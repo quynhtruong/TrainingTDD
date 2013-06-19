@@ -24,19 +24,17 @@ public class BankAccount {
         return bankAccountDTO;
     }
 
-    public static BankAccountDTO deposit(String accountNumber, double amount, String decription) {
+    public static void deposit(String accountNumber, double amount, String decription) {
         BankAccountDTO bankAccountDTO = new BankAccountDTO(accountNumber);
         bankAccountDAO.deposit(accountNumber,amount);
         Transaction.transactionDAO.save(accountNumber, 100000001l, amount, decription);
         bankAccountDTO.changeBalance(amount);
-        return bankAccountDTO;
     }
 
-    public static BankAccountDTO withdraw(String accountNumber, double amount, String decription) {
+    public static void withdraw(String accountNumber, double amount, String decription) {
         BankAccountDTO bankAccountDTO = new BankAccountDTO(accountNumber);
         bankAccountDAO.withdraw(accountNumber,amount,decription);
         Transaction.transactionDAO.save(accountNumber, 100000001l, -amount, decription);
-        return bankAccountDTO;
 
     }
 

@@ -9,7 +9,6 @@ import org.mockito.MockitoAnnotations;
 import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
@@ -31,10 +30,7 @@ public class BankAccountTest {
         Transaction.transactionDAO = mockTransactionDAO;
     }
 
-    /**
-     * Check the returned BankAccountDTO is the passed BankAccountDTO or not
-     * Check whether save method of BankAccountDao is invoked or not
-     */
+
     @Test
     public void testOpenAccount(){
         BankAccountDTO bankAccountDTO = BankAccount.openAccount("1234567890");
@@ -44,10 +40,6 @@ public class BankAccountTest {
         verify(mockBankAccountDAO,times(1)).save(bankAccountDTOArgumentCaptor.capture());
     }
 
-    /**
-        Check whether the accountNumbe and Balance and Date are correct
-        Check whether getAccount of bankAccountDao is invoked
-     */
     @Test
     public void testGetAccount(){
         BankAccountDTO bankAccountDTO = BankAccount.getAccount("1234567890");
@@ -56,82 +48,57 @@ public class BankAccountTest {
         ArgumentCaptor<String> argumentCaptor = ArgumentCaptor.forClass(String.class);
         verify(mockBankAccountDAO,times(1)).getAccount(argumentCaptor.capture());
     }
-    /**
-     * Check whether the method deposit of mockBankAccountDao is invoke or not
-     * Check wtether the  returned BankAccountDTO is the same to the passed BankAccountDTO
-     */
+
     @Test
     public void testDeposit(){
-        BankAccountDTO bankAccountDTO = BankAccount.deposit("1234567890",100.0,"just a small test");
-        assertEquals("1234567890",bankAccountDTO.getAccountNumber());
-        assertEquals(100.0,bankAccountDTO.getBalance());
+        BankAccount.deposit("1234567890",100.0,"just a small test");
         ArgumentCaptor<String> stringArgumentCaptor  = ArgumentCaptor.forClass(String.class);
         ArgumentCaptor<Double> doubleArgumentCaptor  = ArgumentCaptor.forClass(Double.class);
         verify(mockBankAccountDAO,times(1)).deposit(stringArgumentCaptor.capture(),doubleArgumentCaptor.capture());
-
+        assertEquals("1234567890",stringArgumentCaptor.getValue());
+        assertEquals((Double)100.0,doubleArgumentCaptor.getValue());
     }
 
-    /**
-     *  Check whether the returned result is correct
-     *  Check whether the deposit of transactionDAO is invoked
-     * Check whether the argument for deposit medthod of transactionDAO is correct
-     */
     @Test
-    public void testHistoryTransaction(){
-        long dateOfTransaction = 100000001l;
-        BankAccountDTO bankAccountDTO  = BankAccount.deposit("1234567890",100.0,"just a small test");
+    public void testTransactionIsSavedInDeposit(){
+        BankAccount.deposit("1234567890",100.0,"just a small test");
         ArgumentCaptor<String> stringArgumentCaptor = ArgumentCaptor.forClass(String.class);
         ArgumentCaptor<Long> longArgumentCaptor  = ArgumentCaptor.forClass(Long.class);
         ArgumentCaptor<Double> doubleArgumentCaptor = ArgumentCaptor.forClass(Double.class);
         ArgumentCaptor<String> stringArgumentCaptor1 = ArgumentCaptor.forClass(String.class);
         verify(mockTransactionDAO, times(1)).save(stringArgumentCaptor.capture(), longArgumentCaptor.capture(), doubleArgumentCaptor.capture(), stringArgumentCaptor1.capture());
         assertEquals("1234567890",stringArgumentCaptor.getValue());
-        assertTrue(longArgumentCaptor.getValue()==100000001);
         assertEquals(100.0,doubleArgumentCaptor.getValue());
         assertEquals("just a small test",stringArgumentCaptor1.getValue());
     }
 
-    /*
-     * Check whether the withdraw method of BankAcocountDAO is invoked
-     * Check whether the transaction method of TransactionDao is invoked
-     */
+
     @Test
     public void testWithdraw(){
-        BankAccountDTO bankAccountDTO1  = BankAccount.withdraw("1234567890",50.0,"just a small test second time");
+        BankAccount.withdraw("1234567890",50.0,"just a small test second time");
         ArgumentCaptor<String> stringArgumentCaptor =  ArgumentCaptor.forClass(String.class);
         ArgumentCaptor<Double> doubleArgumentCaptor  = ArgumentCaptor.forClass(Double.class);
         ArgumentCaptor<String> stringArgumentCaptor1  = ArgumentCaptor.forClass(String.class);
-        verify(mockBankAccountDAO, times(1)).withdraw(stringArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
         verify(mockBankAccountDAO,times(1)).withdraw(stringArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
+        assertEquals("1234567890",stringArgumentCaptor.getValue());
+        assertEquals((Double)50.0,doubleArgumentCaptor.getValue());
+        assertEquals("just a small test second time",stringArgumentCaptor1.getValue());
     }
 
-    /**
-     * Change the deposit and withdraw medthod of TransactionDao into save()
-     * test save() is invoked
-     * test the arguments of save medthod in transactionDao are correct
-     */
     @Test
-     public void testSaveMethodOfTransaction(){
-        //assume that deposit method was right
-        BankAccountDTO bankAccountDTO1 = BankAccount.withdraw("1234567890",50.0,"just a test of withdraw");
+     public void testTransactionIsSavedInWithdraw(){
+        BankAccount.withdraw("1234567890",50.0,"just a test of withdraw");
         ArgumentCaptor<String> stringArgumentCaptor  = ArgumentCaptor.forClass(String.class);
         ArgumentCaptor<Long> longArgumentCaptor  = ArgumentCaptor.forClass(Long.class);
         ArgumentCaptor<Double> doubleArgumentCaptor  = ArgumentCaptor.forClass(Double.class);
         ArgumentCaptor<String> stringArgumentCaptor1  = ArgumentCaptor.forClass(String.class);
-        List<String> listArgument1 = stringArgumentCaptor.getAllValues();
-        List<Double> listArgument2 = doubleArgumentCaptor.getAllValues();
-        List<String> listArgument3 = stringArgumentCaptor1.getAllValues();
-        verify(mockTransactionDAO,times(2)).save(stringArgumentCaptor.capture(),longArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
-        assertEquals("1234567890",stringArgumentCaptor.getAllValues().get(0));
-        assertEquals((Long)100000001L,longArgumentCaptor.getAllValues().get(0));
-        assertEquals(-50.0,doubleArgumentCaptor.getAllValues().get(0));
-        assertEquals("just a test of withdraw",stringArgumentCaptor1.getAllValues().get(0));
+        verify(mockTransactionDAO,times(1)).save(stringArgumentCaptor.capture(),longArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
+        assertEquals("1234567890",stringArgumentCaptor.getValue());
+        assertEquals((Long)100000001L,longArgumentCaptor.getValue());
+        assertEquals(-50.0,doubleArgumentCaptor.getValue());
+        assertEquals("just a test of withdraw",stringArgumentCaptor1.getValue());
     }
 
-    /*
-        test whether getTransactionsOccurred of transactionDao is invoked or not
-        test the arguments for getTransactionsOccurred of transactionDAO
-     */
     @Test
     public void testGetTransactionHistory(){
         List<Object> listTransaction = BankAccount.getTransactionsOccurred("1234567890");
@@ -140,10 +107,6 @@ public class BankAccountTest {
         assertEquals("1234567890",stringArgumentCaptor.getValue());
     }
 
-    /*
-        test whether getTransactionsOccurred of transactionDao is invoked or not
-        test the arguments for getTransactionsOccurred of transactionDAO
-     */
     @Test
     public void testGetTransactionInAPeriodOfTime(){
         List<Object> listTransaction = BankAccount.getTransactionsOccurred("1234567890",0,100001);
@@ -156,12 +119,8 @@ public class BankAccountTest {
         assertEquals((Long)100001L,longArgumentCaptor1.getValue());
     }
 
-    /*
-        check whether the getKClosestTransactions() method of transactionDao is invoked or not
-        check the argument for the method
-     */
     @Test
-    public void testNClosestTransactions(){
+    public void testKClosestTransactions(){
         List<Object> list = BankAccount.getKClosestTransactins(3);
         ArgumentCaptor<Integer> argumentCaptor = ArgumentCaptor.forClass(Integer.class);
         verify(mockTransactionDAO,times(1)).getKClosestTransactions(argumentCaptor.capture());
