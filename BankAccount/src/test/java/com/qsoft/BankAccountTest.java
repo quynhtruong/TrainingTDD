@@ -165,7 +165,7 @@ public class BankAccountTest {
         List<Object> list = BankAccount.getKClosestTransactins(3);
         ArgumentCaptor<Integer> argumentCaptor = ArgumentCaptor.forClass(Integer.class);
         verify(mockTransactionDAO,times(1)).getKClosestTransactions(argumentCaptor.capture());
-
+        assertEquals(new Integer(3),argumentCaptor.getValue());
     }
 
 }
