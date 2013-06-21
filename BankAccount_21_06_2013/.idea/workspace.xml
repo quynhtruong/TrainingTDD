@@ -80,7 +80,7 @@
       <file leaf-file-name="BankAccountTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="97" selection-start="830" selection-end="830" vertical-scroll-proportion="1.143662">
+            <state line="30" column="87" selection-start="830" selection-end="830" vertical-scroll-proportion="1.143662">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,7 +91,7 @@
       <file leaf-file-name="BankAccount.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/BankAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="39" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
+            <state line="12" column="28" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -128,8 +128,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/BankAccountDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/BankAccountDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/BankAccount.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/BankAccount.java" />
       </list>
     </option>
   </component>
@@ -285,34 +285,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.BankAccountTest.testOpenAccount">
-    <configuration default="false" name="BankAccountTest.testOpenAccount" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.qsoft.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="BankAccount_21_06_2013" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.qsoft" />
-      <option name="MAIN_CLASS_NAME" value="com.qsoft.BankAccountTest" />
-      <option name="METHOD_NAME" value="testOpenAccount" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -404,14 +376,37 @@
       <patterns />
       <method />
     </configuration>
+    <configuration default="false" name="BankAccountTest.testOpenAccount" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.qsoft.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="BankAccount_21_06_2013" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.qsoft" />
+      <option name="MAIN_CLASS_NAME" value="com.qsoft.BankAccountTest" />
+      <option name="METHOD_NAME" value="testOpenAccount" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testOpenAccount" />
     </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testOpenAccount" />
-      </list>
-    </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -539,14 +534,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/BankAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="39" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
+        <state line="12" column="28" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="97" selection-start="830" selection-end="830" vertical-scroll-proportion="1.143662">
+        <state line="30" column="87" selection-start="830" selection-end="830" vertical-scroll-proportion="1.143662">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

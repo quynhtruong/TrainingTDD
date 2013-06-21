@@ -17,7 +17,7 @@
     <file path="$PROJECT_DIR$/../BankAccount_21_06_2013/pom.xml" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371797517007" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_21_06_2013/src/test/java/com/qsoft/BankAccountTest.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371798527866" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_21_06_2013/src/main/java/com/qsoft/BankAccountDTO.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371797953460" ignored="false" />
-    <file path="$PROJECT_DIR$/../BankAccount_21_06_2013/src/main/java/com/qsoft/BankAccount.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371798502652" ignored="false" />
+    <file path="$PROJECT_DIR$/../BankAccount_21_06_2013/src/main/java/com/qsoft/BankAccount.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371798564234" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_21_06_2013/src/main/java/com/qsoft/BankAccountDAO.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371798302701" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
