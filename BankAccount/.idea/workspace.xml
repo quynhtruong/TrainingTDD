@@ -5,7 +5,7 @@
     <ignored path="BankAccount.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1370924034772" ignored="false" />
-    <file path="/BankAccountTest.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371798729857" ignored="false" />
+    <file path="/BankAccountTest.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371799221381" ignored="false" />
     <file path="/fragment.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371798016427" ignored="false" />
     <file path="/BankAccount.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371798657085" ignored="false" />
     <file path="/BankAccountDTO.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371798884375" ignored="false" />
@@ -15,7 +15,7 @@
     <file path="/TransactionDAO.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371625274962" ignored="false" />
     <file path="$USER_HOME$/workspace/SCJPDemo/src/main/java/com/qsoft/MainClass.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371628384341" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_21_06_2013/pom.xml" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371797517007" ignored="false" />
-    <file path="$PROJECT_DIR$/../BankAccount_21_06_2013/src/test/java/com/qsoft/BankAccountTest.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371798896084" ignored="false" />
+    <file path="$PROJECT_DIR$/../BankAccount_21_06_2013/src/test/java/com/qsoft/BankAccountTest.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371799223086" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_21_06_2013/src/main/java/com/qsoft/BankAccountDTO.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371798884929" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_21_06_2013/src/main/java/com/qsoft/BankAccount.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371798878836" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_21_06_2013/src/main/java/com/qsoft/BankAccountDAO.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371798302701" ignored="false" />

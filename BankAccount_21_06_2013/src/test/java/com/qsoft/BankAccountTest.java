@@ -33,6 +33,7 @@ public class BankAccountTest {
         verify(mockBankAccountDAO,times(1)).save(argumentCaptor.capture());
         assertEquals("123456789",argumentCaptor.getValue());
         assertEquals(0.0, bankAccountDTO.getBalance());
+        assertEquals("1234567890",bankAccountDTO.getAccountNumber());
     }
 
 }
