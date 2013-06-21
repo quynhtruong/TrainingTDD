@@ -7,7 +7,6 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 import static junit.framework.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.*;
 
 /**
@@ -33,7 +32,7 @@ public class BankAccountTest {
         ArgumentCaptor<String> argumentCaptor = ArgumentCaptor.forClass(String.class);
         verify(mockBankAccountDAO,times(1)).save(argumentCaptor.capture());
         assertEquals("123456789",argumentCaptor.getValue());
-        assertTrue(0 == bankAccountDTO.getBalance());
+        assertEquals(0.0, bankAccountDTO.getBalance());
     }
 
 }

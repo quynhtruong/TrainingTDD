@@ -9,7 +9,7 @@ package com.qsoft;
  */
 public class BankAccountDTO {
     private String accountNumber;
-    private Double balance;
+    private double balance;
     private Long openTimestamp;
 
     public String getAccountNumber() {

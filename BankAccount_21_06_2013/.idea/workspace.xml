@@ -5,10 +5,10 @@
     <ignored path="BankAccount_21_06_2013.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="$PROJECT_DIR$/../BankAccount/src/test/java/com/qsoft/BankAccountTest.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1371797754253" ignored="false" />
-    <file path="/BankAccountTest.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1371798606147" ignored="false" />
+    <file path="/BankAccountTest.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1371798729857" ignored="false" />
     <file path="/fragment.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1371798016427" ignored="false" />
-    <file path="/BankAccount.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1371798500409" ignored="false" />
-    <file path="/BankAccountDTO.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1371797926348" ignored="false" />
+    <file path="/BankAccount.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1371798657085" ignored="false" />
+    <file path="/BankAccountDTO.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1371798884375" ignored="false" />
     <file path="/BankAccountDAO.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1371798303003" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +80,7 @@
       <file leaf-file-name="BankAccountTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="90" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.9521127">
+            <state line="32" column="83" selection-start="957" selection-end="957" vertical-scroll-proportion="0.6236162">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,7 +91,7 @@
       <file leaf-file-name="BankAccount.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/BankAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="28" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
+            <state line="13" column="36" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -109,7 +109,7 @@
       <file leaf-file-name="BankAccountDTO.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/BankAccountDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="44" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
+            <state line="11" column="18" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -126,9 +126,9 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/BankAccountDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/BankAccountDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/BankAccount.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/BankAccountDTO.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java" />
       </list>
     </option>
@@ -400,7 +400,13 @@
       </option>
       <envs />
       <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -430,7 +436,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3996479" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -438,12 +444,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24961598" sideWeight="0.39612675" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24961598" sideWeight="0.67077464" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32922536" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24961598" sideWeight="0.5915493" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922536" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -518,13 +524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/BankAccountDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="44" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/BankAccountDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="16" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
@@ -532,16 +531,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/BankAccountDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="18" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/BankAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="28" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
+        <state line="13" column="36" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="90" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.9521127">
+        <state line="32" column="83" selection-start="957" selection-end="957" vertical-scroll-proportion="0.6236162">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
