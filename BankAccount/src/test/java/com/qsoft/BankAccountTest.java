@@ -9,6 +9,7 @@ import org.mockito.MockitoAnnotations;
 import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
+import static org.mockito.Mockito.reset;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
@@ -26,6 +27,8 @@ public class BankAccountTest {
     @Before
     public void setUp(){
         MockitoAnnotations.initMocks(this);
+        reset(mockBankAccountDAO);
+        reset(mockTransactionDAO);
         BankAccount.bankAccountDAO = mockBankAccountDAO;
         Transaction.transactionDAO = mockTransactionDAO;
     }
@@ -47,6 +50,7 @@ public class BankAccountTest {
         assertEquals(0.0,bankAccountDTO.getBalance());
         ArgumentCaptor<String> argumentCaptor = ArgumentCaptor.forClass(String.class);
         verify(mockBankAccountDAO,times(1)).getAccount(argumentCaptor.capture());
+        assertEquals("1234567890",argumentCaptor.getValue());
     }
 
     @Test
@@ -55,8 +59,8 @@ public class BankAccountTest {
         ArgumentCaptor<String> stringArgumentCaptor  = ArgumentCaptor.forClass(String.class);
         ArgumentCaptor<Double> doubleArgumentCaptor  = ArgumentCaptor.forClass(Double.class);
         verify(mockBankAccountDAO,times(1)).deposit(stringArgumentCaptor.capture(),doubleArgumentCaptor.capture());
-        assertEquals("1234567890",stringArgumentCaptor.getValue());
-        assertEquals((Double)100.0,doubleArgumentCaptor.getValue());
+        assertEquals("1234567890", stringArgumentCaptor.getValue());
+        assertEquals((Double) 100.0, doubleArgumentCaptor.getValue());
     }
 
     @Test
@@ -80,7 +84,7 @@ public class BankAccountTest {
         ArgumentCaptor<Double> doubleArgumentCaptor  = ArgumentCaptor.forClass(Double.class);
         ArgumentCaptor<String> stringArgumentCaptor1  = ArgumentCaptor.forClass(String.class);
         verify(mockBankAccountDAO,times(1)).withdraw(stringArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
-        assertEquals("1234567890",stringArgumentCaptor.getValue());
+        assertEquals("1234567890", stringArgumentCaptor.getValue());
         assertEquals((Double)50.0,doubleArgumentCaptor.getValue());
         assertEquals("just a small test second time",stringArgumentCaptor1.getValue());
     }
