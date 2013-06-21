@@ -12,6 +12,10 @@ public class BankAccountDTO {
     private double balance;
     private Long openTimestamp;
 
+    public BankAccountDTO(String accountNumber,double balance){
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+    }
     public String getAccountNumber() {
         return accountNumber;
     }

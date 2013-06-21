@@ -10,7 +10,8 @@ package com.qsoft;
 public class BankAccount {
     public static BankAccountDAO bankAccountDAO;
     public static BankAccountDTO openAccount(String accountNumber) {
+        BankAccountDTO bankAccountDTO = new BankAccountDTO(accountNumber,0);
         bankAccountDAO.save(accountNumber);
-        return new BankAccountDTO();
+        return bankAccountDTO;
     }
 }
