@@ -21,6 +21,6 @@ public class BankAccount {
     }
 
     public static BankAccountDTO deposit(String accountNumber, double amout) {
-        return new BankAccountDTO("123456789",100.0);
+        return new BankAccountDTO(accountNumber,amout);
     }
 }
