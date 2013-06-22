@@ -5,9 +5,9 @@
     <ignored path="BankAccount_21_06_2013.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="$PROJECT_DIR$/../BankAccount/src/test/java/com/qsoft/BankAccountTest.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1371797754253" ignored="false" />
-    <file path="/BankAccountTest.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1371883499208" ignored="false" />
+    <file path="/BankAccountTest.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1371883972118" ignored="false" />
     <file path="/fragment.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1371798016427" ignored="false" />
-    <file path="/BankAccount.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1371883409720" ignored="false" />
+    <file path="/BankAccount.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1371883901642" ignored="false" />
     <file path="/BankAccountDTO.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1371799295476" ignored="false" />
     <file path="/BankAccountDAO.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1371883428184" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -71,7 +71,7 @@
       <file leaf-file-name="BankAccountTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="94" selection-start="1529" selection-end="1529" vertical-scroll-proportion="0.78044283">
+            <state line="53" column="80" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.6236162">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,7 +91,7 @@
       <file leaf-file-name="BankAccount.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/BankAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="81" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0">
+            <state line="23" column="20" selection-start="787" selection-end="787" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -109,8 +109,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/BankAccountDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/BankAccount.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/BankAccountDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/BankAccount.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java" />
       </list>
     </option>
@@ -267,7 +267,7 @@
       <recent name="com.qsoft" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BankAccountTest.testGetAccount">
+  <component name="RunManager" selected="JUnit.BankAccountTest.testDeposit">
     <configuration default="false" name="BankAccountTest.testGetAccount" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -281,6 +281,34 @@
       <option name="PACKAGE_NAME" value="com.qsoft" />
       <option name="MAIN_CLASS_NAME" value="com.qsoft.BankAccountTest" />
       <option name="METHOD_NAME" value="testGetAccount" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BankAccountTest.testDeposit" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.qsoft.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="BankAccount_21_06_2013" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.qsoft" />
+      <option name="MAIN_CLASS_NAME" value="com.qsoft.BankAccountTest" />
+      <option name="METHOD_NAME" value="testDeposit" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -421,13 +449,15 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testOpenAccount" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testGetAccount" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testDeposit" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testGetAccount" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testDeposit" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testGetAccount" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -557,14 +587,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/BankAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="81" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0">
+        <state line="23" column="20" selection-start="787" selection-end="787" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="94" selection-start="1529" selection-end="1529" vertical-scroll-proportion="0.78044283">
+        <state line="53" column="80" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.6236162">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

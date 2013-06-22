@@ -19,4 +19,8 @@ public class BankAccount {
         BankAccountDTO bankAccountDTO = bankAccountDAO.getAccount(accountNumber);
         return new BankAccountDTO(accountNumber,0);
     }
+
+    public static BankAccountDTO deposit(String accountNumber, double amout) {
+        return null;
+    }
 }

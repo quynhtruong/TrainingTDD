@@ -47,4 +47,13 @@ public class BankAccountTest {
         assertEquals("123456789",argumentCaptor.getValue());
     }
 
+    @Test
+    public void testDeposit(){
+        BankAccountDTO bankAccountDTO = BankAccount.openAccount("123456789");
+        bankAccountDTO = BankAccount.deposit("123456789",100.0);
+
+        assertEquals("123456789",bankAccountDTO.getAccountNumber());
+        assertEquals(bankAccountDTO.getBalance(),100.0);
+    }
+
 }
