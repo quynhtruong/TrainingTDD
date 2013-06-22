@@ -61,4 +61,11 @@ public class BankAccountTest {
         assertEquals(100.0,doubleArgumentCaptor.getValue());
     }
 
+    @Test
+    public void testWhetherTransactionSaveDeposit(){
+        BankAccountDTO bankAccountDTO = BankAccount.openAccount("123456789");
+        bankAccountDTO = BankAccount.deposit("123456789",100.0);
+
+
+    }
 }
