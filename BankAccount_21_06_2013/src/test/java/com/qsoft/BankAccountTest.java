@@ -43,7 +43,7 @@ public class BankAccountTest {
         ArgumentCaptor<String> argumentCaptor = ArgumentCaptor.forClass(String.class);
         assertEquals(bankAccountDTO.getAccountNumber(),bankAccountDTO1.getAccountNumber());
         assertEquals(bankAccountDTO.getBalance(),bankAccountDTO1.getBalance());
-        assertEquals(bankAccountDTO.getOpenTimestamp(),bankAccountDTO1.getOpenTimestamp());
+        verify(mockBankAccountDAO,times(1)).getAccount(argumentCaptor.capture());
     }
 
 }

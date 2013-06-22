@@ -11,4 +11,8 @@ public class BankAccountDAO {
     public void save(String accountName){
         //do something
     }
+
+    public void getAccount(String accountNumber) {
+        //To change body of created methods use File | Settings | File Templates.
+    }
 }
