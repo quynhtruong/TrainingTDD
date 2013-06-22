@@ -36,4 +36,14 @@ public class BankAccountTest {
         assertEquals("123456789",bankAccountDTO.getAccountNumber());
     }
 
+    @Test
+    public void testGetAccount(){
+        BankAccountDTO bankAccountDTO = BankAccount.openAccount("123456789");
+        BankAccountDTO bankAccountDTO1 = BankAccount.getAccount("123456789");
+        ArgumentCaptor<String> argumentCaptor = ArgumentCaptor.forClass(String.class);
+        assertEquals(bankAccountDTO.getAccountNumber(),bankAccountDTO1.getAccountNumber());
+        assertEquals(bankAccountDTO.getBalance(),bankAccountDTO1.getBalance());
+        assertEquals(bankAccountDTO.getOpenTimestamp(),bankAccountDTO1.getOpenTimestamp());
+    }
+
 }
