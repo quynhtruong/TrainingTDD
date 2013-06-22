@@ -16,6 +16,6 @@ public class BankAccount {
     }
 
     public static BankAccountDTO getAccount(String accountNumber) {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        return new BankAccountDTO(accountNumber,0);
     }
 }
