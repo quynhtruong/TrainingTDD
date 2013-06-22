@@ -57,8 +57,8 @@ public class BankAccountTest {
         ArgumentCaptor<String> stringArgumentCaptor  = ArgumentCaptor.forClass(String.class);
         ArgumentCaptor<Double> doubleArgumentCaptor = ArgumentCaptor.forClass(Double.class);
         verify(mockBankAccountDAO,times(1)).deposit(stringArgumentCaptor.capture(),doubleArgumentCaptor.capture());
-        assertEquals("123456789",bankAccountDTO.getAccountNumber());
-        assertEquals(100.0,bankAccountDTO.getBalance());
+        assertEquals("123456789",stringArgumentCaptor.getValue());
+        assertEquals(100.0,doubleArgumentCaptor.getValue());
     }
 
 }
