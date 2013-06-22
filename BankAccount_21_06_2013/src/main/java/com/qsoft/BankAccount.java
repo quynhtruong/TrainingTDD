@@ -21,7 +21,7 @@ public class BankAccount {
     }
 
     public static BankAccountDTO deposit(String accountNumber, double amout) {
-        BankAccountDTO bankAccountDTO  = bankAccountDAO.deposit("acaa",2312.0);
+        BankAccountDTO bankAccountDTO  = bankAccountDAO.deposit(accountNumber,amout);
         return new BankAccountDTO(accountNumber,amout);
     }
 }
