@@ -12,7 +12,7 @@ public class BankAccountDAO {
         //do something
     }
 
-    public void getAccount(String accountNumber) {
-        //To change body of created methods use File | Settings | File Templates.
+    public BankAccountDTO getAccount(String accountNumber) {
+        return null;
     }
 }

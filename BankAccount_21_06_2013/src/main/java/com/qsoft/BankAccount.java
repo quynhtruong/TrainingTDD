@@ -16,7 +16,7 @@ public class BankAccount {
     }
 
     public static BankAccountDTO getAccount(String accountNumber) {
-        bankAccountDAO.getAccount("1q2222");
+        BankAccountDTO bankAccountDTO = bankAccountDAO.getAccount(accountNumber);
         return new BankAccountDTO(accountNumber,0);
     }
 }
