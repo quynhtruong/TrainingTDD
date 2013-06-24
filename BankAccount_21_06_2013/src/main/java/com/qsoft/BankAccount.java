@@ -23,7 +23,12 @@ public class BankAccount {
 
     public static BankAccountDTO deposit(String accountNumber,double amout,String description) {
         BankAccountDTO bankAccountDTO  = bankAccountDAO.deposit(accountNumber,amout);
-        Transaction.save(accountNumber,amout,description);
+        Transaction.save(accountNumber, amout, description);
         return new BankAccountDTO(accountNumber,amout);
+    }
+
+    public static BankAccountDTO withDraw(String accountNumber, double amount, String description)
+    {
+        return null;  //To change body of created methods use File | Settings | File Templates.
     }
 }

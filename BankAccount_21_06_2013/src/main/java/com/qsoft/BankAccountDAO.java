@@ -19,4 +19,9 @@ public class BankAccountDAO {
     public BankAccountDTO deposit(String accountNumber, Double amount) {
         return null;  //To change body of created methods use File | Settings | File Templates.
     }
+
+    public void withDraw(String accountNumber, Double amount)
+    {
+        //To change body of created methods use File | Settings | File Templates.
+    }
 }
