@@ -76,5 +76,6 @@ public class BankAccountTest {
         assertEquals("123456789",stringArgumentCaptor.getValue());
         assertEquals(100.0,doubleArgumentCaptor.getValue());
         assertEquals("just a test of deposit",stringArgumentCaptor1.getValue());
+        assertEquals((Long)1000L,longArgumentCaptor.getValue());
     }
 }
