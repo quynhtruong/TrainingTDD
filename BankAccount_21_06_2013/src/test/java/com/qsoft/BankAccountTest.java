@@ -6,6 +6,8 @@ import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
+import java.util.Calendar;
+
 import static junit.framework.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
@@ -19,12 +21,15 @@ import static org.mockito.Mockito.*;
 public class BankAccountTest {
     @Mock
     BankAccountDAO mockBankAccountDAO;
+    @Mock
+    TransactionDAO mockTransactionDAO;
 
     @Before
     public void setUp(){
         MockitoAnnotations.initMocks(this);
         reset(mockBankAccountDAO);
         BankAccount.bankAccountDAO = mockBankAccountDAO;
+        Transaction.transactionDAO = mockTransactionDAO;
     }
     @Test
     public void testOpenAccount(){
@@ -63,9 +68,16 @@ public class BankAccountTest {
 
     @Test
     public void testWhetherTransactionSaveDeposit(){
+        Calendar mockCalendar = mock(Calendar.class);
         BankAccountDTO bankAccountDTO = BankAccount.openAccount("123456789");
         bankAccountDTO = BankAccount.deposit("123456789",100.0);
+        when(mockCalendar.getTimeInMillis()).thenReturn(10000L);
 
+        ArgumentCaptor<String> stringArgumentCaptor = ArgumentCaptor.forClass(String.class);
+        ArgumentCaptor<Long> longArgumentCaptor = ArgumentCaptor.forClass(Long.class);
+        ArgumentCaptor<Double> doubleArgumentCaptor  = ArgumentCaptor.forClass(Double.class);
+        ArgumentCaptor<String> stringArgumentCaptor1 = ArgumentCaptor.forClass(String.class);
+        verify(mockTransactionDAO,times(1)).save(stringArgumentCaptor.capture(),longArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
 
     }
 }

@@ -8,5 +8,8 @@ package com.qsoft;
  * To change this template use File | Settings | File Templates.
  */
 public class TransactionDAO {
-
+    public void save(String capture, Long capture1, Double capture2, String capture3)
+    {
+        //bla bla bla
+    }
 }
