@@ -29,6 +29,7 @@ public class BankAccount {
 
     public static BankAccountDTO withDraw(String accountNumber, double amount, String description)
     {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        BankAccountDTO bankAccountDTO  = bankAccountDAO.withDraw("122112",10.0);
+        return new BankAccountDTO(accountNumber,amount);
     }
 }

@@ -20,8 +20,8 @@ public class BankAccountDAO {
         return null;  //To change body of created methods use File | Settings | File Templates.
     }
 
-    public void withDraw(String accountNumber, Double amount)
+    public BankAccountDTO withDraw(String accountNumber, Double amount)
     {
-        //To change body of created methods use File | Settings | File Templates.
+        return null;
     }
 }
