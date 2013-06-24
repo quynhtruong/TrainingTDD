@@ -29,7 +29,7 @@ public class BankAccount {
 
     public static BankAccountDTO withDraw(String accountNumber, double amount, String description)
     {
-        BankAccountDTO bankAccountDTO  = bankAccountDAO.withDraw("122112",10.0);
+        BankAccountDTO bankAccountDTO  = bankAccountDAO.withDraw(accountNumber,amount);
         return new BankAccountDTO(accountNumber,amount);
     }
 }
