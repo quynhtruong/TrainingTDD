@@ -53,7 +53,7 @@ public class BankAccountTest {
     @Test
     public void testDeposit(){
         BankAccountDTO bankAccountDTO = BankAccount.openAccount("123456789");
-        bankAccountDTO = BankAccount.deposit("123456789",100.0);
+        bankAccountDTO = BankAccount.deposit("123456789",100.0,"just a test of deposit");
 
         assertEquals("123456789",bankAccountDTO.getAccountNumber());
         assertEquals(bankAccountDTO.getBalance(),100.0);
@@ -67,12 +67,14 @@ public class BankAccountTest {
     @Test
     public void testWhetherTransactionSaveDeposit(){
         BankAccountDTO bankAccountDTO = BankAccount.openAccount("123456789");
-        bankAccountDTO = BankAccount.deposit("123456789",100.0);
-
+        bankAccountDTO = BankAccount.deposit("123456789",100.0,"just a test of deposit");
         ArgumentCaptor<String> stringArgumentCaptor = ArgumentCaptor.forClass(String.class);
         ArgumentCaptor<Long> longArgumentCaptor = ArgumentCaptor.forClass(Long.class);
         ArgumentCaptor<Double> doubleArgumentCaptor  = ArgumentCaptor.forClass(Double.class);
         ArgumentCaptor<String> stringArgumentCaptor1 = ArgumentCaptor.forClass(String.class);
         verify(mockTransactionDAO,times(1)).save(stringArgumentCaptor.capture(),longArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
+        assertEquals("123456789",stringArgumentCaptor.getValue());
+        assertEquals(100.0,doubleArgumentCaptor.getValue());
+        assertEquals("just a test of deposit",stringArgumentCaptor1.getValue());
     }
 }
