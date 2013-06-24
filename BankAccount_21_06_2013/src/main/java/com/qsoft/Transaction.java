@@ -1,5 +1,7 @@
 package com.qsoft;
 
+import java.util.Calendar;
+
 /**
  * Created with IntelliJ IDEA.
  * User: quynhtq
@@ -9,7 +11,10 @@ package com.qsoft;
  */
 public class Transaction {
     public static TransactionDAO transactionDAO;
-    public static void save(){
+    public static Calendar calendar = Calendar.getInstance();
 
+    public static void save(String accountNumber, double amout, String description)
+    {
+        transactionDAO.save(accountNumber,calendar.getTimeInMillis(),amout,description);
     }
 }

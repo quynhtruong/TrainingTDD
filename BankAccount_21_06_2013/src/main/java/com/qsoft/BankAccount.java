@@ -9,6 +9,7 @@ package com.qsoft;
  */
 public class BankAccount {
     public static BankAccountDAO bankAccountDAO;
+
     public static BankAccountDTO openAccount(String accountNumber) {
         BankAccountDTO bankAccountDTO = new BankAccountDTO(accountNumber,0);
         bankAccountDAO.save(accountNumber);
@@ -20,9 +21,9 @@ public class BankAccount {
         return new BankAccountDTO(accountNumber,0);
     }
 
-    public static BankAccountDTO deposit(String accountNumber, double amout,String description) {
+    public static BankAccountDTO deposit(String accountNumber,double amout,String description) {
         BankAccountDTO bankAccountDTO  = bankAccountDAO.deposit(accountNumber,amout);
-        Transaction.transactionDAO.save(accountNumber,1000L,amout,description);
+        Transaction.save(accountNumber,amout,description);
         return new BankAccountDTO(accountNumber,amout);
     }
 }
