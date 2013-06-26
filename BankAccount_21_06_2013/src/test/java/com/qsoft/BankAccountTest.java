@@ -94,7 +94,61 @@ public class BankAccountTest {
         ArgumentCaptor<String> stringArgumentCaptor  = ArgumentCaptor.forClass(String.class);
         ArgumentCaptor<Double> doubleArgumentCaptor = ArgumentCaptor.forClass(Double.class);
         verify(mockBankAccountDAO,times(1)).withDraw(stringArgumentCaptor.capture(),doubleArgumentCaptor.capture());
+        assertEquals("123456789",stringArgumentCaptor.getValue());
+        assertEquals(50.0,doubleArgumentCaptor.getValue());
+    }
 
+    @Test
+    public void testWhetherTransactionSaveWithdraw(){
+        Calendar mockCalendar = mock(Calendar.class);
+        Transaction.calendar = mockCalendar;
+        when(mockCalendar.getTimeInMillis()).thenReturn(1000L);
+        BankAccountDTO bankAccountDTO = BankAccount.openAccount("123456789");
+        bankAccountDTO = BankAccount.deposit("123456789",100.0,"just a test of deposit");
+        bankAccountDTO = BankAccount.withDraw("123456789",50.0,"just a test of deposit");
+
+
+        ArgumentCaptor<String> stringArgumentCaptor  = ArgumentCaptor.forClass(String.class);
+        ArgumentCaptor<Long> longArgumentCaptor = ArgumentCaptor.forClass(Long.class);
+        ArgumentCaptor<Double> doubleArgumentCaptor  = ArgumentCaptor.forClass(Double.class);
+        ArgumentCaptor<String> stringArgumentCaptor1 = ArgumentCaptor.forClass(String.class);
+        verify(mockTransactionDAO,times(2)).save(stringArgumentCaptor.capture(),longArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
+        assertEquals("123456789", stringArgumentCaptor.getValue());
+        assertEquals(-50.0,doubleArgumentCaptor.getValue());
+        assertEquals("just a test of deposit",stringArgumentCaptor1.getValue());
+        assertEquals((Long)1000L,longArgumentCaptor.getValue());
 
     }
+
+    @Test
+    public void testGetTransactionOccured(){
+        Object object = BankAccount.getTransactionOccoured("1234567899");
+        ArgumentCaptor<String> argumentCaptor = ArgumentCaptor.forClass(String.class);
+
+        verify(mockTransactionDAO,times(1)).getTransactionOccured(argumentCaptor.capture());
+        assertEquals("1234567899",argumentCaptor.getValue());
+    }
+
+    @Test
+    public void testGetTransactionInAPeridOfTime(){
+        Object object =  BankAccount.getTransactionOccoured("123456789",1L,123L);
+
+        ArgumentCaptor<String> stringArgumentCaptor = ArgumentCaptor.forClass(String.class);
+        ArgumentCaptor<Long> longArgumentCaptor = ArgumentCaptor.forClass(Long.class);
+        ArgumentCaptor<Long> longArgumentCaptor1 = ArgumentCaptor.forClass(Long.class);
+        verify(mockTransactionDAO,times(1)).getTransactionOccured(stringArgumentCaptor.capture(),longArgumentCaptor.capture(),longArgumentCaptor1.capture());
+        assertEquals("123456789",stringArgumentCaptor.getValue());
+        assertEquals((Long)1L,longArgumentCaptor.getValue());
+        assertEquals((Long)123L,longArgumentCaptor1.getValue());
+    }
+
+    @Test
+    public void testGetNClosestTransction(){
+        Object object  = BankAccount.getNClosestTransactions(3);
+
+        ArgumentCaptor<Long> argumentCaptor = ArgumentCaptor.forClass(Long.class);
+        verify(mockTransactionDAO,times(1)).getNClosestTransactions(argumentCaptor.capture());
+    }
+
+
 }

@@ -1,6 +1,7 @@
 package com.qsoft;
 
 import java.util.Calendar;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -16,5 +17,15 @@ public class Transaction {
     public static void save(String accountNumber, double amout, String description)
     {
         transactionDAO.save(accountNumber,calendar.getTimeInMillis(),amout,description);
+    }
+
+    public static List<BankAccountDTO> getTransactionOccured(String accountNumber) {
+        List<BankAccountDTO> bankAccountDTOs = transactionDAO.getTransactionOccured(accountNumber);
+        return null;  //To change body of created methods use File | Settings | File Templates.
+    }
+
+    public static List<BankAccountDTO> getTransactionOccured(String accountNumber, Long startTime, Long endTime) {
+        List<BankAccountDTO> bankAccountDTOs = transactionDAO.getTransactionOccured(accountNumber,startTime,endTime);
+        return null;  //To change body of created methods use File | Settings | File Templates.
     }
 }

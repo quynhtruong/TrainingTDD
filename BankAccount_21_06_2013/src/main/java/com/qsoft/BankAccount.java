@@ -1,5 +1,7 @@
 package com.qsoft;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: quynhtq
@@ -29,7 +31,22 @@ public class BankAccount {
 
     public static BankAccountDTO withDraw(String accountNumber, double amount, String description)
     {
+        Transaction.save(accountNumber,-amount,description);
         BankAccountDTO bankAccountDTO  = bankAccountDAO.withDraw(accountNumber,amount);
         return new BankAccountDTO(accountNumber,amount);
+    }
+
+    public static List<BankAccountDTO> getTransactionOccoured(String accountNumber) {
+        List<BankAccountDTO> bankAccountDTOs = Transaction.getTransactionOccured(accountNumber);
+        return null;  //To change body of created methods use File | Settings | File Templates.
+    }
+    public static List<BankAccountDTO> getTransactionOccoured(String accountNumber,Long startTime,Long endTime) {
+        List<BankAccountDTO> bankAccountDTOs = Transaction.getTransactionOccured(accountNumber,startTime,endTime);
+        return null;  //To change body of created methods use File | Settings | File Templates.
+    }
+
+    public static List<BankAccountDTO> getNClosestTransactions(int n)
+    {
+        return null;  //To change body of created methods use File | Settings | File Templates.
     }
 }
