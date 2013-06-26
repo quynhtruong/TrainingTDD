@@ -28,4 +28,5 @@ public class Transaction {
         List<BankAccountDTO> bankAccountDTOs = transactionDAO.getTransactionOccured(accountNumber,startTime,endTime);
         return null;  //To change body of created methods use File | Settings | File Templates.
     }
+
 }

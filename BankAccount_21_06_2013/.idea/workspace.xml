@@ -7,11 +7,11 @@
     <file path="$PROJECT_DIR$/../BankAccount/src/test/java/com/qsoft/BankAccountTest.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1371797754253" ignored="false" />
     <file path="/BankAccountTest.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1372228573762" ignored="false" />
     <file path="/fragment.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1371884587518" ignored="false" />
-    <file path="/BankAccount.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1372228512777" ignored="false" />
+    <file path="/BankAccount.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1372228734800" ignored="false" />
     <file path="/BankAccountDTO.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1371799295476" ignored="false" />
     <file path="/BankAccountDAO.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1372056889383" ignored="false" />
-    <file path="/Transaction.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1372143583512" ignored="false" />
-    <file path="/TransactionDAO.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1372228582351" ignored="false" />
+    <file path="/Transaction.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1372228670306" ignored="false" />
+    <file path="/TransactionDAO.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1372228740608" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +73,7 @@
       <file leaf-file-name="BankAccountTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="148" column="92" selection-start="7293" selection-end="7293" vertical-scroll-proportion="1.0497077">
+            <state line="148" column="88" selection-start="7294" selection-end="7294" vertical-scroll-proportion="0.67863894">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,7 +93,7 @@
       <file leaf-file-name="TransactionDAO.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/TransactionDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="8" selection-start="749" selection-end="836" vertical-scroll-proportion="0.0">
+            <state line="25" column="60" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -111,7 +111,7 @@
       <file leaf-file-name="Transaction.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/Transaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="115" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.0">
+            <state line="30" column="4" selection-start="1174" selection-end="1174" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -120,7 +120,7 @@
       <file leaf-file-name="BankAccount.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/BankAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="22" selection-start="1977" selection-end="1977" vertical-scroll-proportion="0.0">
+            <state line="49" column="49" selection-start="2081" selection-end="2081" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -141,8 +141,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/BankAccountDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/Transaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/BankAccount.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/TransactionDAO.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java" />
       </list>
     </option>
   </component>
@@ -607,12 +607,12 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24961598" sideWeight="0.20950705" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24961598" sideWeight="0.31338027" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24961598" sideWeight="0.44894367" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32922536" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24961598" sideWeight="0.6742958" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922536" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -768,28 +768,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/Transaction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="115" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.0">
+        <state line="30" column="4" selection-start="1174" selection-end="1174" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/BankAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="22" selection-start="1977" selection-end="1977" vertical-scroll-proportion="0.0">
+        <state line="49" column="49" selection-start="2081" selection-end="2081" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/TransactionDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="8" selection-start="749" selection-end="836" vertical-scroll-proportion="0.0">
+        <state line="25" column="60" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="92" selection-start="7293" selection-end="7293" vertical-scroll-proportion="1.0497077">
+        <state line="148" column="88" selection-start="7294" selection-end="7294" vertical-scroll-proportion="0.67863894">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
