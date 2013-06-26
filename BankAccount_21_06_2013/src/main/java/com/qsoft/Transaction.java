@@ -29,4 +29,9 @@ public class Transaction {
         return null;  //To change body of created methods use File | Settings | File Templates.
     }
 
+    public static List<BankAccountDTO> getNClosestTransactions(Long n)
+    {
+        List<BankAccountDTO> bankAccountDTOs = transactionDAO.getNClosestTransactions(n);
+        return null;
+    }
 }

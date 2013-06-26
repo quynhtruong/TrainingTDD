@@ -47,7 +47,7 @@ public class BankAccount {
 
     public static List<BankAccountDTO> getNClosestTransactions(Long n)
     {
-        Transaction.transactionDAO.getNClosestTransactions(10L);
+        List<BankAccountDTO> bankAccountDTOs  = Transaction.getNClosestTransactions(n);
         return null;  //To change body of created methods use File | Settings | File Templates.
     }
 }
