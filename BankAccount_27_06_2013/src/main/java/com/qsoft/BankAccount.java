@@ -18,8 +18,8 @@ public class BankAccount {
 
     public static BankAccountDTO getAccount(String accountNumber)
     {
-        bankAccountDAO.getAccount("asfasas");
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        BankAccountDTO bankAccountDTO = bankAccountDAO.getAccount(accountNumber);
+        return new BankAccountDTO(accountNumber,0.0);
     }
 }
 
