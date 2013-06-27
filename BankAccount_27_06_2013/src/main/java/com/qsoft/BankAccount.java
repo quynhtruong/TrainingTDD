@@ -25,8 +25,11 @@ public class BankAccount {
 
     public static BankAccountDTO deposit(String accountNumber, double amount, String description)
     {
-        bankAccountDAO.save(new BankAccountDTO("1212",141));
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        BankAccountDTO bankAccountDTO = bankAccountDAO.getAccount(accountNumber);
+        bankAccountDTO = new BankAccountDTO(accountNumber,0.0);
+        bankAccountDTO.setBalance(bankAccountDTO.getBalance()+amount);
+        bankAccountDAO.save(bankAccountDTO);
+        return bankAccountDTO;
     }
 }
 
