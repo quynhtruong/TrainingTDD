@@ -12,6 +12,7 @@ package com.qsoft;
 public class BankAccount {
     public static BankAccountDAO bankAccountDAO;
     public static BankAccountDTO openAccount(String accountNumber) {
+        bankAccountDAO.save("213413");
         return null;
     }
 
