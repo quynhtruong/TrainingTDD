@@ -10,8 +10,9 @@ package com.qsoft;
 public class BankAccountDAO
 {
 
-    public void save(String accountNumber)
+    public BankAccountDTO save(String accountNumber)
     {
         //To change body of created methods use File | Settings | File Templates.
+        return null;
     }
 }
