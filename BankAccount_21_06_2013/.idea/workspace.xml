@@ -7,7 +7,7 @@
     <file path="$PROJECT_DIR$/../BankAccount/src/test/java/com/qsoft/BankAccountTest.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1371797754253" ignored="false" />
     <file path="/BankAccountTest.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1372316132937" ignored="false" />
     <file path="/fragment.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1372315489934" ignored="false" />
-    <file path="/BankAccount.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1372316084242" ignored="false" />
+    <file path="/BankAccount.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1372316182082" ignored="false" />
     <file path="/BankAccountDTO.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1372315391836" ignored="false" />
     <file path="/BankAccountDAO.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1372316148090" ignored="false" />
     <file path="/Transaction.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1372228827058" ignored="false" />
@@ -15,7 +15,7 @@
     <file path="$PROJECT_DIR$/../BankAccount_27_06_2013/pom.xml" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1372315220683" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_27_06_2013/src/test/java/com/qsoft/BankAccountTest.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1372316133896" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_27_06_2013/src/main/java/com/qsoft/BankAccountDTO.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1372315433942" ignored="false" />
-    <file path="$PROJECT_DIR$/../BankAccount_27_06_2013/src/main/java/com/qsoft/BankAccount.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1372316084782" ignored="false" />
+    <file path="$PROJECT_DIR$/../BankAccount_27_06_2013/src/main/java/com/qsoft/BankAccount.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1372316186852" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_27_06_2013/src/main/java/com/qsoft/BankAccountDAO.java" changelist="308a4a4d-68cd-4a49-be95-3f8ef0eaa902" time="1372316148629" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
