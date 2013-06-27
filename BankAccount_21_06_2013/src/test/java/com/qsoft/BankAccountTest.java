@@ -145,11 +145,9 @@ public class BankAccountTest {
     @Test
     public void testGetNClosestTransction(){
         Object object  = BankAccount.getNClosestTransactions(3L);
-
         ArgumentCaptor<Long> argumentCaptor = ArgumentCaptor.forClass(Long.class);
         verify(mockTransactionDAO,times(1)).getNClosestTransactions(argumentCaptor.capture());
         assertEquals((Long)3L,argumentCaptor.getValue());
     }
-
 
 }
