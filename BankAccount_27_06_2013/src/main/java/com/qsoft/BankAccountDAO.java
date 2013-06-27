@@ -10,10 +10,9 @@ package com.qsoft;
 public class BankAccountDAO
 {
 
-    public BankAccountDTO save(String accountNumber)
+    public void save(BankAccountDTO  bankAccountDTO)
     {
         //To change body of created methods use File | Settings | File Templates.
-        return null;
     }
 
     public BankAccountDTO getAccount(String accountNumber)
@@ -21,8 +20,4 @@ public class BankAccountDAO
         return null;  //To change body of created methods use File | Settings | File Templates.
     }
 
-    public BankAccountDTO deposit(String accountNumber, Double amount, String description)
-    {
-        return null;  //To change body of created methods use File | Settings | File Templates.
-    }
 }

@@ -31,10 +31,10 @@ public class BankAccountTest
     @Test
     public void testOpenAccount(){
         BankAccountDTO bankAccountDTO = BankAccount.openAccount("123456789");
-        ArgumentCaptor<String> argumentCaptor = ArgumentCaptor.forClass(String.class);
+        ArgumentCaptor<BankAccountDTO> argumentCaptor = ArgumentCaptor.forClass(BankAccountDTO.class);
         verify(mockBankAccountDAO,times(1)).save(argumentCaptor.capture());
-        assertEquals("123456789",bankAccountDTO.getAccountNumber());
-        assertEquals((Double)0.0,bankAccountDTO.getBalance());
+        assertEquals("123456789",argumentCaptor.getValue().getAccountNumber());
+        assertEquals((Double)0.0,argumentCaptor.getValue().getBalance());
     }
 
     @Test
@@ -52,10 +52,7 @@ public class BankAccountTest
     public void testDeposit(){
         BankAccountDTO bankAccountDTO = BankAccount.openAccount("123456789");
         BankAccountDTO bankAccountDTO1 = BankAccount.deposit("123456789", 100.0, "just a test of deposit process");
-
-        ArgumentCaptor<String> stringArgumentCaptor = ArgumentCaptor.forClass(String.class);
-        ArgumentCaptor<Double> doubleArgumentCaptor = ArgumentCaptor.forClass(Double.class);
-        ArgumentCaptor<String> stringArgumentCaptor1 = ArgumentCaptor.forClass(String.class);
-        verify(mockBankAccountDAO,times(1)).deposit(stringArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
+        ArgumentCaptor<BankAccountDTO> argumentCaptor = ArgumentCaptor.forClass(BankAccountDTO.class);
+        verify(mockBankAccountDAO,times(2)).save(argumentCaptor.capture());
     }
 }
