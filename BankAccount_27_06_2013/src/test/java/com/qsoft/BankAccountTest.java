@@ -7,9 +7,7 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.reset;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -46,7 +44,18 @@ public class BankAccountTest
 
         ArgumentCaptor<String> argumentCaptor  = ArgumentCaptor.forClass(String.class);
         verify(mockBankAccountDAO,times(1)).getAccount(argumentCaptor.capture());
-        assertEquals(bankAccountDTO.getAccountNumber(),bankAccountDTO1.getAccountNumber());
+        assertEquals(bankAccountDTO.getAccountNumber(), bankAccountDTO1.getAccountNumber());
         assertEquals(bankAccountDTO.getBalance(),bankAccountDTO1.getBalance());
+    }
+
+    @Test
+    public void testDeposit(){
+        BankAccountDTO bankAccountDTO = BankAccount.openAccount("123456789");
+        BankAccountDTO bankAccountDTO1 = BankAccount.deposit("123456789", 100.0, "just a test of deposit process");
+
+        ArgumentCaptor<String> stringArgumentCaptor = ArgumentCaptor.forClass(String.class);
+        ArgumentCaptor<Double> doubleArgumentCaptor = ArgumentCaptor.forClass(Double.class);
+        ArgumentCaptor<String> stringArgumentCaptor1 = ArgumentCaptor.forClass(String.class);
+        verify(mockBankAccountDAO,times(1)).deposit(stringArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
     }
 }
