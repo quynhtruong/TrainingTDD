@@ -15,4 +15,9 @@ public class BankAccountDAO
         //To change body of created methods use File | Settings | File Templates.
         return null;
     }
+
+    public BankAccountDTO getAccount(String accountNumber)
+    {
+        return null;  //To change body of created methods use File | Settings | File Templates.
+    }
 }

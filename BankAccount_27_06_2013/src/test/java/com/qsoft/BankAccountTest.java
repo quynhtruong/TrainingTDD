@@ -38,4 +38,14 @@ public class BankAccountTest
         assertEquals("123456789",bankAccountDTO.getAccountNumber());
         assertEquals((Double)0.0,bankAccountDTO.getBalance());
     }
+
+    @Test
+    public void testGetAccount(){
+        BankAccountDTO bankAccountDTO = BankAccount.openAccount("123456789");
+        BankAccountDTO bankAccountDTO1 = BankAccount.getAccount("123456789");
+
+        ArgumentCaptor<String> argumentCaptor  = ArgumentCaptor.forClass(String.class);
+        verify(mockBankAccountDAO,times(1)).getAccount(argumentCaptor.capture());
+
+    }
 }
