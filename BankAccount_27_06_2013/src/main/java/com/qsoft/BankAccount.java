@@ -1,5 +1,7 @@
 package com.qsoft;
 
+import java.util.Calendar;
+
 /**
  * Created with IntelliJ IDEA.
  * User: quynhtq
@@ -32,7 +34,8 @@ public class BankAccount
         bankAccountDTO = new BankAccountDTO(accountNumber, 0.0);
         bankAccountDTO.setBalance(bankAccountDTO.getBalance() + amount);
         bankAccountDAO.save(bankAccountDTO);
-        Transaction.transactionDAO.save("asdfas",21L,238943d,"2378");
+        Calendar calendar = Calendar.getInstance();
+        Transaction.transactionDAO.save(accountNumber,calendar.getTimeInMillis(),amount,description);
         return bankAccountDTO;
     }
 }

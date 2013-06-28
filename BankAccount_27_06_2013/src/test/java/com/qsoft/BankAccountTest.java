@@ -76,6 +76,9 @@ public class BankAccountTest
         ArgumentCaptor<String> stringArgumentCaptor1  = ArgumentCaptor.forClass(String.class);
 
         verify(mocTransactionDAO,times(1)).save(stringArgumentCaptor.capture(),longArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
+        assertEquals("123456789",stringArgumentCaptor.getValue());
+        assertEquals((Double)100.0,doubleArgumentCaptor.getValue());
+        assertEquals("just a test of deposit process",stringArgumentCaptor1.getValue());
     }
 
 }
