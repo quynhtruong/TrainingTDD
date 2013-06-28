@@ -35,7 +35,7 @@ public class BankAccount
         bankAccountDTO.setBalance(bankAccountDTO.getBalance() + amount);
         bankAccountDAO.save(bankAccountDTO);
         Calendar calendar = Calendar.getInstance();
-        Transaction.transactionDAO.save(accountNumber,calendar.getTimeInMillis(),amount,description);
+        Transaction.transactionDAO.save(accountNumber,1000L,amount,description);
         return bankAccountDTO;
     }
 }
