@@ -6,6 +6,8 @@ import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
+import java.util.Calendar;
+
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
@@ -68,6 +70,9 @@ public class BankAccountTest
     @Test
     public void testWhetherTransactionSavedOrNot(){
         BankAccountDTO bankAccountDTO = BankAccount.openAccount("123456789");
+        Calendar mockCalendar = mock(Calendar.class);
+        BankAccount.calendar = mockCalendar;
+        when(mockCalendar.getTimeInMillis()).thenReturn(1000L);
         BankAccountDTO bankAccountDTO1 = BankAccount.deposit("123456789", 100.0, "just a test of deposit process");
 
         ArgumentCaptor<String> stringArgumentCaptor = ArgumentCaptor.forClass(String.class);

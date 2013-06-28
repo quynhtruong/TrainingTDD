@@ -14,6 +14,7 @@ import java.util.Calendar;
 public class BankAccount
 {
     public static BankAccountDAO bankAccountDAO;
+    public static Calendar calendar = Calendar.getInstance();
 
     public static BankAccountDTO openAccount(String accountNumber)
     {
@@ -34,8 +35,7 @@ public class BankAccount
         bankAccountDTO = new BankAccountDTO(accountNumber, 0.0);
         bankAccountDTO.setBalance(bankAccountDTO.getBalance() + amount);
         bankAccountDAO.save(bankAccountDTO);
-        Calendar calendar = Calendar.getInstance();
-        Transaction.transactionDAO.save(accountNumber,1000L,amount,description);
+        Transaction.transactionDAO.save(accountNumber,calendar.getTimeInMillis(),amount,description);
         return bankAccountDTO;
     }
 }
