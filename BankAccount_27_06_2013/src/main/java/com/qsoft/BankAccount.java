@@ -9,10 +9,13 @@ package com.qsoft;
  */
 
 
-public class BankAccount {
+public class BankAccount
+{
     public static BankAccountDAO bankAccountDAO;
-    public static BankAccountDTO openAccount(String accountNumber) {
-        BankAccountDTO bankAccountDTO = new BankAccountDTO(accountNumber,0.0);
+
+    public static BankAccountDTO openAccount(String accountNumber)
+    {
+        BankAccountDTO bankAccountDTO = new BankAccountDTO(accountNumber, 0.0);
         bankAccountDAO.save(bankAccountDTO);
         return bankAccountDTO;
     }
@@ -20,14 +23,14 @@ public class BankAccount {
     public static BankAccountDTO getAccount(String accountNumber)
     {
         BankAccountDTO bankAccountDTO = bankAccountDAO.getAccount(accountNumber);
-        return new BankAccountDTO(accountNumber,0.0);
+        return new BankAccountDTO(accountNumber, 0.0);
     }
 
     public static BankAccountDTO deposit(String accountNumber, double amount, String description)
     {
         BankAccountDTO bankAccountDTO = bankAccountDAO.getAccount(accountNumber);
-        bankAccountDTO = new BankAccountDTO(accountNumber,0.0);
-        bankAccountDTO.setBalance(bankAccountDTO.getBalance()+amount);
+        bankAccountDTO = new BankAccountDTO(accountNumber, 0.0);
+        bankAccountDTO.setBalance(bankAccountDTO.getBalance() + amount);
         bankAccountDAO.save(bankAccountDTO);
         return bankAccountDTO;
     }
