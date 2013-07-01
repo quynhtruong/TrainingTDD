@@ -114,6 +114,8 @@ public class BankAccountTest
         Double aDouble = -50.0d;
         assertEquals(aDouble,doubleArgumentCaptor.getValue());
         assertEquals("just a test for withdraw process",stringArgumentCaptor1.getValue());
+
+        assertEquals((Long)1000L,longArgumentCaptor.getValue());
     }
 
 }
