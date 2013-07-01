@@ -20,4 +20,9 @@ public class TransactionDAO
     {
         return null;  //To change body of created methods use File | Settings | File Templates.
     }
+
+    public List<Object> getTransactionOccurred(String accountNumber, long startTime, long endTime)
+    {
+        return null;  //To change body of created methods use File | Settings | File Templates.
+    }
 }
