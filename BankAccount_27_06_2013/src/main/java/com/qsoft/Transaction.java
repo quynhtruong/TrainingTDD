@@ -10,4 +10,6 @@ package com.qsoft;
 public class Transaction
 {
     public static TransactionDAO transactionDAO;
+
+
 }
