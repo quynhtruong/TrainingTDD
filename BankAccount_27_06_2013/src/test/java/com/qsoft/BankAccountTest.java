@@ -95,6 +95,7 @@ public class BankAccountTest
 
         ArgumentCaptor<BankAccountDTO> argumentCaptor = ArgumentCaptor.forClass(BankAccountDTO.class);
         verify(mockBankAccountDAO,times(3)).save(argumentCaptor.capture());
+        assertEquals((Double)50.0,bankAccountDTO.getBalance());
     }
 
 }

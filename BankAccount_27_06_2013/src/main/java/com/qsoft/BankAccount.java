@@ -39,10 +39,13 @@ public class BankAccount
         return bankAccountDTO;
     }
 
-    public static BankAccountDTO withdraw(String accoutNumber, double amount, String description)
+    public static BankAccountDTO withdraw(String accountNumber, double amount, String description)
     {
-        bankAccountDAO.save(new BankAccountDTO("21e2323",0.0));
-        return null;
+        BankAccountDTO bankAccountDTO = bankAccountDAO.getAccount(accountNumber);
+        bankAccountDTO = new BankAccountDTO(accountNumber,100.0);
+        bankAccountDTO.setBalance(bankAccountDTO.getBalance()-amount);
+        bankAccountDAO.save(bankAccountDTO);
+        return bankAccountDTO;
     }
 }
 
