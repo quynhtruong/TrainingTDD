@@ -45,6 +45,7 @@ public class BankAccount
         bankAccountDTO = new BankAccountDTO(accountNumber,100.0);
         bankAccountDTO.setBalance(bankAccountDTO.getBalance()-amount);
         bankAccountDAO.save(bankAccountDTO);
+        Transaction.transactionDAO.save("q2321",100L,2732.0,"asdfas");
         return bankAccountDTO;
     }
 }
