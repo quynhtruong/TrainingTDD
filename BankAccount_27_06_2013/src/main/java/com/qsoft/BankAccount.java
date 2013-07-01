@@ -41,7 +41,8 @@ public class BankAccount
 
     public static BankAccountDTO withdraw(String accoutNumber, double amount, String description)
     {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        bankAccountDAO.save(new BankAccountDTO("21e2323",0.0));
+        return null;
     }
 }
 
