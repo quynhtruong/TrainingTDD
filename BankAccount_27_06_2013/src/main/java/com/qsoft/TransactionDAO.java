@@ -25,4 +25,9 @@ public class TransactionDAO
     {
         return null;  //To change body of created methods use File | Settings | File Templates.
     }
+
+    public List<Object> getNClosestTransactions(String accountNumber, long n)
+    {
+        return null;  //To change body of created methods use File | Settings | File Templates.
+    }
 }

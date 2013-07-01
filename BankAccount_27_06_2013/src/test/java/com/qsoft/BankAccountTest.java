@@ -147,4 +147,14 @@ public class BankAccountTest
         assertEquals((Long)1L,longArgumentCaptor.getValue());
         assertEquals((Long)2L,longArgumentCaptor1.getValue());
     }
+
+    @Test
+    public void testGetNClosestTransactions(){
+        List<Object> list  = BankAccount.getNClosestTransactions("123456789", 3L);
+        ArgumentCaptor<String> stringArgumentCaptor = ArgumentCaptor.forClass(String.class);
+        ArgumentCaptor<Long> longArgumentCaptor  =ArgumentCaptor.forClass(Long.class);
+
+        verify(mocTransactionDAO,times(1)).getNClosestTransactions("123456789",3L);
+    }
+
 }

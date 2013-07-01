@@ -61,5 +61,10 @@ public class BankAccount
         List<Object> transactionList = Transaction.transactionDAO.getTransactionOccurred(accountNumber,startTime,endTime);
         return transactionList;
     }
+
+    public static List<Object> getNClosestTransactions(String accountNumber, long n)
+    {
+        return null;  //To change body of created methods use File | Settings | File Templates.
+    }
 }
 
