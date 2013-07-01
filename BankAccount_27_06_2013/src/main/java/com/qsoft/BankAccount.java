@@ -38,5 +38,10 @@ public class BankAccount
         Transaction.transactionDAO.save(accountNumber,calendar.getTimeInMillis(),amount,description);
         return bankAccountDTO;
     }
+
+    public static BankAccountDTO withdraw(String accoutNumber, double amount, String description)
+    {
+        return null;  //To change body of created methods use File | Settings | File Templates.
+    }
 }
 

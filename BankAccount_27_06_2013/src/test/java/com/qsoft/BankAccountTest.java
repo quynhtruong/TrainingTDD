@@ -84,8 +84,17 @@ public class BankAccountTest
         assertEquals("123456789",stringArgumentCaptor.getValue());
         assertEquals((Double)100.0,doubleArgumentCaptor.getValue());
         assertEquals("just a test of deposit process",stringArgumentCaptor1.getValue());
-
         assertEquals((Long)1000L,longArgumentCaptor.getValue());
+    }
+
+    @Test
+    public void testWithdraw(){
+        BankAccountDTO bankAccountDTO = BankAccount.openAccount("123456789");
+        bankAccountDTO = BankAccount.deposit("123456789", 100.0, "just a test of deposit process");
+        bankAccountDTO = BankAccount.withdraw("123456789",50.0,"just a test for withdraw process");
+
+        ArgumentCaptor<BankAccountDTO> argumentCaptor = ArgumentCaptor.forClass(BankAccountDTO.class);
+        verify(mockBankAccountDAO,times(3)).save(argumentCaptor.capture());
     }
 
 }
