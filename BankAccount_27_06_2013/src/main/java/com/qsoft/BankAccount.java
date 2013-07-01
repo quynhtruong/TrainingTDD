@@ -52,7 +52,7 @@ public class BankAccount
 
     public static List<Object> getTransactionOccurred(String accountNumber)
     {
-        List<Object> transactionList = Transaction.transactionDAO.getTransactionOccurred("23r23");
+        List<Object> transactionList = Transaction.transactionDAO.getTransactionOccurred(accountNumber);
         return transactionList;
     }
 }
