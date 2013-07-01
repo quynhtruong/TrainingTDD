@@ -4,11 +4,11 @@
     <list default="true" id="bba4af25-bb0c-408a-879d-44cc9306d04f" name="Default" comment="" />
     <ignored path="BankAccount_27_06_2013.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/BankAccountTest.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372662542610" ignored="false" />
+    <file path="/BankAccountTest.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372662701647" ignored="false" />
     <file path="/fragment.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372401814467" ignored="false" />
     <file path="/BankAccountDTO.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372315391836" ignored="false" />
     <file path="/BankAccountDAO.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372660825371" ignored="false" />
-    <file path="/BankAccount.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372662589578" ignored="false" />
+    <file path="/BankAccount.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372662625591" ignored="false" />
     <file path="/Transaction.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372661818508" ignored="false" />
     <file path="/TransactionDAO.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372662575809" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,7 +72,7 @@
       <file leaf-file-name="BankAccountTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="154" column="97" selection-start="7093" selection-end="7093" vertical-scroll-proportion="0.9777778">
+            <state line="154" column="92" selection-start="7093" selection-end="7093" vertical-scroll-proportion="1.025">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,7 +110,7 @@
       <file leaf-file-name="BankAccount.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/BankAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="75" selection-start="2413" selection-end="2413" vertical-scroll-proportion="0.0">
+            <state line="67" column="31" selection-start="2568" selection-end="2568" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,9 +132,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/BankAccountDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/BankAccountDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/Transaction.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/TransactionDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/BankAccount.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java" />
       </list>
     </option>
   </component>
@@ -757,7 +757,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/BankAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="75" selection-start="2413" selection-end="2413" vertical-scroll-proportion="0.0">
+        <state line="67" column="31" selection-start="2568" selection-end="2568" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -766,7 +766,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="97" selection-start="7093" selection-end="7093" vertical-scroll-proportion="0.9777778">
+        <state line="154" column="92" selection-start="7093" selection-end="7093" vertical-scroll-proportion="1.025">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

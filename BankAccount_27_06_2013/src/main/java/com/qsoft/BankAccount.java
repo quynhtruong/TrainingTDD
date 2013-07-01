@@ -64,7 +64,8 @@ public class BankAccount
 
     public static List<Object> getNClosestTransactions(String accountNumber, long n)
     {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        List<Object> transactionList = Transaction.transactionDAO.getNClosestTransactions(accountNumber,n);
+        return transactionList;
     }
 }
 
