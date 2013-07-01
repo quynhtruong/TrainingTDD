@@ -143,6 +143,8 @@ public class BankAccountTest
         ArgumentCaptor<Long> longArgumentCaptor1 = ArgumentCaptor.forClass(Long.class);
 
         verify(mocTransactionDAO,times(1)).getTransactionOccurred(stringArgumentCaptor.capture(),longArgumentCaptor.capture(),longArgumentCaptor1.capture());
-
+        assertEquals("123456789",stringArgumentCaptor.getValue());
+        assertEquals((Long)1L,longArgumentCaptor.getValue());
+        assertEquals((Long)2L,longArgumentCaptor1.getValue());
     }
 }

@@ -5,7 +5,7 @@
     <ignored path="BankAccount.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1370924034772" ignored="false" />
-    <file path="/BankAccountTest.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1372662317140" ignored="false" />
+    <file path="/BankAccountTest.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1372662394918" ignored="false" />
     <file path="/fragment.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371798016427" ignored="false" />
     <file path="/BankAccount.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1372662276195" ignored="false" />
     <file path="/BankAccountDTO.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371799295476" ignored="false" />
@@ -20,7 +20,7 @@
     <file path="$PROJECT_DIR$/../BankAccount_21_06_2013/src/main/java/com/qsoft/BankAccount.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371799328070" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_21_06_2013/src/main/java/com/qsoft/BankAccountDAO.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371798302701" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_27_06_2013/src/main/java/com/qsoft/BankAccount.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1372662276525" ignored="false" />
-    <file path="$PROJECT_DIR$/../BankAccount_27_06_2013/src/test/java/com/qsoft/BankAccountTest.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1372662317973" ignored="false" />
+    <file path="$PROJECT_DIR$/../BankAccount_27_06_2013/src/test/java/com/qsoft/BankAccountTest.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1372662405304" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_27_06_2013/src/main/java/com/qsoft/TransactionDAO.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1372662287942" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
