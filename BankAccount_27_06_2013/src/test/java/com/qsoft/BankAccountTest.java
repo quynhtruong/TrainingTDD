@@ -68,7 +68,7 @@ public class BankAccountTest
     }
 
     @Test
-    public void testWhetherTransactionSavedOrNot(){
+    public void testWhetherTransactionSavedOrNotInDepositProcess(){
         BankAccountDTO bankAccountDTO = BankAccount.openAccount("123456789");
         Calendar mockCalendar = mock(Calendar.class);
         BankAccount.calendar = mockCalendar;
@@ -96,6 +96,21 @@ public class BankAccountTest
         ArgumentCaptor<BankAccountDTO> argumentCaptor = ArgumentCaptor.forClass(BankAccountDTO.class);
         verify(mockBankAccountDAO,times(3)).save(argumentCaptor.capture());
         assertEquals((Double)50.0,bankAccountDTO.getBalance());
+    }
+
+    @Test
+    public void testWhetherTransactionSavedOrNotInWithdrawProcess(){
+        BankAccountDTO bankAccountDTO = BankAccount.openAccount("123456789");
+        bankAccountDTO = BankAccount.deposit("123456789", 100.0, "just a test of deposit process");
+        bankAccountDTO = BankAccount.withdraw("123456789",50.0,"just a test for withdraw process");
+
+        ArgumentCaptor<String> stringArgumentCaptor = ArgumentCaptor.forClass(String.class);
+        ArgumentCaptor<Long> longArgumentCaptor  = ArgumentCaptor.forClass(Long.class);
+        ArgumentCaptor<Double> doubleArgumentCaptor  = ArgumentCaptor.forClass(Double.class);
+        ArgumentCaptor<String> stringArgumentCaptor1  = ArgumentCaptor.forClass(String.class);
+
+        verify(mocTransactionDAO,times(2)).save(stringArgumentCaptor.capture(),longArgumentCaptor.capture(),doubleArgumentCaptor.capture(),stringArgumentCaptor1.capture());
+
     }
 
 }
