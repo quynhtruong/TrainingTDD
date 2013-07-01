@@ -36,17 +36,17 @@ public class BankAccount
         bankAccountDTO = new BankAccountDTO(accountNumber, 0.0);
         bankAccountDTO.setBalance(bankAccountDTO.getBalance() + amount);
         bankAccountDAO.save(bankAccountDTO);
-        Transaction.transactionDAO.save(accountNumber,calendar.getTimeInMillis(),amount,description);
+        Transaction.transactionDAO.save(accountNumber, calendar.getTimeInMillis(), amount, description);
         return bankAccountDTO;
     }
 
     public static BankAccountDTO withdraw(String accountNumber, double amount, String description)
     {
         BankAccountDTO bankAccountDTO = bankAccountDAO.getAccount(accountNumber);
-        bankAccountDTO = new BankAccountDTO(accountNumber,100.0);
-        bankAccountDTO.setBalance(bankAccountDTO.getBalance()-amount);
+        bankAccountDTO = new BankAccountDTO(accountNumber, 100.0);
+        bankAccountDTO.setBalance(bankAccountDTO.getBalance() - amount);
         bankAccountDAO.save(bankAccountDTO);
-        Transaction.transactionDAO.save(accountNumber,calendar.getTimeInMillis(),-amount,description);
+        Transaction.transactionDAO.save(accountNumber, calendar.getTimeInMillis(), -amount, description);
         return bankAccountDTO;
     }
 
@@ -58,13 +58,13 @@ public class BankAccount
 
     public static List<Object> getTransactionOccurred(String accountNumber, long startTime, long endTime)
     {
-        List<Object> transactionList = Transaction.transactionDAO.getTransactionOccurred(accountNumber,startTime,endTime);
+        List<Object> transactionList = Transaction.transactionDAO.getTransactionOccurred(accountNumber, startTime, endTime);
         return transactionList;
     }
 
     public static List<Object> getNClosestTransactions(String accountNumber, long n)
     {
-        List<Object> transactionList = Transaction.transactionDAO.getNClosestTransactions(accountNumber,n);
+        List<Object> transactionList = Transaction.transactionDAO.getNClosestTransactions(accountNumber, n);
         return transactionList;
     }
 }

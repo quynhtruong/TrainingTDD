@@ -126,37 +126,40 @@ public class BankAccountTest
     }
 
     @Test
-    public void testGetTransactionOccurred(){
-        List<Object> list  = BankAccount.getTransactionOccurred("123456789");
+    public void testGetTransactionOccurred()
+    {
+        List<Object> list = BankAccount.getTransactionOccurred("123456789");
 
         ArgumentCaptor<String> stringArgumentCaptor = ArgumentCaptor.forClass(String.class);
 
-        verify(mocTransactionDAO,times(1)).getTransactionOccurred(stringArgumentCaptor.capture());
+        verify(mocTransactionDAO, times(1)).getTransactionOccurred(stringArgumentCaptor.capture());
     }
 
     @Test
-    public void testGetTransactionWithAnIntervalOfTime(){
-        List<Object> list  = BankAccount.getTransactionOccurred("123456789",1L,2L);
+    public void testGetTransactionWithAnIntervalOfTime()
+    {
+        List<Object> list = BankAccount.getTransactionOccurred("123456789", 1L, 2L);
 
         ArgumentCaptor<String> stringArgumentCaptor = ArgumentCaptor.forClass(String.class);
         ArgumentCaptor<Long> longArgumentCaptor = ArgumentCaptor.forClass(Long.class);
         ArgumentCaptor<Long> longArgumentCaptor1 = ArgumentCaptor.forClass(Long.class);
 
-        verify(mocTransactionDAO,times(1)).getTransactionOccurred(stringArgumentCaptor.capture(),longArgumentCaptor.capture(),longArgumentCaptor1.capture());
-        assertEquals("123456789",stringArgumentCaptor.getValue());
-        assertEquals((Long)1L,longArgumentCaptor.getValue());
-        assertEquals((Long)2L,longArgumentCaptor1.getValue());
+        verify(mocTransactionDAO, times(1)).getTransactionOccurred(stringArgumentCaptor.capture(), longArgumentCaptor.capture(), longArgumentCaptor1.capture());
+        assertEquals("123456789", stringArgumentCaptor.getValue());
+        assertEquals((Long) 1L, longArgumentCaptor.getValue());
+        assertEquals((Long) 2L, longArgumentCaptor1.getValue());
     }
 
     @Test
-    public void testGetNClosestTransactions(){
-        List<Object> list  = BankAccount.getNClosestTransactions("123456789", 3L);
+    public void testGetNClosestTransactions()
+    {
+        List<Object> list = BankAccount.getNClosestTransactions("123456789", 3L);
         ArgumentCaptor<String> stringArgumentCaptor = ArgumentCaptor.forClass(String.class);
-        ArgumentCaptor<Long> longArgumentCaptor  =ArgumentCaptor.forClass(Long.class);
+        ArgumentCaptor<Long> longArgumentCaptor = ArgumentCaptor.forClass(Long.class);
 
-        verify(mocTransactionDAO,times(1)).getNClosestTransactions(stringArgumentCaptor.capture(),longArgumentCaptor.capture());
-        assertEquals("123456789",stringArgumentCaptor.getValue());
-        assertEquals((Long)3L,longArgumentCaptor.getValue());
+        verify(mocTransactionDAO, times(1)).getNClosestTransactions(stringArgumentCaptor.capture(), longArgumentCaptor.capture());
+        assertEquals("123456789", stringArgumentCaptor.getValue());
+        assertEquals((Long) 3L, longArgumentCaptor.getValue());
     }
 
 }
