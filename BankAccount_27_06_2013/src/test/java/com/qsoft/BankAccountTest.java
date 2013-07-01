@@ -101,8 +101,12 @@ public class BankAccountTest
     @Test
     public void testWhetherTransactionSavedOrNotInWithdrawProcess(){
         BankAccountDTO bankAccountDTO = BankAccount.openAccount("123456789");
+        Calendar mockCalendar = mock(Calendar.class);
+        BankAccount.calendar = mockCalendar;
+        when(mockCalendar.getTimeInMillis()).thenReturn(1000L);
         bankAccountDTO = BankAccount.deposit("123456789", 100.0, "just a test of deposit process");
         bankAccountDTO = BankAccount.withdraw("123456789",50.0,"just a test for withdraw process");
+
 
         ArgumentCaptor<String> stringArgumentCaptor = ArgumentCaptor.forClass(String.class);
         ArgumentCaptor<Long> longArgumentCaptor  = ArgumentCaptor.forClass(Long.class);

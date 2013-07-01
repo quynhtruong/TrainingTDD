@@ -4,7 +4,7 @@
     <list default="true" id="bba4af25-bb0c-408a-879d-44cc9306d04f" name="Default" comment="" />
     <ignored path="BankAccount_27_06_2013.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/BankAccountTest.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372661549622" ignored="false" />
+    <file path="/BankAccountTest.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372661666355" ignored="false" />
     <file path="/fragment.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372401814467" ignored="false" />
     <file path="/BankAccountDTO.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372315391836" ignored="false" />
     <file path="/BankAccountDAO.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372660825371" ignored="false" />
@@ -72,7 +72,7 @@
       <file leaf-file-name="BankAccountTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="96" selection-start="4840" selection-end="4840" vertical-scroll-proportion="0.6472222">
+            <state line="111" column="101" selection-start="4910" selection-end="4910" vertical-scroll-proportion="0.7416667">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -740,7 +740,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="96" selection-start="4840" selection-end="4840" vertical-scroll-proportion="0.6472222">
+        <state line="111" column="101" selection-start="4910" selection-end="4910" vertical-scroll-proportion="0.7416667">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
