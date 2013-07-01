@@ -133,4 +133,16 @@ public class BankAccountTest
 
         verify(mocTransactionDAO,times(1)).getTransactionOccurred(stringArgumentCaptor.capture());
     }
+
+    @Test
+    public void testGetTransactionWithAnIntervalOfTime(){
+        List<Object> list  = BankAccount.getTransactionOccurred("123456789",1L,2L);
+
+        ArgumentCaptor<String> stringArgumentCaptor = ArgumentCaptor.forClass(String.class);
+        ArgumentCaptor<Long> longArgumentCaptor = ArgumentCaptor.forClass(Long.class);
+        ArgumentCaptor<Long> longArgumentCaptor1 = ArgumentCaptor.forClass(Long.class);
+
+        verify(mocTransactionDAO,times(1)).getTransactionOccurred(stringArgumentCaptor.capture());
+
+    }
 }

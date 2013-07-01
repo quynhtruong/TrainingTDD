@@ -5,9 +5,9 @@
     <ignored path="BankAccount.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1370924034772" ignored="false" />
-    <file path="/BankAccountTest.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371799221381" ignored="false" />
+    <file path="/BankAccountTest.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1372662189575" ignored="false" />
     <file path="/fragment.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371798016427" ignored="false" />
-    <file path="/BankAccount.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1372662070038" ignored="false" />
+    <file path="/BankAccount.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1372662228379" ignored="false" />
     <file path="/BankAccountDTO.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371799295476" ignored="false" />
     <file path="/BankAccountDAO.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371798303003" ignored="false" />
     <file path="/Dummy.txt" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1370932910030" ignored="false" />
@@ -19,7 +19,8 @@
     <file path="$PROJECT_DIR$/../BankAccount_21_06_2013/src/main/java/com/qsoft/BankAccountDTO.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371799296326" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_21_06_2013/src/main/java/com/qsoft/BankAccount.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371799328070" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_21_06_2013/src/main/java/com/qsoft/BankAccountDAO.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1371798302701" ignored="false" />
-    <file path="$PROJECT_DIR$/../BankAccount_27_06_2013/src/main/java/com/qsoft/BankAccount.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1372662107687" ignored="false" />
+    <file path="$PROJECT_DIR$/../BankAccount_27_06_2013/src/main/java/com/qsoft/BankAccount.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1372662228935" ignored="false" />
+    <file path="$PROJECT_DIR$/../BankAccount_27_06_2013/src/test/java/com/qsoft/BankAccountTest.java" changelist="c8583e3c-161e-466e-9c50-0dd49cd39f92" time="1372662237018" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

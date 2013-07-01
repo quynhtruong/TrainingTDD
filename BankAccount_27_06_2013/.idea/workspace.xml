@@ -4,11 +4,11 @@
     <list default="true" id="bba4af25-bb0c-408a-879d-44cc9306d04f" name="Default" comment="" />
     <ignored path="BankAccount_27_06_2013.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/BankAccountTest.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372661909443" ignored="false" />
+    <file path="/BankAccountTest.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372662189575" ignored="false" />
     <file path="/fragment.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372401814467" ignored="false" />
     <file path="/BankAccountDTO.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372315391836" ignored="false" />
     <file path="/BankAccountDAO.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372660825371" ignored="false" />
-    <file path="/BankAccount.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372662070038" ignored="false" />
+    <file path="/BankAccount.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372662228379" ignored="false" />
     <file path="/Transaction.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372661818508" ignored="false" />
     <file path="/TransactionDAO.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372661935896" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,7 +72,7 @@
       <file leaf-file-name="BankAccountTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="101" selection-start="5794" selection-end="5794" vertical-scroll-proportion="0.63309354">
+            <state line="142" column="102" selection-start="6415" selection-end="6415" vertical-scroll-proportion="0.6420863">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,7 +110,7 @@
       <file leaf-file-name="BankAccount.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/BankAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="102" selection-start="2022" selection-end="2022" vertical-scroll-proportion="0.0">
+            <state line="60" column="8" selection-start="2184" selection-end="2271" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,9 +132,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/BankAccountDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/BankAccountDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/Transaction.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/TransactionDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/BankAccount.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java" />
       </list>
     </option>
   </component>
@@ -290,35 +290,7 @@
       <recent name="com.qsoft" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BankAccountTest.testGetTransactionOccurred">
-    <configuration default="false" name="BankAccountTest.testDeposit" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.qsoft.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="BankAccount_27_06_2013" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.qsoft" />
-      <option name="MAIN_CLASS_NAME" value="com.qsoft.BankAccountTest" />
-      <option name="METHOD_NAME" value="testDeposit" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.BankAccountTest.testGetTransactionWithAnIntervalOfTime">
     <configuration default="false" name="BankAccountTest.testWhetherTransactionSavedOrNot" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -437,6 +409,34 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="BankAccountTest.testGetTransactionWithAnIntervalOfTime" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.qsoft.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="BankAccount_27_06_2013" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.qsoft" />
+      <option name="MAIN_CLASS_NAME" value="com.qsoft.BankAccountTest" />
+      <option name="METHOD_NAME" value="testGetTransactionWithAnIntervalOfTime" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -529,19 +529,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testDeposit" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testWhetherTransactionSavedOrNot" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testWithdraw" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testWhetherTransactionSavedOrNotInWithdrawProcess" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testGetTransactionOccurred" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testWhetherTransactionSavedOrNot" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testWithdraw" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testWhetherTransactionSavedOrNotInWithdrawProcess" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testGetTransactionOccurred" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testGetTransactionWithAnIntervalOfTime" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testGetTransactionOccurred" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testWhetherTransactionSavedOrNotInWithdrawProcess" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testWithdraw" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testWhetherTransactionSavedOrNot" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testDeposit" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testGetTransactionWithAnIntervalOfTime" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testGetTransactionOccurred" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testWhetherTransactionSavedOrNotInWithdrawProcess" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testWithdraw" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BankAccountTest.testWhetherTransactionSavedOrNot" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -757,7 +757,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/BankAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="102" selection-start="2022" selection-end="2022" vertical-scroll-proportion="0.0">
+        <state line="60" column="8" selection-start="2184" selection-end="2271" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -766,7 +766,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/BankAccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="101" selection-start="5794" selection-end="5794" vertical-scroll-proportion="0.63309354">
+        <state line="142" column="102" selection-start="6415" selection-end="6415" vertical-scroll-proportion="0.6420863">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
