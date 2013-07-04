@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/tool"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tool http://www.springframework.org/schema/tool/spring-tool.xsd">
+    <context:annotation/>
+
+    <bean id="bankAccountService" class="com.qsoft.business.impl.BankAccountServiceImpl" scope="prototype"/>
+    <bean id="bankAccountDAO" class="com.qsoft.persistence.dao.impl.BankAccountDAOImpl" scope="prototype"/>
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="org.postgresql.Driver"/>
+        <!--using postgres driver-->
+        <property name="url" value="jdbc:postgresql://localhost:5432/dbcatalog"/>
+        <property name="username" value="dbc_user" />
+        <property name="password" value="123456" />
+    </bean>
+</beans>

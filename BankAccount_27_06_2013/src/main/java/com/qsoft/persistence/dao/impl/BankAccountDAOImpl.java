@@ -1,4 +1,7 @@
-package com.qsoft;
+package com.qsoft.persistence.dao.impl;
+
+import com.qsoft.persistence.dao.BankAccountDAO;
+import com.qsoft.persistence.model.BankAccountModel;
 
 /**
  * Created with IntelliJ IDEA.
@@ -7,15 +10,15 @@ package com.qsoft;
  * Time: 1:44 PM
  * To change this template use File | Settings | File Templates.
  */
-public class BankAccountDAO
+public class BankAccountDAOImpl implements BankAccountDAO
 {
 
-    public void save(BankAccountDTO bankAccountDTO)
+    public void save(BankAccountModel bankAccountModel)
     {
         //To change body of created methods use File | Settings | File Templates.
     }
 
-    public BankAccountDTO getAccount(String accountNumber)
+    public BankAccountModel getAccount(String accountNumber)
     {
         return null;  //To change body of created methods use File | Settings | File Templates.
     }

@@ -1,4 +1,4 @@
-package com.qsoft;
+package com.qsoft.persistence.model;
 
 /**
  * Created with IntelliJ IDEA.
@@ -8,13 +8,13 @@ package com.qsoft;
  * To change this template use File | Settings | File Templates.
  */
 
-public class BankAccountDTO
+public class BankAccountModel
 {
     private String accountNumber;
     private double balance;
     private Long openTimestamp;
 
-    public BankAccountDTO(String accountNumber, double balance)
+    public BankAccountModel(String accountNumber, double balance)
     {
         this.accountNumber = accountNumber;
         this.balance = balance;

@@ -1,4 +1,4 @@
-package com.qsoft;
+package com.qsoft.persistence.dao.impl;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import java.util.List;
  * Time: 1:43 PM
  * To change this template use File | Settings | File Templates.
  */
-public class TransactionDAO
+public class TransactionDAOImpl
 {
     public void save(String accountNumber, Long timeStamp, Double amount, String description)
     {
