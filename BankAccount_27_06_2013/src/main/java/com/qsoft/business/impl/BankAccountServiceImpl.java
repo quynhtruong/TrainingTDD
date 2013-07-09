@@ -14,7 +14,6 @@ import java.util.List;
  * Time: 1:44 PM
  * To change this template use File | Settings | File Templates.
  */
-
 public class BankAccountServiceImpl implements BankAccountService
 {
     public BankAccountDAO bankAccountDAO;

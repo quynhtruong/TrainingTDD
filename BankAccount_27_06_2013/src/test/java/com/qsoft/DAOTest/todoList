@@ -1,0 +1,17 @@
+with DAO testing, we have to ensure the following functions will be executed correctly:
+Get method:
+    1:Get Account by a given account Number
+    2:Get account by a give id
+    3.Get the whole list from the database
+Update method:
+    1. update an account existing in the database
+    2. create (and update) an account which is not already in the database
+Delete method:
+    1. Delete an account by ID, account number
+    2. Delete the whole rows in a table
+
+
+
+
+
+
