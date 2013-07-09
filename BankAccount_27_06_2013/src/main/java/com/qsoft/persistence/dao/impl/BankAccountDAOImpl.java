@@ -45,7 +45,17 @@ public class BankAccountDAOImpl implements BankAccountDAO
     @Override
     public BankAccountEntity getAccountById(Long id)
     {
-        return new BankAccountEntity("0123456782",10D,12345678L);
+        Query query = entityManager.createQuery("select o from BankAccountEntity o where o.id = :qid", BankAccountEntity.class);
+        query.setParameter("qid", id);
+        List<BankAccountEntity> list = query.getResultList();
+        if (list.size() == 0)
+        {
+            return null;
+        }
+        else
+        {
+            return list.get(0);
+        }
     }
 
 }
