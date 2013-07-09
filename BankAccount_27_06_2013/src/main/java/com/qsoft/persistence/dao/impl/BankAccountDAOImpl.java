@@ -42,4 +42,10 @@ public class BankAccountDAOImpl implements BankAccountDAO
         }
     }
 
+    @Override
+    public BankAccountEntity getAccountById(Long id)
+    {
+        return new BankAccountEntity("0123456782",10D,12345678L);
+    }
+
 }
