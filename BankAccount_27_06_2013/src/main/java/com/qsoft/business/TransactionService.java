@@ -1,5 +1,7 @@
 package com.qsoft.business;
 
+import com.qsoft.persistence.dao.TransactionDAO;
+
 /**
  * User: quynhtq
  * Date: 7/4/13
@@ -7,5 +9,5 @@ package com.qsoft.business;
  */
 public interface TransactionService
 {
-
+    public void setTransactionDAO(TransactionDAO transactionDAO);
 }

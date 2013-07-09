@@ -1,7 +1,7 @@
 package com.qsoft.business.impl;
 
-import com.qsoft.persistence.dao.impl.TransactionDAOImpl;
 import com.qsoft.business.TransactionService;
+import com.qsoft.persistence.dao.TransactionDAO;
 
 /**
  * Created with IntelliJ IDEA.
@@ -12,5 +12,10 @@ import com.qsoft.business.TransactionService;
  */
 public class TransactionServiceImpl implements TransactionService
 {
-    public static TransactionDAOImpl transactionDAO;
+    public TransactionDAO transactionDAO;
+    @Override
+    public void setTransactionDAO(TransactionDAO transactionDAO)
+    {
+        this.transactionDAO = transactionDAO;
+    }
 }

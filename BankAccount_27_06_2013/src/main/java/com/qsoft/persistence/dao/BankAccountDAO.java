@@ -1,6 +1,6 @@
 package com.qsoft.persistence.dao;
 
-import com.qsoft.persistence.model.BankAccountModel;
+import com.qsoft.persistence.model.BankAccountEntity;
 
 /**
  * User: quynhtq
@@ -9,6 +9,6 @@ import com.qsoft.persistence.model.BankAccountModel;
  */
 public interface BankAccountDAO
 {
-    public void save(BankAccountModel bankAccountModel);
-    public BankAccountModel getAccount(String accountNumber);
+    public void save(BankAccountEntity bankAccountModel);
+    public BankAccountEntity getAccount(String accountNumber);
 }

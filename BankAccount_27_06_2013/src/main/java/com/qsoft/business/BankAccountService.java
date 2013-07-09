@@ -1,6 +1,8 @@
 package com.qsoft.business;
 
-import com.qsoft.persistence.model.BankAccountModel;
+import com.qsoft.business.impl.TransactionServiceImpl;
+import com.qsoft.persistence.dao.BankAccountDAO;
+import com.qsoft.persistence.model.BankAccountEntity;
 
 import java.util.List;
 
@@ -11,13 +13,15 @@ import java.util.List;
  */
 public interface BankAccountService
 {
-    public BankAccountModel openAccount(String accountNumber);
+    public void setBankAccountDAO(BankAccountDAO bankAccountDAO);
+    public void setTransactionService(TransactionServiceImpl transactionService);
+    public BankAccountEntity openAccount(String accountNumber);
 
-    public BankAccountModel getAccount(String accountNumber);
+    public BankAccountEntity getAccount(String accountNumber);
 
-    public BankAccountModel deposit(String accountNumber, double amount, String description);
+    public BankAccountEntity deposit(String accountNumber, double amount, String description);
 
-    public BankAccountModel withdraw(String accountNumber, double amount, String description);
+    public BankAccountEntity withdraw(String accountNumber, double amount, String description);
 
     public List<Object> getTransactionOccurred(String accountNumber);
 
