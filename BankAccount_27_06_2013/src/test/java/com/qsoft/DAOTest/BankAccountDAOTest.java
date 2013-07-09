@@ -73,11 +73,20 @@ public class BankAccountDAOTest
     }
 
     @Test
-    public void testGetAccount()
+    public void testGetAccountByAccountnumber()
     {
         BankAccountEntity account = bankAccountDAO.getAccountByAccountNumber("0123456789");
         assertEquals("0123456789", account.getAccountNumber());
         assertEquals(new Double(100), account.getBalance());
         assertEquals(new Long(12345678), account.getOpenTimestamp());
     }
+    @Test
+    public void testGetAccountById(){
+        BankAccountEntity account = bankAccountDAO.getAccountById"2");
+        assertEquals("0123456782", account.getAccountNumber());
+        assertEquals(new Double(10), account.getBalance());
+        assertEquals(new Long(12345678), account.getOpenTimestamp());
+
+    }
+
 }

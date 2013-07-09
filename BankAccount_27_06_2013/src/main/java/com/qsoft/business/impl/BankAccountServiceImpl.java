@@ -40,13 +40,13 @@ public class BankAccountServiceImpl implements BankAccountService
 
     public BankAccountEntity getAccount(String accountNumber)
     {
-        BankAccountEntity bankAccountDTO = bankAccountDAO.getAccount(accountNumber);
+        BankAccountEntity bankAccountDTO = bankAccountDAO.getAccountByAccountNumber(accountNumber);
         return new BankAccountEntity(accountNumber, 0.0);
     }
 
     public BankAccountEntity deposit(String accountNumber, double amount, String description)
     {
-        BankAccountEntity bankAccountDTO = bankAccountDAO.getAccount(accountNumber);
+        BankAccountEntity bankAccountDTO = bankAccountDAO.getAccountByAccountNumber(accountNumber);
         bankAccountDTO = new BankAccountEntity(accountNumber, 0.0);
         bankAccountDTO.setBalance(bankAccountDTO.getBalance() + amount);
         bankAccountDAO.save(bankAccountDTO);
@@ -56,7 +56,7 @@ public class BankAccountServiceImpl implements BankAccountService
 
     public BankAccountEntity withdraw(String accountNumber, double amount, String description)
     {
-        BankAccountEntity bankAccountDTO = bankAccountDAO.getAccount(accountNumber);
+        BankAccountEntity bankAccountDTO = bankAccountDAO.getAccountByAccountNumber(accountNumber);
         bankAccountDTO = new BankAccountEntity(accountNumber, 100.0);
         bankAccountDTO.setBalance(bankAccountDTO.getBalance() - amount);
         bankAccountDAO.save(bankAccountDTO);

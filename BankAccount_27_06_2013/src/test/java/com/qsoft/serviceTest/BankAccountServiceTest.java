@@ -65,7 +65,7 @@ public class BankAccountServiceTest
         BankAccountEntity bankAccountDTO1 = bankAccountService.getAccount("123456789");
 
         ArgumentCaptor<String> argumentCaptor = ArgumentCaptor.forClass(String.class);
-        verify(mockBankAccountDAO, times(1)).getAccount(argumentCaptor.capture());
+        verify(mockBankAccountDAO, times(1)).getAccountByAccountNumber(argumentCaptor.capture());
         assertEquals(bankAccountDTO.getAccountNumber(), bankAccountDTO1.getAccountNumber());
         assertEquals(bankAccountDTO.getBalance(), bankAccountDTO1.getBalance());
     }
