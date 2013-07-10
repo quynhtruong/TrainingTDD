@@ -21,6 +21,7 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.sql.DataSource;
+import java.util.List;
 
 import static junit.framework.Assert.assertEquals;
 
@@ -96,5 +97,18 @@ public class BankAccountDAOTest
         assertEquals(null, bankAccountEntity1);
     }
 
+    @Test
+    public void testTheWholeListInTheDatabase()
+    {
+        List<BankAccountEntity> bankAccountEntityList = bankAccountDAO.getLAllAccount();
+        assertEquals("0123456782",bankAccountEntityList.get(0).getAccountNumber());
+        assertEquals(new Double(10), bankAccountEntityList.get(0).getBalance());
+        assertEquals(new Long(12345678), bankAccountEntityList.get(0).getOpenTimestamp());
+
+        assertEquals("0123456783",bankAccountEntityList.get(1).getAccountNumber());
+        assertEquals(new Double(100), bankAccountEntityList.get(1).getBalance());
+        assertEquals(new Long(12345678), bankAccountEntityList.get(1).getOpenTimestamp());
+
+    }
 
 }

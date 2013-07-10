@@ -2,6 +2,8 @@ package com.qsoft.persistence.dao;
 
 import com.qsoft.persistence.model.BankAccountEntity;
 
+import java.util.List;
+
 /**
  * User: quynhtq
  * Date: 7/4/13
@@ -12,4 +14,5 @@ public interface BankAccountDAO
     public void save(BankAccountEntity bankAccountModel);
     public BankAccountEntity getAccountByAccountNumber(String accountNumber);
     public BankAccountEntity getAccountById(Long id);
+    List<BankAccountEntity> getLAllAccount();
 }

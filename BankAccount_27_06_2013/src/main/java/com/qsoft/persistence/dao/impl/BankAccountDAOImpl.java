@@ -58,4 +58,10 @@ public class BankAccountDAOImpl implements BankAccountDAO
         }
     }
 
+    @Override
+    public List<BankAccountEntity> getLAllAccount()
+    {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
+
 }
