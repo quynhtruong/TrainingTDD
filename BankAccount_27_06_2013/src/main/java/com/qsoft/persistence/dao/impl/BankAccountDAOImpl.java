@@ -81,7 +81,7 @@ public class BankAccountDAOImpl implements BankAccountDAO
     @Override
     public void deleteAllBankAccountEntity()
     {
-        //To change body of implemented methods use File | Settings | File Templates.
+        Query query = entityManager.createQuery("delete from BankAccountEntity o");
+        query.executeUpdate();
     }
-
 }
