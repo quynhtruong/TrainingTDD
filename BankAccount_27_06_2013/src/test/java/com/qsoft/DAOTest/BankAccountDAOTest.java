@@ -101,12 +101,13 @@ public class BankAccountDAOTest
     public void testTheWholeListInTheDatabase()
     {
         List<BankAccountEntity> bankAccountEntityList = bankAccountDAO.getLAllAccount();
-        assertEquals("0123456782",bankAccountEntityList.get(0).getAccountNumber());
-        assertEquals(new Double(10), bankAccountEntityList.get(0).getBalance());
+        assertEquals(2,bankAccountEntityList.size());
+        assertEquals("0123456781",bankAccountEntityList.get(0).getAccountNumber());
+        assertEquals(new Double(1), bankAccountEntityList.get(0).getBalance());
         assertEquals(new Long(12345678), bankAccountEntityList.get(0).getOpenTimestamp());
 
-        assertEquals("0123456783",bankAccountEntityList.get(1).getAccountNumber());
-        assertEquals(new Double(100), bankAccountEntityList.get(1).getBalance());
+        assertEquals("0123456782",bankAccountEntityList.get(1).getAccountNumber());
+        assertEquals(new Double(10), bankAccountEntityList.get(1).getBalance());
         assertEquals(new Long(12345678), bankAccountEntityList.get(1).getOpenTimestamp());
 
     }
