@@ -7,7 +7,6 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -62,9 +61,8 @@ public class BankAccountDAOImpl implements BankAccountDAO
     @Override
     public List<BankAccountEntity> getLAllAccount()
     {
-        List<BankAccountEntity> result = new ArrayList<BankAccountEntity>();
-        result.add(new BankAccountEntity("0123456781",1D,12345678L));
-        result.add(new BankAccountEntity("0123456782",10D,12345678L));
+        Query query = entityManager.createQuery("select o from BankAccountEntity o", BankAccountEntity.class);
+        List<BankAccountEntity> result = query.getResultList();
         return result;
     }
 

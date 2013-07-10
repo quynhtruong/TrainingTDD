@@ -105,7 +105,6 @@ public class BankAccountDAOTest
         assertEquals("0123456781",bankAccountEntityList.get(0).getAccountNumber());
         assertEquals(new Double(1), bankAccountEntityList.get(0).getBalance());
         assertEquals(new Long(12345678), bankAccountEntityList.get(0).getOpenTimestamp());
-
         assertEquals("0123456782",bankAccountEntityList.get(1).getAccountNumber());
         assertEquals(new Double(10), bankAccountEntityList.get(1).getBalance());
         assertEquals(new Long(12345678), bankAccountEntityList.get(1).getOpenTimestamp());
