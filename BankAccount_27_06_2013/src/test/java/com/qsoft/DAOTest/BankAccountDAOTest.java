@@ -75,18 +75,26 @@ public class BankAccountDAOTest
     @Test
     public void testGetAccountByAccountnumber()
     {
-        BankAccountEntity account = bankAccountDAO.getAccountByAccountNumber("0123456789");
-        assertEquals("0123456789", account.getAccountNumber());
-        assertEquals(new Double(100), account.getBalance());
-        assertEquals(new Long(12345678), account.getOpenTimestamp());
+        BankAccountEntity bankAccountEntity = bankAccountDAO.getAccountByAccountNumber("0123456789");
+        assertEquals("0123456789", bankAccountEntity.getAccountNumber());
+        assertEquals(new Double(100), bankAccountEntity.getBalance());
+        assertEquals(new Long(12345678), bankAccountEntity.getOpenTimestamp());
     }
     @Test
     public void testGetAccountById(){
-        BankAccountEntity account = bankAccountDAO.getAccountById(2L);
-        assertEquals("0123456782", account.getAccountNumber());
-        assertEquals(new Double(10), account.getBalance());
-        assertEquals(new Long(12345678), account.getOpenTimestamp());
-
+        BankAccountEntity bankAccountEntity = bankAccountDAO.getAccountById(2L);
+        assertEquals("0123456782", bankAccountEntity.getAccountNumber());
+        assertEquals(new Double(10), bankAccountEntity.getBalance());
+        assertEquals(new Long(12345678), bankAccountEntity.getOpenTimestamp());
     }
+    @Test
+    public void testAnAccountDoesNotExist()
+    {
+        BankAccountEntity bankAccountEntity = bankAccountDAO.getAccountByAccountNumber("138741");
+        assertEquals(null, bankAccountEntity);
+        BankAccountEntity bankAccountEntity1 = bankAccountDAO.getAccountByAccountNumber("10");
+        assertEquals(null, bankAccountEntity1);
+    }
+
 
 }
