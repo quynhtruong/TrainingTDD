@@ -22,4 +22,6 @@ public interface BankAccountDAO
     void create(BankAccountEntity bankAccountEntity);
 
     void delete(BankAccountEntity bankAccountEntity);
+
+    void deleteAllBankAccountEntity();
 }

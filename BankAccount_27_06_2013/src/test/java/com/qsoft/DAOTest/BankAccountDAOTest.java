@@ -148,4 +148,12 @@ public class BankAccountDAOTest
         BankAccountEntity bankAccountEntity1 = bankAccountDAO.getAccountByAccountNumber("0123456783");
         assertEquals(null,bankAccountEntity1);
     }
+
+    @Test
+    public void testDeleteTheWholeRowInATable()
+    {
+        bankAccountDAO.deleteAllBankAccountEntity();
+        List<BankAccountEntity> bankAccountEntityList = bankAccountDAO.getLAllAccount();
+        assertEquals(0,bankAccountEntityList.size());
+    }
 }

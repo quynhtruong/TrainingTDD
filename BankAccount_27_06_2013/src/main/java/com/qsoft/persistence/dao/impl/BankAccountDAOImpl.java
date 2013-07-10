@@ -78,4 +78,10 @@ public class BankAccountDAOImpl implements BankAccountDAO
         entityManager.remove(bankAccountEntity);
     }
 
+    @Override
+    public void deleteAllBankAccountEntity()
+    {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
+
 }
