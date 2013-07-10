@@ -66,4 +66,10 @@ public class BankAccountDAOImpl implements BankAccountDAO
         return result;
     }
 
+    @Override
+    public void create(BankAccountEntity bankAccountEntity)
+    {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
+
 }

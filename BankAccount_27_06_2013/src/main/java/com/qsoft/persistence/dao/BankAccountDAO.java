@@ -15,4 +15,6 @@ public interface BankAccountDAO
     public BankAccountEntity getAccountByAccountNumber(String accountNumber);
     public BankAccountEntity getAccountById(Long id);
     List<BankAccountEntity> getLAllAccount();
+
+    void create(BankAccountEntity bankAccountEntity);
 }
