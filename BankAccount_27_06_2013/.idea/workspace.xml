@@ -37,7 +37,7 @@
     <file path="$USER_HOME$/Desktop/TDD-master/BankAccount1-7/src/main/java/com/qsoft/bankaccount/business/BankAccountService.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373352541815" ignored="false" />
     <file path="/persistenceTest.xml" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373353092738" ignored="false" />
     <file path="$USER_HOME$/Desktop/TDD-master/BankAccount8-7/src/test/resources/testContext.xml" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373353329650" ignored="false" />
-    <file path="/BankAccountDAOTest.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373439559289" ignored="false" />
+    <file path="/BankAccountDAOTest.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373439700265" ignored="false" />
     <file path="$USER_HOME$/Desktop/TDD-master/BankAccount8-7/src/test/java/com/qsoft/bankaccount/persistence/dao/BankAccountDAOTest.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373355095994" ignored="false" />
     <file path="$USER_HOME$/Desktop/TDD-master/BankAccount8-7/src/main/java/com/qsoft/bankaccount/persistence/model/BankAccountEntity.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373354264667" ignored="false" />
     <file path="$USER_HOME$/Desktop/TDD-master/BankAccount8-7/src/main/java/com/qsoft/bankaccount/business/impl/BankAccountServiceImpl.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373354374724" ignored="false" />
@@ -118,7 +118,7 @@
       <file leaf-file-name="BankAccountDAOTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/DAOTest/BankAccountDAOTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="137" column="52" selection-start="5355" selection-end="5355" vertical-scroll-proportion="1.3136531">
+            <state line="146" column="78" selection-start="5733" selection-end="5733" vertical-scroll-proportion="1.6236162">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -197,8 +197,8 @@
         <option value="$PROJECT_DIR$/src/test/java/com/qsoft/DAOTest/todoList" />
         <option value="$PROJECT_DIR$/src/test/resources/dataset.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/BankAccountDAO.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/qsoft/DAOTest/BankAccountDAOTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/impl/BankAccountDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/qsoft/DAOTest/BankAccountDAOTest.java" />
       </list>
     </option>
   </component>
@@ -632,35 +632,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BankAccountDAOTest.testDeleteAnAccountInTheDatabase">
-    <configuration default="false" name="BankAccountDAOTest.testAnAccountDoesNotExist" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.qsoft.DAOTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="BankAccount_27_06_2013" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.qsoft.DAOTest" />
-      <option name="MAIN_CLASS_NAME" value="com.qsoft.DAOTest.BankAccountDAOTest" />
-      <option name="METHOD_NAME" value="testAnAccountDoesNotExist" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.BankAccountDAOTest.testDeleteAnAccountDoesNotInTheDatabase">
     <configuration default="false" name="BankAccountDAOTest.testTheWholeListInTheDatabase" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -758,6 +730,34 @@
       <option name="PACKAGE_NAME" value="com.qsoft.DAOTest" />
       <option name="MAIN_CLASS_NAME" value="com.qsoft.DAOTest.BankAccountDAOTest" />
       <option name="METHOD_NAME" value="testDeleteAnAccountInTheDatabase" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BankAccountDAOTest.testDeleteAnAccountDoesNotInTheDatabase" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.qsoft.DAOTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="BankAccount_27_06_2013" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.qsoft.DAOTest" />
+      <option name="MAIN_CLASS_NAME" value="com.qsoft.DAOTest.BankAccountDAOTest" />
+      <option name="METHOD_NAME" value="testDeleteAnAccountDoesNotInTheDatabase" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -900,19 +900,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testGetAccount" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testAnAccountDoesNotExist" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testTheWholeListInTheDatabase" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testUpdateAnAccountExistingInTheDatabase" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testCreateAndUpdateAnAccountDoesNotInTheDatabase" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testDeleteAnAccountInTheDatabase" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testTheWholeListInTheDatabase" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testUpdateAnAccountExistingInTheDatabase" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testCreateAndUpdateAnAccountDoesNotInTheDatabase" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testDeleteAnAccountInTheDatabase" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testDeleteAnAccountDoesNotInTheDatabase" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testDeleteAnAccountInTheDatabase" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testCreateAndUpdateAnAccountDoesNotInTheDatabase" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testUpdateAnAccountExistingInTheDatabase" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testTheWholeListInTheDatabase" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testAnAccountDoesNotExist" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testDeleteAnAccountDoesNotInTheDatabase" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testDeleteAnAccountInTheDatabase" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testCreateAndUpdateAnAccountDoesNotInTheDatabase" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testUpdateAnAccountExistingInTheDatabase" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testTheWholeListInTheDatabase" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1135,7 +1135,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/DAOTest/BankAccountDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="52" selection-start="5355" selection-end="5355" vertical-scroll-proportion="1.3136531">
+        <state line="146" column="78" selection-start="5733" selection-end="5733" vertical-scroll-proportion="1.6236162">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

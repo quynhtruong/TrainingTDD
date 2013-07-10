@@ -140,4 +140,12 @@ public class BankAccountDAOTest
         assertEquals(null,bankAccountEntity1);
     }
 
+    @Test
+    public void testDeleteAnAccountDoesNotInTheDatabase()
+    {
+        BankAccountEntity bankAccountEntity = new BankAccountEntity("0123456783",111D,1423871L);
+        bankAccountDAO.delete(bankAccountEntity);
+        BankAccountEntity bankAccountEntity1 = bankAccountDAO.getAccountByAccountNumber("0123456783");
+        assertEquals(null,bankAccountEntity1);
+    }
 }
