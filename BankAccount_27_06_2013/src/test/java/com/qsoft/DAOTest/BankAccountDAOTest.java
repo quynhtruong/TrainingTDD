@@ -130,4 +130,14 @@ public class BankAccountDAOTest
         assertEquals(new Long(1423871),bankAccountEntity1.getOpenTimestamp());
     }
 
+    @Test
+    public void testDeleteAnAccountInTheDatabase()
+    {
+        BankAccountEntity bankAccountEntity = bankAccountDAO.getAccountByAccountNumber("0123456781");
+        bankAccountDAO.delete(bankAccountEntity);
+
+        BankAccountEntity bankAccountEntity1 = bankAccountDAO.getAccountByAccountNumber("0123456781");
+        assertEquals(null,bankAccountEntity1);
+    }
+
 }

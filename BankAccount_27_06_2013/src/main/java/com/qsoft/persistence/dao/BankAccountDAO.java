@@ -12,9 +12,14 @@ import java.util.List;
 public interface BankAccountDAO
 {
     public void save(BankAccountEntity bankAccountModel);
+
     public BankAccountEntity getAccountByAccountNumber(String accountNumber);
+
     public BankAccountEntity getAccountById(Long id);
+
     List<BankAccountEntity> getLAllAccount();
 
     void create(BankAccountEntity bankAccountEntity);
+
+    void delete(BankAccountEntity bankAccountEntity);
 }
