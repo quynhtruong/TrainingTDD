@@ -50,6 +50,10 @@ public class TransactionDAOImpl implements TransactionDAO
 
     public List<TransactionEntity> getNClosestTransactions(String accountNumber, Long n)
     {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        Query query = entityManager.createQuery("select o from TransactionEntity o where o.accountNumber = :qAccountNumber order by o.timestamp desc ", TransactionEntity.class);
+        query.setParameter("qAccountNumber", accountNumber);
+        query.setMaxResults((int)(Long.parseLong(n.toString())));
+        List<TransactionEntity> resultList = query.getResultList();
+        return resultList;
     }
 }
