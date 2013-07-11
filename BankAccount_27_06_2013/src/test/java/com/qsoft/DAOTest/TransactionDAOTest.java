@@ -104,4 +104,20 @@ public class TransactionDAOTest
         assertEquals(100D, transactionEntityList.get(2).getAmount());
         assertEquals("justATestThirdTime", transactionEntityList.get(2).getDescription());
     }
+
+    @Test
+    public void testGetNCloesetTransactins()
+    {
+        List<TransactionEntity> transactionEntityList = transactionDAO.getNClosestTransactions("0123456781",2L);
+        assertEquals("0123456781", transactionEntityList.get(0).getAccountNumber());
+        assertEquals(new Long(123), transactionEntityList.get(0).getTimestamp());
+        assertEquals(1D, transactionEntityList.get(0).getAmount());
+        assertEquals("justATest", transactionEntityList.get(0).getDescription());
+
+        assertEquals("0123456781", transactionEntityList.get(1).getAccountNumber());
+        assertEquals(new Long(123), transactionEntityList.get(1).getTimestamp());
+        assertEquals(10D, transactionEntityList.get(1).getAmount());
+        assertEquals("justATestSecondTime", transactionEntityList.get(1).getDescription());
+
+    }
 }
