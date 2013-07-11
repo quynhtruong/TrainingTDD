@@ -141,7 +141,7 @@
       <file leaf-file-name="TransactionDAOTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/DAOTest/TransactionDAOTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="88" selection-start="2491" selection-end="2491" vertical-scroll-proportion="0.31028038">
+            <state line="87" column="86" selection-start="3296" selection-end="3296" vertical-scroll-proportion="0.85046726">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -243,12 +243,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/business/TransactionService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/qsoft/DAOTest/BankAccountDAOTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/TransactionDAO.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/qsoft/DAOTest/TransactionDAOTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/business/impl/BankAccountServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/business/BankAccountService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/qsoft/serviceTest/BankAccountServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/impl/TransactionDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/persistence/model/TransactionEntity.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/qsoft/DAOTest/TransactionDAOTest.java" />
       </list>
     </option>
   </component>
@@ -708,35 +708,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TransactionDAOTest.testGetAllTransactionByAccountNumber">
-    <configuration default="false" name="BankAccountDAOTest.testCreateAndUpdateAnAccountDoesNotInTheDatabase" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.qsoft.DAOTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="BankAccount_27_06_2013" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.qsoft.DAOTest" />
-      <option name="MAIN_CLASS_NAME" value="com.qsoft.DAOTest.BankAccountDAOTest" />
-      <option name="METHOD_NAME" value="testCreateAndUpdateAnAccountDoesNotInTheDatabase" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.TransactionDAOTest.testSaveTransaction">
     <configuration default="false" name="BankAccountDAOTest.testDeleteAnAccountInTheDatabase" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -834,6 +806,34 @@
       <option name="PACKAGE_NAME" value="com.qsoft.DAOTest" />
       <option name="MAIN_CLASS_NAME" value="com.qsoft.DAOTest.TransactionDAOTest" />
       <option name="METHOD_NAME" value="testGetAllTransactionByAccountNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TransactionDAOTest.testSaveTransaction" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.qsoft.DAOTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="BankAccount_27_06_2013" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.qsoft.DAOTest" />
+      <option name="MAIN_CLASS_NAME" value="com.qsoft.DAOTest.TransactionDAOTest" />
+      <option name="METHOD_NAME" value="testSaveTransaction" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -976,19 +976,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testGetAccount" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testCreateAndUpdateAnAccountDoesNotInTheDatabase" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testDeleteAnAccountInTheDatabase" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testDeleteAnAccountDoesNotInTheDatabase" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testDeleteTheWholeRowInATable" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.TransactionDAOTest.testGetAllTransactionByAccountNumber" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testDeleteAnAccountInTheDatabase" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testDeleteAnAccountDoesNotInTheDatabase" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testDeleteTheWholeRowInATable" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TransactionDAOTest.testGetAllTransactionByAccountNumber" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.TransactionDAOTest.testSaveTransaction" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TransactionDAOTest.testGetAllTransactionByAccountNumber" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testDeleteTheWholeRowInATable" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testDeleteAnAccountDoesNotInTheDatabase" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testDeleteAnAccountInTheDatabase" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testCreateAndUpdateAnAccountDoesNotInTheDatabase" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TransactionDAOTest.testSaveTransaction" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TransactionDAOTest.testGetAllTransactionByAccountNumber" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testDeleteTheWholeRowInATable" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testDeleteAnAccountDoesNotInTheDatabase" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testDeleteAnAccountInTheDatabase" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1206,7 +1206,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/DAOTest/TransactionDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="88" selection-start="2491" selection-end="2491" vertical-scroll-proportion="0.31028038">
+        <state line="87" column="86" selection-start="3296" selection-end="3296" vertical-scroll-proportion="0.85046726">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
