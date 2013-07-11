@@ -26,6 +26,10 @@ public class TransactionEntity
     @Column(name = "description")
     private String description;
 
+    public TransactionEntity()
+    {
+    }
+
     public TransactionEntity(String accountNumber, Long timestamp, Double amount, String description)
     {
         this.accountNumber = accountNumber;
