@@ -8,6 +8,7 @@ import com.qsoft.persistence.dao.TransactionDAO;
 import com.qsoft.persistence.dao.impl.BankAccountDAOImpl;
 import com.qsoft.persistence.dao.impl.TransactionDAOImpl;
 import com.qsoft.persistence.model.BankAccountEntity;
+import com.qsoft.persistence.model.TransactionEntity;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
@@ -140,7 +141,7 @@ public class BankAccountServiceTest
     @Test
     public void testGetTransactionOccurred()
     {
-        List<Object> list = bankAccountService.getTransactionOccurred("123456789");
+        List<TransactionEntity> list = bankAccountService.getTransactionOccurred("123456789");
 
         ArgumentCaptor<String> stringArgumentCaptor = ArgumentCaptor.forClass(String.class);
 
@@ -150,7 +151,7 @@ public class BankAccountServiceTest
     @Test
     public void testGetTransactionWithAnIntervalOfTime()
     {
-        List<Object> list = bankAccountService.getTransactionOccurred("123456789", 1L, 2L);
+        List<TransactionEntity> list = bankAccountService.getTransactionOccurred("123456789", 1L, 2L);
 
         ArgumentCaptor<String> stringArgumentCaptor = ArgumentCaptor.forClass(String.class);
         ArgumentCaptor<Long> longArgumentCaptor = ArgumentCaptor.forClass(Long.class);
@@ -165,7 +166,7 @@ public class BankAccountServiceTest
     @Test
     public void testGetNClosestTransactions()
     {
-        List<Object> list = bankAccountService.getNClosestTransactions("123456789", 3L);
+        List<TransactionEntity> list = bankAccountService.getNClosestTransactions("123456789", 3L);
         ArgumentCaptor<String> stringArgumentCaptor = ArgumentCaptor.forClass(String.class);
         ArgumentCaptor<Long> longArgumentCaptor = ArgumentCaptor.forClass(Long.class);
 

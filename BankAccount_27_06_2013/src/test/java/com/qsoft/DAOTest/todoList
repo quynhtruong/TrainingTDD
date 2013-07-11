@@ -12,6 +12,14 @@ Delete method:
     8. Delete an account by ID, account number
     9. Delete the whole rows in a table
 
+with TransactionDAO testing:
+    10. save a transaction
+    11. get the list of an account's transactions which is executed
+    12. get the list of an account's transactions which is executed in an interval of time
+    13. get the list of n closest transactions
+
+
+
 
 
 

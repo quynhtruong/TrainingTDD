@@ -1,5 +1,7 @@
 package com.qsoft.persistence.dao;
 
+import com.qsoft.persistence.model.TransactionEntity;
+
 import java.util.List;
 
 /**
@@ -10,8 +12,7 @@ import java.util.List;
 public interface TransactionDAO
 {
     public void save(String accountNumber, Long timeStamp, Double amount, String description);
-    public List<Object> getTransactionOccurred(String accountNumber);
-    public List<Object> getTransactionOccurred(String accountNumber, long startTime, long endTime);
-    public List<Object> getNClosestTransactions(String accountNumber, long n);
-
+    public List<TransactionEntity> getTransactionOccurred(String accountNumber);
+    public List<TransactionEntity> getTransactionOccurred(String accountNumber, long startTime, long endTime);
+    public List<TransactionEntity> getNClosestTransactions(String accountNumber, long n);
 }

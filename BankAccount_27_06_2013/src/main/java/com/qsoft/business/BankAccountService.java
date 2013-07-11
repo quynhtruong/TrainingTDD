@@ -3,6 +3,7 @@ package com.qsoft.business;
 import com.qsoft.business.impl.TransactionServiceImpl;
 import com.qsoft.persistence.dao.BankAccountDAO;
 import com.qsoft.persistence.model.BankAccountEntity;
+import com.qsoft.persistence.model.TransactionEntity;
 
 import java.util.List;
 
@@ -14,7 +15,9 @@ import java.util.List;
 public interface BankAccountService
 {
     public void setBankAccountDAO(BankAccountDAO bankAccountDAO);
+
     public void setTransactionService(TransactionServiceImpl transactionService);
+
     public BankAccountEntity openAccount(String accountNumber);
 
     public BankAccountEntity getAccount(String accountNumber);
@@ -23,10 +26,10 @@ public interface BankAccountService
 
     public BankAccountEntity withdraw(String accountNumber, double amount, String description);
 
-    public List<Object> getTransactionOccurred(String accountNumber);
+    public List<TransactionEntity> getTransactionOccurred(String accountNumber);
 
-    public List<Object> getTransactionOccurred(String accountNumber, long startTime, long endTime);
+    public List<TransactionEntity> getTransactionOccurred(String accountNumber, long startTime, long endTime);
 
-    public List<Object> getNClosestTransactions(String accountNumber, long n);
+    public List<TransactionEntity> getNClosestTransactions(String accountNumber, long n);
 
 }

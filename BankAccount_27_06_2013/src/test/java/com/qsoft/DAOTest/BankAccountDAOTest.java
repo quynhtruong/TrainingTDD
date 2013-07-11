@@ -1,6 +1,5 @@
 package com.qsoft.DAOTest;
 
-import com.qsoft.business.BankAccountService;
 import com.qsoft.persistence.dao.BankAccountDAO;
 import com.qsoft.persistence.model.BankAccountEntity;
 import org.dbunit.DataSourceDatabaseTester;
@@ -40,8 +39,6 @@ public class BankAccountDAOTest
     private EntityManager entityManager;
     @Autowired
     private BankAccountDAO bankAccountDAO;
-    @Autowired
-    private BankAccountService bankAccountService;
     @Autowired
     private DataSource dataSourceTest;
 
@@ -155,5 +152,11 @@ public class BankAccountDAOTest
         bankAccountDAO.deleteAllBankAccountEntity();
         List<BankAccountEntity> bankAccountEntityList = bankAccountDAO.getLAllAccount();
         assertEquals(0,bankAccountEntityList.size());
+    }
+
+    @Test
+    public void tesSavetTransactionDAO()
+    {
+
     }
 }

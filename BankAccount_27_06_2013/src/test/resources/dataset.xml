@@ -2,4 +2,8 @@
 <dataset>
     <bank_account account_number="0123456781" balance="1" open_time_stamp="12345678"/>
     <bank_account account_number="0123456782" balance="10" open_time_stamp="12345678"/>
+    <transaction account_number ="0123456781" timestamp="123" amount = "1" description = "justATest"/>
+    <transaction account_number ="0123456781" timestamp="123" amount = "10" description = "justATestSecondTime"/>
+    <transaction account_number ="0123456781" timestamp="123" amount = "100" description = "justATestThirdTime"/>
+    <transaction account_number ="0123456782" timestamp="123" amount = "1000" description = "justATest"/>
 </dataset>

@@ -1,7 +1,12 @@
 package com.qsoft.persistence.dao.impl;
 
 import com.qsoft.persistence.dao.TransactionDAO;
+import com.qsoft.persistence.model.TransactionEntity;
+import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import java.util.List;
 
 /**
@@ -11,24 +16,29 @@ import java.util.List;
  * Time: 1:43 PM
  * To change this template use File | Settings | File Templates.
  */
+@Component
+@Transactional
 public class TransactionDAOImpl implements TransactionDAO
 {
+    @PersistenceContext
+    public EntityManager entityManager;
+
     public void save(String accountNumber, Long timeStamp, Double amount, String description)
     {
         //To change body of created methods use File | Settings | File Templates.
     }
 
-    public List<Object> getTransactionOccurred(String accountNumber)
+    public List<TransactionEntity> getTransactionOccurred(String accountNumber)
     {
         return null;  //To change body of created methods use File | Settings | File Templates.
     }
 
-    public List<Object> getTransactionOccurred(String accountNumber, long startTime, long endTime)
+    public List<TransactionEntity> getTransactionOccurred(String accountNumber, long startTime, long endTime)
     {
         return null;  //To change body of created methods use File | Settings | File Templates.
     }
 
-    public List<Object> getNClosestTransactions(String accountNumber, long n)
+    public List<TransactionEntity> getNClosestTransactions(String accountNumber, long n)
     {
         return null;  //To change body of created methods use File | Settings | File Templates.
     }

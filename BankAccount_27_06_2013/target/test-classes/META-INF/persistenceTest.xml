@@ -4,6 +4,7 @@
     <persistence-unit name="NewPersistenceUnitTest">
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
         <class>com.qsoft.persistence.model.BankAccountEntity</class>
+        <class>com.qsoft.persistence.model.TransactionEntity</class>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
             <property name="hibernate.archive.autodetection" value="class"/>

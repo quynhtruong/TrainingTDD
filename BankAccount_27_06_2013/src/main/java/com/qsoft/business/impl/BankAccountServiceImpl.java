@@ -3,6 +3,8 @@ package com.qsoft.business.impl;
 import com.qsoft.business.BankAccountService;
 import com.qsoft.persistence.dao.BankAccountDAO;
 import com.qsoft.persistence.model.BankAccountEntity;
+import com.qsoft.persistence.model.TransactionEntity;
+import org.springframework.stereotype.Component;
 
 import java.util.Calendar;
 import java.util.List;
@@ -14,6 +16,7 @@ import java.util.List;
  * Time: 1:44 PM
  * To change this template use File | Settings | File Templates.
  */
+@Component
 public class BankAccountServiceImpl implements BankAccountService
 {
     public BankAccountDAO bankAccountDAO;
@@ -64,21 +67,21 @@ public class BankAccountServiceImpl implements BankAccountService
         return bankAccountDTO;
     }
 
-    public List<Object> getTransactionOccurred(String accountNumber)
+    public List<TransactionEntity> getTransactionOccurred(String accountNumber)
     {
-        List<Object> transactionList = transactionService.transactionDAO.getTransactionOccurred(accountNumber);
+        List<TransactionEntity> transactionList = transactionService.transactionDAO.getTransactionOccurred(accountNumber);
         return transactionList;
     }
 
-    public List<Object> getTransactionOccurred(String accountNumber, long startTime, long endTime)
+    public List<TransactionEntity> getTransactionOccurred(String accountNumber, long startTime, long endTime)
     {
-        List<Object> transactionList = transactionService.transactionDAO.getTransactionOccurred(accountNumber, startTime, endTime);
+        List<TransactionEntity> transactionList = transactionService.transactionDAO.getTransactionOccurred(accountNumber, startTime, endTime);
         return transactionList;
     }
 
-    public List<Object> getNClosestTransactions(String accountNumber, long n)
+    public List<TransactionEntity> getNClosestTransactions(String accountNumber, long n)
     {
-        List<Object> transactionList = transactionService.transactionDAO.getNClosestTransactions(accountNumber, n);
+        List<TransactionEntity> transactionList = transactionService.transactionDAO.getNClosestTransactions(accountNumber, n);
         return transactionList;
     }
 }
