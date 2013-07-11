@@ -63,17 +63,17 @@ public class TransactionDAOTest
     public void testGetAllTransactionByAccountNumber()
     {
         List<TransactionEntity> transactionEntityList = transactionDAO.getTransactionOccurred("0123456781");
-        assertEquals(3,transactionEntityList.size());
+        assertEquals(3, transactionEntityList.size());
 
-        assertEquals("0123456781",transactionEntityList.get(0).getAccountNumber());
-        assertEquals(new Long(123),transactionEntityList.get(0).getTimestamp());
-        assertEquals(1D,transactionEntityList.get(0).getAmount());
-        assertEquals("justATest",transactionEntityList.get(0).getDescription());
+        assertEquals("0123456781", transactionEntityList.get(0).getAccountNumber());
+        assertEquals(new Long(123), transactionEntityList.get(0).getTimestamp());
+        assertEquals(1D, transactionEntityList.get(0).getAmount());
+        assertEquals("justATest", transactionEntityList.get(0).getDescription());
 
-        assertEquals("0123456781",transactionEntityList.get(2).getAccountNumber());
-        assertEquals(new Long(123),transactionEntityList.get(2).getTimestamp());
-        assertEquals(100D,transactionEntityList.get(2).getAmount());
-        assertEquals("justATestThirdTime",transactionEntityList.get(2).getDescription());
+        assertEquals("0123456781", transactionEntityList.get(2).getAccountNumber());
+        assertEquals(new Long(123), transactionEntityList.get(2).getTimestamp());
+        assertEquals(100D, transactionEntityList.get(2).getAmount());
+        assertEquals("justATestThirdTime", transactionEntityList.get(2).getDescription());
 
     }
 
@@ -83,9 +83,25 @@ public class TransactionDAOTest
         transactionDAO.save("123456789", 1234L, 111D, "testTransaction");
         List<TransactionEntity> transactionEntityList = transactionDAO.getTransactionOccurred("123456789");
 
-        assertEquals("123456789",transactionEntityList.get(0).getAccountNumber());
-        assertEquals(new Long(1234),transactionEntityList.get(0).getTimestamp());
-        assertEquals(111D,transactionEntityList.get(0).getAmount());
-        assertEquals("testTransaction",transactionEntityList.get(0).getDescription());
+        assertEquals("123456789", transactionEntityList.get(0).getAccountNumber());
+        assertEquals(new Long(1234), transactionEntityList.get(0).getTimestamp());
+        assertEquals(111D, transactionEntityList.get(0).getAmount());
+        assertEquals("testTransaction", transactionEntityList.get(0).getDescription());
+    }
+
+    @Test
+    public void testGetTransactionInAPeridOfTime()
+    {
+        List<TransactionEntity> transactionEntityList = transactionDAO.getTransactionOccurred("0123456781", 1L, 10000L);
+
+        assertEquals("0123456781", transactionEntityList.get(0).getAccountNumber());
+        assertEquals(new Long(123), transactionEntityList.get(0).getTimestamp());
+        assertEquals(1D, transactionEntityList.get(0).getAmount());
+        assertEquals("justATest", transactionEntityList.get(0).getDescription());
+
+        assertEquals("0123456781", transactionEntityList.get(2).getAccountNumber());
+        assertEquals(new Long(123), transactionEntityList.get(2).getTimestamp());
+        assertEquals(100D, transactionEntityList.get(2).getAmount());
+        assertEquals("justATestThirdTime", transactionEntityList.get(2).getDescription());
     }
 }
