@@ -26,7 +26,8 @@ public class TransactionDAOImpl implements TransactionDAO
 
     public void save(String accountNumber, Long timeStamp, Double amount, String description)
     {
-        //To change body of created methods use File | Settings | File Templates.
+        TransactionEntity transactionEntity = new TransactionEntity(accountNumber,timeStamp,amount,description);
+        entityManager.persist(transactionEntity);
     }
 
     public List<TransactionEntity> getTransactionOccurred(String accountNumber)
