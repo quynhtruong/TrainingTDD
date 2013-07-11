@@ -38,12 +38,17 @@ public class TransactionDAOImpl implements TransactionDAO
         return resultList;
     }
 
-    public List<TransactionEntity> getTransactionOccurred(String accountNumber, long startTime, long endTime)
+    public List<TransactionEntity> getTransactionOccurred(String accountNumber, Long startTime, Long endTime)
     {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        Query query = entityManager.createQuery("select o from TransactionEntity o where o.accountNumber = :qAccountNumber and o.timestamp>=:qStartTime and o.timestamp <=:qEndTime", TransactionEntity.class);
+        query.setParameter("qAccountNumber",accountNumber);
+        query.setParameter("qStartTime",startTime);
+        query.setParameter("qEndTime",endTime);
+        List<TransactionEntity> resultList = query.getResultList();
+        return resultList;
     }
 
-    public List<TransactionEntity> getNClosestTransactions(String accountNumber, long n)
+    public List<TransactionEntity> getNClosestTransactions(String accountNumber, Long n)
     {
         return null;  //To change body of created methods use File | Settings | File Templates.
     }

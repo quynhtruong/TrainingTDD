@@ -13,6 +13,6 @@ public interface TransactionDAO
 {
     public void save(String accountNumber, Long timeStamp, Double amount, String description);
     public List<TransactionEntity> getTransactionOccurred(String accountNumber);
-    public List<TransactionEntity> getTransactionOccurred(String accountNumber, long startTime, long endTime);
-    public List<TransactionEntity> getNClosestTransactions(String accountNumber, long n);
+    public List<TransactionEntity> getTransactionOccurred(String accountNumber, Long startTime, Long endTime);
+    public List<TransactionEntity> getNClosestTransactions(String accountNumber, Long n);
 }
