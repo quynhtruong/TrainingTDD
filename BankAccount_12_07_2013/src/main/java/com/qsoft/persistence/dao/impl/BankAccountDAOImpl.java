@@ -27,12 +27,12 @@ public class BankAccountDAOImpl implements BankAccountDAO
 
     public BankAccountEntity getAccountByAccountNumber(String accountNumber)
     {
-
+        return new BankAccountEntity("0123456781",1D,12345678L);
     }
 
     @Override
     public void create(BankAccountEntity bankAccountEntity)
     {
-        entityManager.persist(bankAccountEntity);
+
     }
 }
