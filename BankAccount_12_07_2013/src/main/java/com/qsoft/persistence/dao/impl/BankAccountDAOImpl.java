@@ -27,7 +27,7 @@ public class BankAccountDAOImpl implements BankAccountDAO
 
     public BankAccountEntity getAccountByAccountNumber(String accountNumber)
     {
-        return null;
+
     }
 
     @Override

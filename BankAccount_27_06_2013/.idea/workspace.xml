@@ -13,7 +13,7 @@
     <file path="/TransactionDAO.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373527103219" ignored="false" />
     <file path="/pom.xml" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373509561963" ignored="false" />
     <file path="$USER_HOME$/workspace/dbcatalog/pom.xml" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372920571053" ignored="false" />
-    <file path="/BankAccountDAOImpl.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373611715395" ignored="false" />
+    <file path="/BankAccountDAOImpl.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373612237774" ignored="false" />
     <file path="/applicationContext.xml" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373355656082" ignored="false" />
     <file path="/testContext.xml" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373612040351" ignored="false" />
     <file path="/BankAccountImpl.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1372921817927" ignored="false" />
@@ -79,10 +79,10 @@
     <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/pom.xml" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373610727513" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/src/test/java/com/qsoft/MainClass.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373610890029" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/src/test/java/com/qsoft/MainClassTest.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373610912216" ignored="false" />
-    <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/src/test/java/com/qsoft/daoTest/BankAccountDAOTest.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373612185608" ignored="false" />
+    <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/src/test/java/com/qsoft/daoTest/BankAccountDAOTest.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373612250869" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/src/test/resources/dataset.xml" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373611522393" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/src/test/resources/todoList" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373611586572" ignored="false" />
-    <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/src/main/java/com/qsoft/persistence/dao/impl/BankAccountDAOImpl.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373611786524" ignored="false" />
+    <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/src/main/java/com/qsoft/persistence/dao/impl/BankAccountDAOImpl.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373612256935" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/src/main/java/com/qsoft/persistence/dao/BankAccountDAO.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373611752826" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/src/test/resources/testContext.xml" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373612040351" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />

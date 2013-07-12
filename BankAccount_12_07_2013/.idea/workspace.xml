@@ -4,7 +4,7 @@
     <list default="true" id="30bd414f-9ba8-4347-bccb-4c80fcfd690f" name="Default" comment="" />
     <ignored path="BankAccount_12_07_2013.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/BankAccountDAOImpl.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373611715396" ignored="false" />
+    <file path="/BankAccountDAOImpl.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373612237774" ignored="false" />
     <file path="/testContext.xml" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373612040351" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_27_06_2013/src/test/java/com/qsoft/DAOTest/BankAccountDAOTest.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373612086096" ignored="false" />
     <file path="/BankAccountDAOTest.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373612163067" ignored="false" />
@@ -66,13 +66,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BankAccountDAOTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BankAccountDAOTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/daoTest/BankAccountDAOTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="77" selection-start="2033" selection-end="2033" vertical-scroll-proportion="0.8211091">
+            <state line="62" column="32" selection-start="1992" selection-end="1992" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BankAccountDAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/BankAccountDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="0" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BankAccountDAOImpl.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/impl/BankAccountDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="8" selection-start="826" selection-end="826" vertical-scroll-proportion="0.46332738">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,9 +118,9 @@
         <option value="$PROJECT_DIR$/src/test/resources/dataset.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/todoList" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/BankAccountDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/impl/BankAccountDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testContext.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/qsoft/daoTest/BankAccountDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/impl/BankAccountDAOImpl.java" />
       </list>
     </option>
   </component>
@@ -768,23 +786,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/BankAccountDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="4" selection-start="320" selection-end="320" vertical-scroll-proportion="0.5204461">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/business/impl/BankAccountServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="13" selection-start="517" selection-end="517" vertical-scroll-proportion="-0.33882785">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/impl/BankAccountDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="22" selection-start="590" selection-end="590" vertical-scroll-proportion="0.5724508">
           <folding />
         </state>
       </provider>
@@ -838,12 +842,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/BankAccountDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/daoTest/BankAccountDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="77" selection-start="2033" selection-end="2033" vertical-scroll-proportion="0.8211091">
+        <state line="62" column="32" selection-start="1992" selection-end="1992" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/impl/BankAccountDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="8" selection-start="826" selection-end="826" vertical-scroll-proportion="0.46332738">
+          <folding />
         </state>
       </provider>
     </entry>
