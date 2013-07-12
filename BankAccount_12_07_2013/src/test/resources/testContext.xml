@@ -6,7 +6,7 @@
 	   http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd"
        default-autowire="byName">
 
-    <import resource="applicationContext.xml"/>
+    <import resource="classpath:applicationContext.xml"/>
     <bean id="placeholderConfig"
           class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="location" value="classpath:dbTest.properties"/>
