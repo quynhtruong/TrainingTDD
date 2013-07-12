@@ -37,7 +37,7 @@
     <file path="$USER_HOME$/Desktop/TDD-master/BankAccount1-7/src/main/java/com/qsoft/bankaccount/business/BankAccountService.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373352541815" ignored="false" />
     <file path="/persistenceTest.xml" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373525037502" ignored="false" />
     <file path="$USER_HOME$/Desktop/TDD-master/BankAccount8-7/src/test/resources/testContext.xml" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373353329650" ignored="false" />
-    <file path="/BankAccountDAOTest.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373612783619" ignored="false" />
+    <file path="/BankAccountDAOTest.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373612924959" ignored="false" />
     <file path="$USER_HOME$/Desktop/TDD-master/BankAccount8-7/src/test/java/com/qsoft/bankaccount/persistence/dao/BankAccountDAOTest.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373355095994" ignored="false" />
     <file path="$USER_HOME$/Desktop/TDD-master/BankAccount8-7/src/main/java/com/qsoft/bankaccount/persistence/model/BankAccountEntity.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373354264667" ignored="false" />
     <file path="$USER_HOME$/Desktop/TDD-master/BankAccount8-7/src/main/java/com/qsoft/bankaccount/business/impl/BankAccountServiceImpl.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373354374724" ignored="false" />
@@ -79,7 +79,7 @@
     <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/pom.xml" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373610727513" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/src/test/java/com/qsoft/MainClass.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373610890029" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/src/test/java/com/qsoft/MainClassTest.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373610912216" ignored="false" />
-    <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/src/test/java/com/qsoft/daoTest/BankAccountDAOTest.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373612785880" ignored="false" />
+    <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/src/test/java/com/qsoft/daoTest/BankAccountDAOTest.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373612926553" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/src/test/resources/dataset.xml" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373611522393" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/src/test/resources/todoList" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373611586572" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/src/main/java/com/qsoft/persistence/dao/impl/BankAccountDAOImpl.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373612525321" ignored="false" />
