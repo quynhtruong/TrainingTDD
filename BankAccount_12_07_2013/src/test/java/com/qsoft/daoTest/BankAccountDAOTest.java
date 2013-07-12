@@ -89,6 +89,5 @@ public class BankAccountDAOTest
         assertEquals(bankAccountEntity.getBalance(),bankAccountEntity1.getBalance());
         assertEquals(bankAccountEntity.getOpenTimestamp(),bankAccountEntity1.getOpenTimestamp());
 
-
     }
 }

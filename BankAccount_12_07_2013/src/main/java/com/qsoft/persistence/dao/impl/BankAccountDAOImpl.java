@@ -45,6 +45,6 @@ public class BankAccountDAOImpl implements BankAccountDAO
     @Override
     public void create(BankAccountEntity bankAccountEntity)
     {
-
+        entityManager.persist(bankAccountEntity);
     }
 }
