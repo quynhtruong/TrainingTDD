@@ -65,5 +65,17 @@ public class BankAccountDAOTest
         assertEquals(new Long(12345678), bankAccountEntity.getOpenTimestamp());
     }
 
+    @Test
+    public void testUpdateAccountAlreadyInthedatabase()
+    {
+        BankAccountEntity bankAccountEntity = bankAccountDAO.getAccountByAccountNumber("0123456781");
+        Double abalance = bankAccountEntity.getBalance()+10D;
+        bankAccountEntity.setBalance(abalance);
+        bankAccountDAO.save(bankAccountEntity);
+        BankAccountEntity bankAccountEntity1 = bankAccountDAO.getAccountByAccountNumber("0123456781");
 
+        assertEquals("0123456781",bankAccountEntity1.getAccountNumber());
+        assertEquals(abalance,bankAccountEntity1.getBalance());
+        assertEquals(new Long(12345678),bankAccountEntity1.getOpenTimestamp());
+    }
 }

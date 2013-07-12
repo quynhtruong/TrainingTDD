@@ -37,7 +37,7 @@
     <file path="$USER_HOME$/Desktop/TDD-master/BankAccount1-7/src/main/java/com/qsoft/bankaccount/business/BankAccountService.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373352541815" ignored="false" />
     <file path="/persistenceTest.xml" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373525037502" ignored="false" />
     <file path="$USER_HOME$/Desktop/TDD-master/BankAccount8-7/src/test/resources/testContext.xml" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373353329650" ignored="false" />
-    <file path="/BankAccountDAOTest.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373612163066" ignored="false" />
+    <file path="/BankAccountDAOTest.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373612783619" ignored="false" />
     <file path="$USER_HOME$/Desktop/TDD-master/BankAccount8-7/src/test/java/com/qsoft/bankaccount/persistence/dao/BankAccountDAOTest.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373355095994" ignored="false" />
     <file path="$USER_HOME$/Desktop/TDD-master/BankAccount8-7/src/main/java/com/qsoft/bankaccount/persistence/model/BankAccountEntity.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373354264667" ignored="false" />
     <file path="$USER_HOME$/Desktop/TDD-master/BankAccount8-7/src/main/java/com/qsoft/bankaccount/business/impl/BankAccountServiceImpl.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373354374724" ignored="false" />
@@ -79,7 +79,7 @@
     <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/pom.xml" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373610727513" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/src/test/java/com/qsoft/MainClass.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373610890029" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/src/test/java/com/qsoft/MainClassTest.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373610912216" ignored="false" />
-    <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/src/test/java/com/qsoft/daoTest/BankAccountDAOTest.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373612299246" ignored="false" />
+    <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/src/test/java/com/qsoft/daoTest/BankAccountDAOTest.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373612785880" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/src/test/resources/dataset.xml" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373611522393" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/src/test/resources/todoList" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373611586572" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_12_07_2013/src/main/java/com/qsoft/persistence/dao/impl/BankAccountDAOImpl.java" changelist="bba4af25-bb0c-408a-879d-44cc9306d04f" time="1373612525321" ignored="false" />
@@ -147,89 +147,7 @@
     <favorites_list name="BankAccount_27_06_2013" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="TransactionDAOImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/impl/TransactionDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="26" selection-start="2455" selection-end="2455" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="43" selection-start="3873" selection-end="3873" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BankAccountDAOTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/DAOTest/BankAccountDAOTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="71" selection-start="2216" selection-end="2216" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BankAccountDAO.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/BankAccountDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="todoList" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/DAOTest/todoList">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BankAccountDAOImpl.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/impl/BankAccountDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="47" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.7439252">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransactionEntity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/persistence/model/TransactionEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="5" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dataset.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/dataset.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="110" selection-start="533" selection-end="551" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BankAccountEntity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/persistence/model/BankAccountEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="4" selection-start="481" selection-end="501" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -512,6 +430,70 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="qsoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BankAccount_27_06_2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BankAccount_27_06_2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qsoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BankAccount_27_06_2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BankAccount_27_06_2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qsoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -869,7 +851,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3060606" sideWeight="0.5344538" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3060606" sideWeight="0.5344538" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46554622" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -939,20 +921,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_12/src.zip!/javax/sql/DataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="17" selection-start="2464" selection-end="2464" vertical-scroll-proportion="0.3321617">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="4" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/persistence/model/BankAccountEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="4" selection-start="481" selection-end="501" vertical-scroll-proportion="0.0">
@@ -962,7 +930,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/persistence/model/TransactionEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="5" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0">
+        <state line="29" column="5" selection-start="717" selection-end="717" vertical-scroll-proportion="0.035149384">
           <folding />
         </state>
       </provider>
@@ -976,7 +944,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/dataset.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="110" selection-start="533" selection-end="551" vertical-scroll-proportion="0.0">
+        <state line="6" column="110" selection-start="533" selection-end="551" vertical-scroll-proportion="0.21582733">
           <folding />
         </state>
       </provider>
@@ -1048,7 +1016,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/impl/BankAccountDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="47" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.7439252">
+        <state line="40" column="47" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/business/TransactionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="17" selection-start="154" selection-end="154" vertical-scroll-proportion="0.31634447">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/business/BankAccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="33" selection-start="378" selection-end="395" vertical-scroll-proportion="0.28417265">
           <folding />
         </state>
       </provider>
