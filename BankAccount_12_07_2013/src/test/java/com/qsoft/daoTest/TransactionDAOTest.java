@@ -89,7 +89,18 @@ public class TransactionDAOTest
         assertEquals(new Long(123),transactionEntityList.get(1).getTimestamp());
         assertEquals(1D,transactionEntityList.get(1).getAmount());
         assertEquals("justATest",transactionEntityList.get(1).getDescription());
+    }
 
+    @Test
+    public void testSaveTransation()
+    {
+        transactionDAO.save("0123456790",1234L,111D,"JustATestForSaveTransaction");
+        List<TransactionEntity> transactionEntityList =  transactionDAO.getTransactionOccurred("0123456790");
+
+        assertEquals("0123456790",transactionEntityList.get(0).getAccountNumber());
+        assertEquals(new Long(1234),transactionEntityList.get(0).getTimestamp());
+        assertEquals(111D,transactionEntityList.get(0).getAmount());
+        assertEquals("JustATestForSaveTransaction",transactionEntityList.get(0).getDescription());
 
     }
 
