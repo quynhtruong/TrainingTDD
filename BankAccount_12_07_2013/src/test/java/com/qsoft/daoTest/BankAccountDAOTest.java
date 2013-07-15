@@ -56,7 +56,7 @@ public class BankAccountDAOTest
     }
 
     @Test
-    public void testGetAccountByAccountnumber()
+    public void testGetAccountByAccountNumber()
     {
         BankAccountEntity bankAccountEntity = bankAccountDAO.getAccountByAccountNumber("0123456781");
 
@@ -66,28 +66,37 @@ public class BankAccountDAOTest
     }
 
     @Test
-    public void testUpdateAccountAlreadyInthedatabase()
+    public void testGetAccountDoesNotExits()
+    {
+        BankAccountEntity bankAccountEntity = bankAccountDAO.getAccountByAccountNumber("sgkdsf");
+        assertEquals(null,bankAccountEntity);
+    }
+
+    @Test
+    public void testUpdateAccountAlreadyInTheDatabase()
     {
         BankAccountEntity bankAccountEntity = bankAccountDAO.getAccountByAccountNumber("0123456781");
-        Double abalance = bankAccountEntity.getBalance()+10D;
+        Double abalance = bankAccountEntity.getBalance() + 10D;
         bankAccountEntity.setBalance(abalance);
         bankAccountDAO.save(bankAccountEntity);
         BankAccountEntity bankAccountEntity1 = bankAccountDAO.getAccountByAccountNumber("0123456781");
 
-        assertEquals("0123456781",bankAccountEntity1.getAccountNumber());
-        assertEquals(abalance,bankAccountEntity1.getBalance());
-        assertEquals(new Long(12345678),bankAccountEntity1.getOpenTimestamp());
+        assertEquals("0123456781", bankAccountEntity1.getAccountNumber());
+        assertEquals(abalance, bankAccountEntity1.getBalance());
+        assertEquals(new Long(12345678), bankAccountEntity1.getOpenTimestamp());
     }
+
     @Test
     public void testCreateAndUpdateAnAccountDoesNotExistInTheDatabase()
     {
-        BankAccountEntity bankAccountEntity = new BankAccountEntity("1234567891",10D,123L);
+        BankAccountEntity bankAccountEntity = new BankAccountEntity("1234567891", 10D, 123L);
         bankAccountDAO.create(bankAccountEntity);
         BankAccountEntity bankAccountEntity1 = bankAccountDAO.getAccountByAccountNumber("1234567891");
 
-        assertEquals(bankAccountEntity.getAccountNumber(),bankAccountEntity1.getAccountNumber());
-        assertEquals(bankAccountEntity.getBalance(),bankAccountEntity1.getBalance());
-        assertEquals(bankAccountEntity.getOpenTimestamp(),bankAccountEntity1.getOpenTimestamp());
-
+        assertEquals(bankAccountEntity.getAccountNumber(), bankAccountEntity1.getAccountNumber());
+        assertEquals(bankAccountEntity.getBalance(), bankAccountEntity1.getBalance());
+        assertEquals(bankAccountEntity.getOpenTimestamp(), bankAccountEntity1.getOpenTimestamp());
     }
+
+
 }
