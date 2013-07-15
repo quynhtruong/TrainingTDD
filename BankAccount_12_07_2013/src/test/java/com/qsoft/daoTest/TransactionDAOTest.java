@@ -1,6 +1,7 @@
 package com.qsoft.daoTest;
 
 import com.qsoft.persistence.dao.TransactionDAO;
+import com.qsoft.persistence.model.TransactionEntity;
 import org.dbunit.DataSourceDatabaseTester;
 import org.dbunit.IDatabaseTester;
 import org.dbunit.dataset.IDataSet;
@@ -8,6 +9,7 @@ import org.dbunit.dataset.xml.FlatXmlDataSetBuilder;
 import org.dbunit.operation.DatabaseOperation;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
@@ -16,6 +18,9 @@ import org.springframework.test.context.transaction.TransactionConfiguration;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.sql.DataSource;
+import java.util.List;
+
+import static junit.framework.Assert.assertEquals;
 
 /**
  * User: quynhtq
@@ -49,6 +54,25 @@ public class TransactionDAOTest
     public void tearDown() throws Exception
     {
         databaseTester.onTearDown();
+    }
+
+    @Test
+    public void testGetTransactionByAccountNumber()
+    {
+        List<TransactionEntity> transactionEntityList =  transactionDAO.getTransactionOccurred("0123456781");
+
+        assertEquals(3,transactionEntityList.size());
+
+        assertEquals("0123456781",transactionEntityList.get(0).getAccountNumber());
+        assertEquals(new Long(123),transactionEntityList.get(0).getTimestamp());
+        assertEquals(1D,transactionEntityList.get(0).getAmount());
+        assertEquals("justATest",transactionEntityList.get(0).getDescription());
+
+        assertEquals("0123456781",transactionEntityList.get(2).getAccountNumber());
+        assertEquals(new Long(125),transactionEntityList.get(2).getTimestamp());
+        assertEquals(100D,transactionEntityList.get(2).getAmount());
+        assertEquals("justATestThirdTime",transactionEntityList.get(2).getDescription());
+
     }
 
 }
