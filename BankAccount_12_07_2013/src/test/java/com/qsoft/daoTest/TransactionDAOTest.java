@@ -64,14 +64,16 @@ public class TransactionDAOTest
         assertEquals(3,transactionEntityList.size());
 
         assertEquals("0123456781",transactionEntityList.get(0).getAccountNumber());
-        assertEquals(new Long(123),transactionEntityList.get(0).getTimestamp());
-        assertEquals(1D,transactionEntityList.get(0).getAmount());
-        assertEquals("justATest",transactionEntityList.get(0).getDescription());
+        assertEquals(new Long(125),transactionEntityList.get(0).getTimestamp());
+        assertEquals(100D,transactionEntityList.get(0).getAmount());
+        assertEquals("justATestThirdTime",transactionEntityList.get(0).getDescription());
 
         assertEquals("0123456781",transactionEntityList.get(2).getAccountNumber());
-        assertEquals(new Long(125),transactionEntityList.get(2).getTimestamp());
-        assertEquals(100D,transactionEntityList.get(2).getAmount());
-        assertEquals("justATestThirdTime",transactionEntityList.get(2).getDescription());
+        assertEquals(new Long(123),transactionEntityList.get(2).getTimestamp());
+        assertEquals(1D,transactionEntityList.get(2).getAmount());
+        assertEquals("justATest",transactionEntityList.get(2).getDescription());
+
+
 
     }
 
