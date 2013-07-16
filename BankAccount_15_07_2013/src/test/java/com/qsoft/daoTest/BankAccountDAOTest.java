@@ -69,14 +69,21 @@ public class BankAccountDAOTest
     @Test
     public void testSaveAccountIntoDatabase()
     {
-        BankAccountEntity bankAccountEntity = new BankAccountEntity("987654321",10D,12346789L);
+        BankAccountEntity bankAccountEntity = new BankAccountEntity("987654321", 10D, 12346789L);
         bankAccountDAO.save(bankAccountEntity);
 
         BankAccountEntity bankAccountEntity1 = bankAccountDAO.getAccountByAccountNumber("987654321");
 
-        assertEquals("987654321",bankAccountEntity1.getAccountNumber());
-        assertEquals(new Double(10),bankAccountEntity1.getBalance());
-        assertEquals(new Long(12346789),bankAccountEntity1.getOpenTimestamp());
+        assertEquals("987654321", bankAccountEntity1.getAccountNumber());
+        assertEquals(new Double(10), bankAccountEntity1.getBalance());
+        assertEquals(new Long(12346789), bankAccountEntity1.getOpenTimestamp());
+    }
 
+    @Test
+    public void getAnAccountWhichDoesNotExistInTheDataBase()
+    {
+        BankAccountEntity bankAccountEntity = bankAccountDAO.getAccountByAccountNumber("2842373143");
+
+        assertEquals(null,bankAccountEntity);
     }
 }

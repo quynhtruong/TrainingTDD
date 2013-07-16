@@ -7,12 +7,12 @@
     <file path="/BankAccountDAOImpl.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373956576919" ignored="false" />
     <file path="/testContext.xml" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373612040351" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_27_06_2013/src/test/java/com/qsoft/DAOTest/BankAccountDAOTest.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373612086096" ignored="false" />
-    <file path="/BankAccountDAOTest.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373956459481" ignored="false" />
+    <file path="/BankAccountDAOTest.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373956676871" ignored="false" />
     <file path="/TransactionDAOTest.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373870971661" ignored="false" />
     <file path="/TransactionDAOImpl.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373871158523" ignored="false" />
     <file path="/todoList" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373869619238" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_15_07_2013/src/main/java/com/qsoft/persistence/davdasc.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373871435371" ignored="false" />
-    <file path="$PROJECT_DIR$/../BankAccount_15_07_2013/src/test/java/com/qsoft/daoTest/BankAccountDAOTest.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373956462499" ignored="false" />
+    <file path="$PROJECT_DIR$/../BankAccount_15_07_2013/src/test/java/com/qsoft/daoTest/BankAccountDAOTest.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373956678909" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_15_07_2013/pom.xml" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373871683971" ignored="false" />
     <file path="/fragment.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373955905132" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_15_07_2013/src/test/resources/dataset.xml" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373955902230" ignored="false" />
