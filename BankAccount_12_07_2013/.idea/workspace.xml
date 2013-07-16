@@ -20,7 +20,7 @@
     <file path="/BankAccountDAO.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373956584799" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_15_07_2013/src/main/java/com/qsoft/persistence/dao/BankAccountDAO.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373956585641" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_15_07_2013/src/test/java/com/qsoft/daoTest/TransactionDAOTest.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373958175321" ignored="false" />
-    <file path="$PROJECT_DIR$/../BankAccount_15_07_2013/src/main/java/com/qsoft/persistence/dao/impl/TransactionDAOImpl.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373957954097" ignored="false" />
+    <file path="$PROJECT_DIR$/../BankAccount_15_07_2013/src/main/java/com/qsoft/persistence/dao/impl/TransactionDAOImpl.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373958206655" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +113,7 @@
       <file leaf-file-name="TransactionDAOImpl.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/impl/TransactionDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="1062" selection-end="1396" vertical-scroll-proportion="0.41904762">
+            <state line="55" column="0" selection-start="2055" selection-end="2398" vertical-scroll-proportion="0.83809525">
               <folding />
             </state>
           </provider>
@@ -975,7 +975,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/impl/TransactionDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1062" selection-end="1396" vertical-scroll-proportion="0.41904762">
+        <state line="55" column="0" selection-start="2055" selection-end="2398" vertical-scroll-proportion="0.83809525">
           <folding />
         </state>
       </provider>
