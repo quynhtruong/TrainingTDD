@@ -24,7 +24,7 @@ public class BankAccountDAOImpl implements BankAccountDAO
 
     public void save(BankAccountEntity bankAccountModel)
     {
-        //To change body of created methods use File | Settings | File Templates.
+        entityManager.persist(new BankAccountEntity("987654321",10D,12346789L));
     }
 
     public BankAccountEntity getAccountByAccountNumber(String accountNumber)
