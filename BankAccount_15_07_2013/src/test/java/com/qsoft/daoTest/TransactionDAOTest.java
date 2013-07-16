@@ -85,10 +85,10 @@ public class TransactionDAOTest
         assertEquals(new Double(100), transactionEntityList.get(0).getAmount());
         assertEquals("justATestThirdTime", transactionEntityList.get(0).getDescription());
 
-        assertEquals("0123456781", transactionEntityList.get(2).getAccountNumber());
-        assertEquals(new Long(124), transactionEntityList.get(2).getTimestamp());
-        assertEquals(new Double(10), transactionEntityList.get(2).getAmount());
-        assertEquals("justATestSecondTime", transactionEntityList.get(2).getDescription());
+        assertEquals("0123456781", transactionEntityList.get(1).getAccountNumber());
+        assertEquals(new Long(124), transactionEntityList.get(1).getTimestamp());
+        assertEquals(new Double(10), transactionEntityList.get(1).getAmount());
+        assertEquals("justATestSecondTime", transactionEntityList.get(1).getDescription());
 
     }
 

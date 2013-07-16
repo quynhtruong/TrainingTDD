@@ -38,7 +38,13 @@ public class TransactionDAOImpl implements TransactionDAO
 
     public List<TransactionEntity> getTransactionOccurred(String accountNumber, Long startTime, Long endTime)
     {
-        return null;
+        Query query = entityManager.createQuery("select o from TransactionEntity o where o.accountNumber = :qAccountNumber and o.timestamp >= :qStartTime and o.timestamp <= :qEndTime order by o.timestamp desc ", TransactionEntity.class);
+        query.setParameter("qAccountNumber", accountNumber);
+        query.setParameter("qStartTime",startTime);
+        query.setParameter("qEndTime",endTime);
+        List<TransactionEntity> resultList = query.getResultList();
+        return resultList;
+
     }
 
     public List<TransactionEntity> getNClosestTransactions(String accountNumber, Long n)
