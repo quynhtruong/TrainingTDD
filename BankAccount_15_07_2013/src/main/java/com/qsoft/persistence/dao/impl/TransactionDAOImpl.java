@@ -26,6 +26,7 @@ public class TransactionDAOImpl implements TransactionDAO
 
     public void save(String accountNumber, Long timeStamp, Double amount, String description)
     {
+        entityManager.persist(new TransactionEntity(accountNumber,timeStamp,amount,description));
     }
 
     public List<TransactionEntity> getTransactionOccurred(String accountNumber)
