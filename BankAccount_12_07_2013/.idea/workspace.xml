@@ -8,7 +8,7 @@
     <file path="/testContext.xml" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373612040351" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_27_06_2013/src/test/java/com/qsoft/DAOTest/BankAccountDAOTest.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373612086096" ignored="false" />
     <file path="/BankAccountDAOTest.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373957058818" ignored="false" />
-    <file path="/TransactionDAOTest.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373957549331" ignored="false" />
+    <file path="/TransactionDAOTest.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373957880493" ignored="false" />
     <file path="/TransactionDAOImpl.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373957674704" ignored="false" />
     <file path="/todoList" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373869619238" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_15_07_2013/src/main/java/com/qsoft/persistence/davdasc.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373871435371" ignored="false" />
@@ -19,7 +19,7 @@
     <file path="$PROJECT_DIR$/../BankAccount_15_07_2013/src/main/java/com/qsoft/persistence/dao/impl/BankAccountDAOImpl.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373956580977" ignored="false" />
     <file path="/BankAccountDAO.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373956584799" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_15_07_2013/src/main/java/com/qsoft/persistence/dao/BankAccountDAO.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373956585641" ignored="false" />
-    <file path="$PROJECT_DIR$/../BankAccount_15_07_2013/src/test/java/com/qsoft/daoTest/TransactionDAOTest.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373957710205" ignored="false" />
+    <file path="$PROJECT_DIR$/../BankAccount_15_07_2013/src/test/java/com/qsoft/daoTest/TransactionDAOTest.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373957903822" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_15_07_2013/src/main/java/com/qsoft/persistence/dao/impl/TransactionDAOImpl.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373957686893" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -778,7 +778,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
