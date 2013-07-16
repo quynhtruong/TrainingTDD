@@ -1,0 +1,21 @@
+with BankAccountDAO testing, we have to ensure the following functions will be executed correctly:
+Get method:
+    1:Get Account by a given account Number
+    2. The method get will output null value if no account exists
+Update method:
+    3. update an account existing in the database
+    4. update an account which doest not exist in the database
+    5. create (and update) an account which is not already in the database
+with TransactionDAO testing:
+    6. save a transaction
+    7. get the list of an account's transactions which is executed
+    8. get the list of an account's transactions which is executed in an interval of time
+    9. get the list of n closest transactions
+
+
+
+
+
+
+
+
