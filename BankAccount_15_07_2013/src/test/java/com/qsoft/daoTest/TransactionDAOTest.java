@@ -74,4 +74,22 @@ public class TransactionDAOTest
         assertEquals("justATest", transactionEntityList.get(2).getDescription());
     }
 
+    @Test
+    public void testGetAllAccountByAccountNumberAndAnIntervalOfTime()
+    {
+        List<TransactionEntity> transactionEntityList = transactionDAO.getTransactionOccurred("0123456781",124L,125L);
+
+        assertEquals(transactionEntityList.size(), 2L);
+        assertEquals("0123456781", transactionEntityList.get(0).getAccountNumber());
+        assertEquals(new Long(125), transactionEntityList.get(0).getTimestamp());
+        assertEquals(new Double(100), transactionEntityList.get(0).getAmount());
+        assertEquals("justATestThirdTime", transactionEntityList.get(0).getDescription());
+
+        assertEquals("0123456781", transactionEntityList.get(2).getAccountNumber());
+        assertEquals(new Long(124), transactionEntityList.get(2).getTimestamp());
+        assertEquals(new Double(10), transactionEntityList.get(2).getAmount());
+        assertEquals("justATestSecondTime", transactionEntityList.get(2).getDescription());
+
+    }
+
 }
