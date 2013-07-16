@@ -6,6 +6,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -27,7 +29,18 @@ public class BankAccountDAOImpl implements BankAccountDAO
 
     public BankAccountEntity getAccountByAccountNumber(String accountNumber)
     {
-        return new BankAccountEntity("0123456781",1D,12345678L);
+        Query query = entityManager.createQuery("select o from BankAccountEntity o where o.accountNumber =:qAccountNumber",BankAccountEntity.class);
+        query.setParameter("qAccountNumber", accountNumber);
+        List<BankAccountEntity> list = query.getResultList();
+        if (list.size() == 0)
+        {
+            return null;
+        }
+        else
+        {
+            return list.get(0);
+        }
+
     }
 
     @Override
