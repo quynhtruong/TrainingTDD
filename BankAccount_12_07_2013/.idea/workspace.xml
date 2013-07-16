@@ -20,7 +20,7 @@
     <file path="/BankAccountDAO.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373956584799" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_15_07_2013/src/main/java/com/qsoft/persistence/dao/BankAccountDAO.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373956585641" ignored="false" />
     <file path="$PROJECT_DIR$/../BankAccount_15_07_2013/src/test/java/com/qsoft/daoTest/TransactionDAOTest.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373957451421" ignored="false" />
-    <file path="$PROJECT_DIR$/../BankAccount_15_07_2013/src/main/java/com/qsoft/persistence/dao/impl/TransactionDAOImpl.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373957259431" ignored="false" />
+    <file path="$PROJECT_DIR$/../BankAccount_15_07_2013/src/main/java/com/qsoft/persistence/dao/impl/TransactionDAOImpl.java" changelist="30bd414f-9ba8-4347-bccb-4c80fcfd690f" time="1373957514106" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,10 +101,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dataset.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="dataset.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/dataset.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="224" selection-end="641" vertical-scroll-proportion="0.2930403">
+            <state line="8" column="0" selection-start="224" selection-end="641" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TransactionDAOImpl.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/impl/TransactionDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="0" selection-start="1062" selection-end="1396" vertical-scroll-proportion="0.41904762">
               <folding />
             </state>
           </provider>
@@ -918,13 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/impl/TransactionDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="71" selection-start="1590" selection-end="1590" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="125" column="21" selection-start="441" selection-end="4174" vertical-scroll-proportion="0.8901099">
@@ -966,7 +968,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/dataset.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="224" selection-end="641" vertical-scroll-proportion="0.2930403">
+        <state line="8" column="0" selection-start="224" selection-end="641" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/impl/TransactionDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1062" selection-end="1396" vertical-scroll-proportion="0.41904762">
           <folding />
         </state>
       </provider>

@@ -7,6 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import java.util.List;
 
 /**
@@ -29,7 +30,10 @@ public class TransactionDAOImpl implements TransactionDAO
 
     public List<TransactionEntity> getTransactionOccurred(String accountNumber)
     {
-        return  null;
+        Query query = entityManager.createQuery("select o from TransactionEntity o where o.accountNumber = :qAccountNumber order by o.timestamp desc ", TransactionEntity.class);
+        query.setParameter("qAccountNumber", accountNumber);
+        List<TransactionEntity> resultList = query.getResultList();
+        return resultList;
     }
 
     public List<TransactionEntity> getTransactionOccurred(String accountNumber, Long startTime, Long endTime)
