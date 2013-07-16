@@ -8,7 +8,7 @@
     <file path="/BankAccountDAOTest.java" changelist="94e04106-31f3-472a-aa61-15d234ba86b6" time="1373957058818" ignored="false" />
     <file path="/BankAccountDAOImpl.java" changelist="94e04106-31f3-472a-aa61-15d234ba86b6" time="1373956576919" ignored="false" />
     <file path="/BankAccountDAO.java" changelist="94e04106-31f3-472a-aa61-15d234ba86b6" time="1373956584799" ignored="false" />
-    <file path="/TransactionDAOTest.java" changelist="94e04106-31f3-472a-aa61-15d234ba86b6" time="1373957880493" ignored="false" />
+    <file path="/TransactionDAOTest.java" changelist="94e04106-31f3-472a-aa61-15d234ba86b6" time="1373958140229" ignored="false" />
     <file path="/TransactionDAOImpl.java" changelist="94e04106-31f3-472a-aa61-15d234ba86b6" time="1373957953097" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +71,7 @@
       <file leaf-file-name="todoList" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/todoList">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="33" selection-start="505" selection-end="512" vertical-scroll-proportion="0.0">
+            <state line="12" column="32" selection-start="661" selection-end="668" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -80,7 +80,7 @@
       <file leaf-file-name="TransactionDAOTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/daoTest/TransactionDAOTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="79" selection-start="4077" selection-end="4077" vertical-scroll-proportion="0.729207">
+            <state line="117" column="89" selection-start="4919" selection-end="4919" vertical-scroll-proportion="1.9723756">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,7 +118,7 @@
       <file leaf-file-name="dataset.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/dataset.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="105" selection-start="409" selection-end="428" vertical-scroll-proportion="0.0">
+            <state line="11" column="72" selection-start="808" selection-end="811" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -156,9 +156,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/impl/BankAccountDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/BankAccountDAO.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/qsoft/daoTest/BankAccountDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/impl/TransactionDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/test/resources/dataset.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/qsoft/daoTest/TransactionDAOTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/persistence/dao/impl/TransactionDAOImpl.java" />
       </list>
     </option>
   </component>
@@ -546,35 +546,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.TransactionDAOTest.testSaveATransaction">
-    <configuration default="false" name="BankAccountDAOTest.getAnAccountWhichDoesNotExistInTheDataBase" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.qsoft.daoTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="BankAccount_15_07_2013" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.qsoft.daoTest" />
-      <option name="MAIN_CLASS_NAME" value="com.qsoft.daoTest.BankAccountDAOTest" />
-      <option name="METHOD_NAME" value="getAnAccountWhichDoesNotExistInTheDataBase" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.TransactionDAOTest.testGetNClosestTransaction">
     <configuration default="false" name="BankAccountDAOTest.testUpdateAnAccountWhichIsExistingInTheDatabase" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -672,6 +644,34 @@
       <option name="PACKAGE_NAME" value="com.qsoft.daoTest" />
       <option name="MAIN_CLASS_NAME" value="com.qsoft.daoTest.TransactionDAOTest" />
       <option name="METHOD_NAME" value="testSaveATransaction" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TransactionDAOTest.testGetNClosestTransaction" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.qsoft.daoTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="BankAccount_15_07_2013" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.qsoft.daoTest" />
+      <option name="MAIN_CLASS_NAME" value="com.qsoft.daoTest.TransactionDAOTest" />
+      <option name="METHOD_NAME" value="testGetNClosestTransaction" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -808,19 +808,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testSaveAccountIntoDatabase" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.getAnAccountWhichDoesNotExistInTheDataBase" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testUpdateAnAccountWhichIsExistingInTheDatabase" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TransactionDAOTest.testGetAllTransactionByAccountNumber" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TransactionDAOTest.testGetAllAccountByAccountNumberAndAnIntervalOfTime" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.TransactionDAOTest.testSaveATransaction" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testUpdateAnAccountWhichIsExistingInTheDatabase" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TransactionDAOTest.testGetAllTransactionByAccountNumber" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TransactionDAOTest.testGetAllAccountByAccountNumberAndAnIntervalOfTime" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TransactionDAOTest.testSaveATransaction" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.TransactionDAOTest.testGetNClosestTransaction" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TransactionDAOTest.testSaveATransaction" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TransactionDAOTest.testGetAllAccountByAccountNumberAndAnIntervalOfTime" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TransactionDAOTest.testGetAllTransactionByAccountNumber" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testUpdateAnAccountWhichIsExistingInTheDatabase" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.getAnAccountWhichDoesNotExistInTheDataBase" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TransactionDAOTest.testGetNClosestTransaction" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TransactionDAOTest.testSaveATransaction" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TransactionDAOTest.testGetAllAccountByAccountNumberAndAnIntervalOfTime" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TransactionDAOTest.testGetAllTransactionByAccountNumber" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BankAccountDAOTest.testUpdateAnAccountWhichIsExistingInTheDatabase" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -861,7 +861,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32718894" sideWeight="0.41767764" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58232236" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.58232236" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1001,20 +1001,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/dataset.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="105" selection-start="409" selection-end="428" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/todoList">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="33" selection-start="505" selection-end="512" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/persistence/model/TransactionEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="65" selection-start="781" selection-end="790" vertical-scroll-proportion="0.0">
@@ -1036,9 +1022,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/todoList">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="32" selection-start="661" selection-end="668" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/dataset.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="72" selection-start="808" selection-end="811" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/daoTest/TransactionDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="79" selection-start="4077" selection-end="4077" vertical-scroll-proportion="0.729207">
+        <state line="117" column="89" selection-start="4919" selection-end="4919" vertical-scroll-proportion="1.9723756">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

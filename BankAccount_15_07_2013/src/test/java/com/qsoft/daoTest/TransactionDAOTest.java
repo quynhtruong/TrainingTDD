@@ -103,6 +103,25 @@ public class TransactionDAOTest
         assertEquals(new Long(126), transactionEntityList.get(0).getTimestamp());
         assertEquals(new Double(1000), transactionEntityList.get(0).getAmount());
         assertEquals("justATestTracsactionFourthTime", transactionEntityList.get(0).getDescription());
+    }
+
+    @Test
+    public void testGetNClosestTransaction()
+    {
+        List<TransactionEntity> transactionEntityList = transactionDAO.getNClosestTransactions("0123456782",4L);
+
+        assertEquals(4,transactionEntityList.size());
+        assertEquals("0123456782", transactionEntityList.get(0).getAccountNumber());
+        assertEquals(new Long(126), transactionEntityList.get(0).getTimestamp());
+        assertEquals(new Double(100000), transactionEntityList.get(0).getAmount());
+        assertEquals("justATest", transactionEntityList.get(0).getDescription());
+
+
+        assertEquals("0123456782", transactionEntityList.get(3).getAccountNumber());
+        assertEquals(new Long(123), transactionEntityList.get(3).getTimestamp());
+        assertEquals(new Double(100), transactionEntityList.get(3).getAmount());
+        assertEquals("justATest", transactionEntityList.get(3).getDescription());
+
 
     }
 }
