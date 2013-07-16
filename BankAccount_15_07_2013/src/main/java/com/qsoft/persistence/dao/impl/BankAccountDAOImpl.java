@@ -22,9 +22,9 @@ public class BankAccountDAOImpl implements BankAccountDAO
     @PersistenceContext
     public EntityManager entityManager;
 
-    public void save(BankAccountEntity bankAccountModel)
+    public void save(BankAccountEntity bankAccountEntity)
     {
-        entityManager.persist(new BankAccountEntity("987654321",10D,12346789L));
+        entityManager.persist(bankAccountEntity);
     }
 
     public BankAccountEntity getAccountByAccountNumber(String accountNumber)
