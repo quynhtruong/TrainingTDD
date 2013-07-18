@@ -18,7 +18,7 @@ public class SingleLinkedListTest
     public void testCreateASingleLinkedListWithNoElement()
     {
         SingleLinkedList singleLinkedList = new SingleLinkedList();
-        assertEquals(0,singleLinkedList.size());
+        assertEquals(0, singleLinkedList.size());
     }
 
     @Test
@@ -30,8 +30,8 @@ public class SingleLinkedListTest
         objectList.add(new Object());
 
         SingleLinkedList singleLinkedList = new SingleLinkedList(objectList);
-        assertEquals(singleLinkedList.getFirstElement().getValue(),objectList.get(2));
-        assertEquals(singleLinkedList.getFirstElement().getNextElement().getValue(),objectList.get(1));
+        assertEquals(singleLinkedList.getFirstElement().getValue(), objectList.get(2));
+        assertEquals(singleLinkedList.getFirstElement().getNextElement().getValue(), objectList.get(1));
     }
 
     @Test
@@ -43,9 +43,19 @@ public class SingleLinkedListTest
         objectList.add(new Object());
 
         SingleLinkedList singleLinkedList = new SingleLinkedList(objectList);
-        assertEquals(3,singleLinkedList.size());
+        assertEquals(3, singleLinkedList.size());
     }
 
+    @Test
+    public void testFindAnObjectInTheLinkedList()
+    {
+        List<Object> objectList = new ArrayList<Object>();
+        objectList.add(new Object());
+        objectList.add(new Object());
+        objectList.add(new Object());
 
-
+        SingleLinkedList singleLinkedList = new SingleLinkedList(objectList);
+        LinkedListElement linkedListElement = singleLinkedList.find(objectList.get(0));
+        assertEquals(linkedListElement.getValue(),objectList.get(0));
+    }
 }

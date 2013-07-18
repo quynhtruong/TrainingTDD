@@ -42,4 +42,9 @@ public class SingleLinkedList
     {
         return firstElement;
     }
+
+    public LinkedListElement find(Object o)
+    {
+        return null;
+    }
 }
