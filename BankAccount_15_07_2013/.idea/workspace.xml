@@ -16,7 +16,7 @@
     <file path="/SingleLinkedListTest.java" changelist="94e04106-31f3-472a-aa61-15d234ba86b6" time="1374129952953" ignored="false" />
     <file path="/ToDoList" changelist="94e04106-31f3-472a-aa61-15d234ba86b6" time="1374129756362" ignored="false" />
     <file path="$PROJECT_DIR$/../SingleLinkedList/src/test/resources/ToDoList" changelist="94e04106-31f3-472a-aa61-15d234ba86b6" time="1374129757344" ignored="false" />
-    <file path="$PROJECT_DIR$/../SingleLinkedList/src/main/java/com/qsoft/SingleLinkedList.java" changelist="94e04106-31f3-472a-aa61-15d234ba86b6" time="1374129971283" ignored="false" />
+    <file path="$PROJECT_DIR$/../SingleLinkedList/src/main/java/com/qsoft/SingleLinkedList.java" changelist="94e04106-31f3-472a-aa61-15d234ba86b6" time="1374130010281" ignored="false" />
     <file path="/SingleLinkedList.java" changelist="94e04106-31f3-472a-aa61-15d234ba86b6" time="1374129968260" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -799,7 +799,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1364" height="736" extended-state="1" />
+    <frame x="1" y="1" width="1364" height="736" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
