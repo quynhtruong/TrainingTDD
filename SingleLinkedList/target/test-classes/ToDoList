@@ -1,2 +1,4 @@
 1. create a linked list with no element
-2. return the size of the list
+2. create a linked list from an array
+3. return the size of the list
+4. return the linked list object which hold the given object

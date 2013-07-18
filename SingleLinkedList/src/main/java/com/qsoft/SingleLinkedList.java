@@ -45,6 +45,13 @@ public class SingleLinkedList
 
     public LinkedListElement find(Object o)
     {
-        return null;
+        LinkedListElement result = firstElement;
+        while(result!=null)
+        {
+            if (result.getValue().equals(o))
+                return result;
+            result = result.getNextElement();
+        }
+        return result;
     }
 }
