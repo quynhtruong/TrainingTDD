@@ -41,6 +41,19 @@ public class SingleLinkedListTest
         assertEquals(3,singleLinkedList.getSize());
         assertEquals(singleLinkedList.getFirstNode().getValue(),objectList.get(2));
         assertEquals(singleLinkedList.getFirstNode().getNextNode().getValue(),objectList.get(1));
+    }
 
+    @Test
+    public void testFindAndObjectWhichIsAlreadyInTheList()
+    {
+        List<Object> objectList = new ArrayList<Object>();
+        objectList.add(new Object());
+        objectList.add(new Object());
+        objectList.add(new Object());
+        singleLinkedList = new SingleLinkedList(objectList);
+
+        assertEquals(singleLinkedList.find(objectList.get(2)),singleLinkedList.getFirstNode());
+        assertEquals(singleLinkedList.find(objectList.get(2)),singleLinkedList.getFirstNode());
+        assertEquals(singleLinkedList.find(objectList.get(2)),singleLinkedList.getFirstNode());
     }
 }

@@ -46,4 +46,9 @@ public class SingleLinkedList
             result++;
         return result;
     }
+
+    public LinkedListNode find(Object obj)
+    {
+        return null;  //To change body of created methods use File | Settings | File Templates.
+    }
 }

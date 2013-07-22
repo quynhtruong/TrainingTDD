@@ -5,15 +5,15 @@
     <ignored path="SingleLinkedList.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="51e53a14-7713-43b5-a75b-437548e17e0a" time="1374129573113" ignored="false" />
-    <file path="/SingleLinkedListTest.java" changelist="51e53a14-7713-43b5-a75b-437548e17e0a" time="1374476042079" ignored="false" />
+    <file path="/SingleLinkedListTest.java" changelist="51e53a14-7713-43b5-a75b-437548e17e0a" time="1374476524917" ignored="false" />
     <file path="/ToDoList" changelist="51e53a14-7713-43b5-a75b-437548e17e0a" time="1374131174157" ignored="false" />
     <file path="/fragment.java" changelist="51e53a14-7713-43b5-a75b-437548e17e0a" time="1374475310256" ignored="false" />
-    <file path="/SingleLinkedList.java" changelist="51e53a14-7713-43b5-a75b-437548e17e0a" time="1374476352664" ignored="false" />
+    <file path="/SingleLinkedList.java" changelist="51e53a14-7713-43b5-a75b-437548e17e0a" time="1374476533829" ignored="false" />
     <file path="/LinkedListElement.java" changelist="51e53a14-7713-43b5-a75b-437548e17e0a" time="1374130736957" ignored="false" />
     <file path="$PROJECT_DIR$/../SingleLinkedList_22_07_2013/pom.xml" changelist="51e53a14-7713-43b5-a75b-437548e17e0a" time="1374474995466" ignored="false" />
     <file path="$PROJECT_DIR$/../SingleLinkedList_22_07_2013/src/main/resources/todoList" changelist="51e53a14-7713-43b5-a75b-437548e17e0a" time="1374475654233" ignored="false" />
-    <file path="$PROJECT_DIR$/../SingleLinkedList_22_07_2013/src/test/java/com/qsoft/SingleLinkedListTest.java" changelist="51e53a14-7713-43b5-a75b-437548e17e0a" time="1374476124615" ignored="false" />
-    <file path="$PROJECT_DIR$/../SingleLinkedList_22_07_2013/src/main/java/com/qsoft/SingleLinkedList.java" changelist="51e53a14-7713-43b5-a75b-437548e17e0a" time="1374476353704" ignored="false" />
+    <file path="$PROJECT_DIR$/../SingleLinkedList_22_07_2013/src/test/java/com/qsoft/SingleLinkedListTest.java" changelist="51e53a14-7713-43b5-a75b-437548e17e0a" time="1374476537159" ignored="false" />
+    <file path="$PROJECT_DIR$/../SingleLinkedList_22_07_2013/src/main/java/com/qsoft/SingleLinkedList.java" changelist="51e53a14-7713-43b5-a75b-437548e17e0a" time="1374476534876" ignored="false" />
     <file path="$PROJECT_DIR$/../SingleLinkedList_22_07_2013/src/main/java/com/qsoft/LinkedListNode.java" changelist="51e53a14-7713-43b5-a75b-437548e17e0a" time="1374475534631" ignored="false" />
     <file path="/LinkedListNode.java" changelist="51e53a14-7713-43b5-a75b-437548e17e0a" time="1374475522423" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
