@@ -1,6 +1,6 @@
-list.size() - trả về số phần tử có mặt trong danh sách
 Khởi tạo đối tượng SingleLinkedList mới, là danh sách rỗng.
 Khởi tạo đối tượng SingleLinkedList mới từ một array of Object.
+list.size() - trả về số phần tử có mặt trong danh sách
 list.find(Object o) trả về tham chiếu tới nút đầu tiên chứa dữ liệu là đối tượng o.
 list.first() trả về tham chiếu tới nút đầu tiên trong danh sách
 list.last() trả về tham chiếu tới nút cuối cùng trong danh sách

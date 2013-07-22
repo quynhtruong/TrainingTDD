@@ -1,5 +1,6 @@
 package com.qsoft;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
@@ -11,10 +12,19 @@ import static junit.framework.Assert.assertEquals;
  */
 public class SingleLinkedListTest
 {
-    @Test
-    public void testLinkedListWithEmpty()
+    public SingleLinkedList singleLinkedList;
+    @Before
+    public void setUp()
     {
-        SingleLinkedList singleLinkedList = new SingleLinkedList();
-        assertEquals(0,singleLinkedList.size());
+        singleLinkedList = null;
+        singleLinkedList = new SingleLinkedList();
     }
+
+    @Test
+    public void testInitializeLinkedListByNothing()
+    {
+        assertEquals(singleLinkedList.getSize(),0);
+    }
+
+
 }

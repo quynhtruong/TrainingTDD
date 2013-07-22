@@ -7,8 +7,26 @@ package com.qsoft;
  */
 public class SingleLinkedList
 {
-    public int size()
+    private LinkedListNode firstNode;
+    private int size;
+
+    public LinkedListNode getFirstNode()
     {
-        return -1;
+        return firstNode;
+    }
+
+    public void setFirstNode(LinkedListNode firstNode)
+    {
+        this.firstNode = firstNode;
+    }
+
+    public int getSize()
+    {
+        return size;
+    }
+
+    public void setSize(int size)
+    {
+        this.size = size;
     }
 }
