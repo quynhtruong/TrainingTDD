@@ -6,7 +6,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/SingleLinkedListTest.java" changelist="7eb40128-a62c-4daf-b99d-02c7b2a9f9da" time="1374476524917" ignored="false" />
     <file path="/fragment.java" changelist="7eb40128-a62c-4daf-b99d-02c7b2a9f9da" time="1374475310256" ignored="false" />
-    <file path="/SingleLinkedList.java" changelist="7eb40128-a62c-4daf-b99d-02c7b2a9f9da" time="1374476533829" ignored="false" />
+    <file path="/SingleLinkedList.java" changelist="7eb40128-a62c-4daf-b99d-02c7b2a9f9da" time="1374476599466" ignored="false" />
     <file path="/LinkedListNode.java" changelist="7eb40128-a62c-4daf-b99d-02c7b2a9f9da" time="1374475522423" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +78,7 @@
       <file leaf-file-name="SingleLinkedListTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/SingleLinkedListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="66" selection-start="1289" selection-end="1289" vertical-scroll-proportion="0.9808743">
+            <state line="47" column="70" selection-start="1192" selection-end="1192" vertical-scroll-proportion="0.5706619">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#689#697#0" expanded="true" />
@@ -91,7 +91,7 @@
       <file leaf-file-name="SingleLinkedList.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/SingleLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="8" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0">
+            <state line="58" column="20" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -542,7 +542,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6700855" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32991454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -633,14 +633,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/SingleLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="8" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0">
+        <state line="58" column="20" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/SingleLinkedListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="66" selection-start="1289" selection-end="1289" vertical-scroll-proportion="0.9808743">
+        <state line="47" column="70" selection-start="1192" selection-end="1192" vertical-scroll-proportion="0.5706619">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#689#697#0" expanded="true" />

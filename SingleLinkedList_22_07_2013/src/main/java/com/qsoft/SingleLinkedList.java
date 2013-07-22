@@ -19,7 +19,7 @@ public class SingleLinkedList
 
     public SingleLinkedList(List<Object> objectList)
     {
-        for(Object obj: objectList)
+        for (Object obj : objectList)
         {
             LinkedListNode listNode = new LinkedListNode();
             listNode.setValue(obj);
@@ -42,13 +42,20 @@ public class SingleLinkedList
     public int getSize()
     {
         int result = 0;
-        for(LinkedListNode node = firstNode;node!=null;node=node.getNextNode())
+        for (LinkedListNode node = firstNode; node != null; node = node.getNextNode())
+        {
             result++;
+        }
         return result;
     }
 
     public LinkedListNode find(Object obj)
     {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+        for (LinkedListNode node = firstNode; node != null; node = node.getNextNode())
+        {
+            if (node.getValue().equals(obj))
+                return node;
+        }
+        return null;
     }
 }
