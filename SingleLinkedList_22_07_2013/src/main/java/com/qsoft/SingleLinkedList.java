@@ -1,5 +1,7 @@
 package com.qsoft;
 
+import java.util.List;
+
 /**
  * User: quynhtq
  * Date: 7/22/13
@@ -10,6 +12,18 @@ public class SingleLinkedList
     private LinkedListNode firstNode;
     private int size;
 
+    //constructor
+    public SingleLinkedList()
+    {
+
+    }
+
+    public SingleLinkedList(List<Object> objectList)
+    {
+        //To change body of created methods use File | Settings | File Templates.
+    }
+
+    //getter and setter
     public LinkedListNode getFirstNode()
     {
         return firstNode;
