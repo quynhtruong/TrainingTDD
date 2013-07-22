@@ -10,7 +10,6 @@ import java.util.List;
 public class SingleLinkedList
 {
     private LinkedListNode firstNode;
-    private int size;
 
     //constructor
     public SingleLinkedList()
@@ -20,7 +19,13 @@ public class SingleLinkedList
 
     public SingleLinkedList(List<Object> objectList)
     {
-        //To change body of created methods use File | Settings | File Templates.
+        for(Object obj: objectList)
+        {
+            LinkedListNode listNode = new LinkedListNode();
+            listNode.setValue(obj);
+            listNode.setNextNode(firstNode);
+            firstNode = listNode;
+        }
     }
 
     //getter and setter
@@ -36,11 +41,9 @@ public class SingleLinkedList
 
     public int getSize()
     {
-        return size;
-    }
-
-    public void setSize(int size)
-    {
-        this.size = size;
+        int result = 0;
+        for(LinkedListNode node = firstNode;node!=null;node=node.getNextNode())
+            result++;
+        return result;
     }
 }

@@ -6,7 +6,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/SingleLinkedListTest.java" changelist="7eb40128-a62c-4daf-b99d-02c7b2a9f9da" time="1374476042079" ignored="false" />
     <file path="/fragment.java" changelist="7eb40128-a62c-4daf-b99d-02c7b2a9f9da" time="1374475310256" ignored="false" />
-    <file path="/SingleLinkedList.java" changelist="7eb40128-a62c-4daf-b99d-02c7b2a9f9da" time="1374476091257" ignored="false" />
+    <file path="/SingleLinkedList.java" changelist="7eb40128-a62c-4daf-b99d-02c7b2a9f9da" time="1374476352664" ignored="false" />
     <file path="/LinkedListNode.java" changelist="7eb40128-a62c-4daf-b99d-02c7b2a9f9da" time="1374475522423" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +78,7 @@
       <file leaf-file-name="SingleLinkedListTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/SingleLinkedListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="66" selection-start="814" selection-end="814" vertical-scroll-proportion="0.8251366">
+            <state line="37" column="76" selection-start="814" selection-end="814" vertical-scroll-proportion="0.70765024">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#689#697#0" expanded="true" />
@@ -90,7 +90,7 @@
       <file leaf-file-name="SingleLinkedList.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/SingleLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="12" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
+            <state line="44" column="78" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -593,13 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/SingleLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="12" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/LinkedListNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="65" selection-start="0" selection-end="739" vertical-scroll-proportion="0.0">
@@ -607,9 +600,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/SingleLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="78" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/SingleLinkedListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="66" selection-start="814" selection-end="814" vertical-scroll-proportion="0.8251366">
+        <state line="37" column="76" selection-start="814" selection-end="814" vertical-scroll-proportion="0.70765024">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#689#697#0" expanded="true" />
