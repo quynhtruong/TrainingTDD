@@ -49,6 +49,7 @@ public class SingleLinkedListTest
     @Test
     public void testFindAnObjectInTheLinkedList()
     {
+
         List<Object> objectList = new ArrayList<Object>();
         objectList.add(new Object());
         objectList.add(new Object());
