@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Observable;
 
 import static junit.framework.Assert.assertEquals;
 
@@ -55,5 +56,10 @@ public class SingleLinkedListTest
         assertEquals(singleLinkedList.find(objectList.get(2)),singleLinkedList.getFirstNode());
         assertEquals(singleLinkedList.find(objectList.get(2)),singleLinkedList.getFirstNode());
         assertEquals(singleLinkedList.find(objectList.get(2)),singleLinkedList.getFirstNode());
+    }
+    @Test
+    public void testFindAnObjectWhichIsNotAlreadyInTheList()
+    {
+        assertEquals(singleLinkedList.find(new Object()),null);
     }
 }
