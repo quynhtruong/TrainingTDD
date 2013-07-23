@@ -78,6 +78,6 @@ public class SingleLinkedListTest
         objectList.add(new Object());
         SingleLinkedList singleLinkedList = new SingleLinkedList(objectList);
 
-        assertEquals(singleLinkedList.getLastNode().getValue(),objectList.get(1));
+        assertEquals(singleLinkedList.getLastNode().getValue(),objectList.get(0));
     }
 }

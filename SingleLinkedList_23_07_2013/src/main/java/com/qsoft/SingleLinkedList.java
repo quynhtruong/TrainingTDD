@@ -11,6 +11,7 @@ public class SingleLinkedList
 {
     private LinkedListNode firstNode;
 
+
     //constructor
     public SingleLinkedList()
     {
@@ -23,7 +24,6 @@ public class SingleLinkedList
         {
             LinkedListNode newNode = new LinkedListNode();
             newNode.setValue(object);
-            ;
             newNode.setNextNode(firstNode);
             firstNode = newNode;
         }
@@ -63,6 +63,8 @@ public class SingleLinkedList
 
     public LinkedListNode getLastNode()
     {
-        return null;
+        LinkedListNode linkedListNode;
+        for (linkedListNode = firstNode; linkedListNode.getNextNode() != null; linkedListNode = linkedListNode.getNextNode());
+        return linkedListNode;
     }
 }
