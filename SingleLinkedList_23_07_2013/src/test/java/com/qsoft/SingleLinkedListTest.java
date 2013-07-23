@@ -56,4 +56,16 @@ public class SingleLinkedListTest
 
         assertEquals(singleLinkedList.find(objectList.get(1)),singleLinkedList.getFirstNode().getNextNode());
     }
+
+    @Test
+    public void testGetFirstNode()
+    {
+        List<Object> objectList= new ArrayList<Object>();
+        objectList.add(new Object());
+        objectList.add(new Object());
+        objectList.add(new Object());
+        SingleLinkedList singleLinkedList = new SingleLinkedList(objectList);
+
+        assertEquals(singleLinkedList.getFirstNode().getValue(),objectList.get(2));
+    }
 }
