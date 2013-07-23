@@ -32,4 +32,17 @@ public class SingleLinkedListTest
         SingleLinkedList singleLinkedList = new SingleLinkedList(objectList);
         assertEquals(singleLinkedList.getFirstNode().getValue(),objectList.get(2));
     }
+
+    @Test
+    public void testGetSize()
+    {
+        List<Object> objectList= new ArrayList<Object>();
+        objectList.add(new Object());
+        objectList.add(new Object());
+        objectList.add(new Object());
+        SingleLinkedList singleLinkedList = new SingleLinkedList(objectList);
+
+
+        assertEquals(3,singleLinkedList.getSize());
+    }
 }
