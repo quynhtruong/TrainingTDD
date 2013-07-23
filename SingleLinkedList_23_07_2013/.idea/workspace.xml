@@ -4,9 +4,9 @@
     <list default="true" id="f31b42b6-50d6-4f5f-a882-16ac2e0e4157" name="Default" comment="" />
     <ignored path="SingleLinkedList_23_07_2013.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/SingleLinkedListTest.java" changelist="f31b42b6-50d6-4f5f-a882-16ac2e0e4157" time="1374561471181" ignored="false" />
+    <file path="/SingleLinkedListTest.java" changelist="f31b42b6-50d6-4f5f-a882-16ac2e0e4157" time="1374561543590" ignored="false" />
     <file path="/LinkedListNode.java" changelist="f31b42b6-50d6-4f5f-a882-16ac2e0e4157" time="1374561162083" ignored="false" />
-    <file path="/SingleLinkedList.java" changelist="f31b42b6-50d6-4f5f-a882-16ac2e0e4157" time="1374561302744" ignored="false" />
+    <file path="/SingleLinkedList.java" changelist="f31b42b6-50d6-4f5f-a882-16ac2e0e4157" time="1374561586280" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +86,7 @@
       <file leaf-file-name="SingleLinkedListTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/SingleLinkedListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="51" selection-start="663" selection-end="663" vertical-scroll-proportion="0.93565685">
+            <state line="31" column="66" selection-start="731" selection-end="731" vertical-scroll-proportion="0.9892761">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#538#546#0" expanded="true" />
@@ -98,7 +98,7 @@
       <file leaf-file-name="SingleLinkedList.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/SingleLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="16" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0">
+            <state line="20" column="8" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -126,8 +126,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/todoList" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/LinkedListNode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/SingleLinkedList.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/qsoft/SingleLinkedListTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/SingleLinkedList.java" />
       </list>
     </option>
   </component>
@@ -469,7 +469,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -568,14 +568,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/SingleLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="16" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0">
+        <state line="20" column="8" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/SingleLinkedListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="51" selection-start="663" selection-end="663" vertical-scroll-proportion="0.93565685">
+        <state line="31" column="66" selection-start="731" selection-end="731" vertical-scroll-proportion="0.9892761">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#538#546#0" expanded="true" />

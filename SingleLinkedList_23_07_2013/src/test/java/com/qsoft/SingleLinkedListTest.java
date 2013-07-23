@@ -29,7 +29,7 @@ public class SingleLinkedListTest
         objectList.add(new Object());
         objectList.add(new Object());
 
-        SingleLinkedList singleLinkedList = new SingleLinkedList();
+        SingleLinkedList singleLinkedList = new SingleLinkedList(objectList);
         assertEquals(singleLinkedList.getFirstNode(),objectList.get(2));
     }
 }
