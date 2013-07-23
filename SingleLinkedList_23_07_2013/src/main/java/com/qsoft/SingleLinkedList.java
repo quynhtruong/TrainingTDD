@@ -16,16 +16,19 @@ public class SingleLinkedList
     {
 
     }
+
     public SingleLinkedList(List<Object> objectArrayList)
     {
-        for(Object object: objectArrayList)
+        for (Object object : objectArrayList)
         {
             LinkedListNode newNode = new LinkedListNode();
-            newNode.setValue(object);;
+            newNode.setValue(object);
+            ;
             newNode.setNextNode(firstNode);
             firstNode = newNode;
         }
     }
+
     //getter and setter
     public LinkedListNode getFirstNode()
     {
@@ -40,7 +43,12 @@ public class SingleLinkedList
     //other methods
     public int getSize()
     {
-        return 0;
+        int result = firstNode!=null?1:0;
+        for (LinkedListNode linkedListNode = firstNode; linkedListNode.getNextNode() != null; linkedListNode = linkedListNode.getNextNode())
+        {
+            result++;
+        }
+        return result;
     }
 
 }
