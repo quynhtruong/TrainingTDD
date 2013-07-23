@@ -42,7 +42,18 @@ public class SingleLinkedListTest
         objectList.add(new Object());
         SingleLinkedList singleLinkedList = new SingleLinkedList(objectList);
 
-
         assertEquals(3,singleLinkedList.getSize());
+    }
+
+    @Test
+    public void testFindObject()
+    {
+        List<Object> objectList= new ArrayList<Object>();
+        objectList.add(new Object());
+        objectList.add(new Object());
+        objectList.add(new Object());
+        SingleLinkedList singleLinkedList = new SingleLinkedList(objectList);
+
+        assertEquals(singleLinkedList.find(objectList.get(1)),singleLinkedList.getFirstNode().getNextNode());
     }
 }

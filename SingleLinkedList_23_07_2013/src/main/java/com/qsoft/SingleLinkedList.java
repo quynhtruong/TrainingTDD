@@ -51,4 +51,8 @@ public class SingleLinkedList
         return result;
     }
 
+    public LinkedListNode find(Object object)
+    {
+        return null;
+    }
 }
