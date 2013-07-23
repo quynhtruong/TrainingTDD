@@ -18,7 +18,13 @@ public class SingleLinkedList
     }
     public SingleLinkedList(List<Object> objectArrayList)
     {
-
+        for(Object object: objectArrayList)
+        {
+            LinkedListNode newNode = new LinkedListNode();
+            newNode.setValue(object);;
+            newNode.setNextNode(firstNode);
+            firstNode = newNode;
+        }
     }
     //getter and setter
     public LinkedListNode getFirstNode()
