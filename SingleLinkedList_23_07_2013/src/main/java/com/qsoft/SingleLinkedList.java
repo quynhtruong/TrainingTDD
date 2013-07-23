@@ -53,6 +53,11 @@ public class SingleLinkedList
 
     public LinkedListNode find(Object object)
     {
+        for (LinkedListNode linkedListNode = firstNode; linkedListNode.getNextNode() != null; linkedListNode = linkedListNode.getNextNode())
+        {
+            if (linkedListNode.getValue().equals(object))
+                return linkedListNode;
+        }
         return null;
     }
 }
