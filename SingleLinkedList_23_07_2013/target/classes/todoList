@@ -1,0 +1,13 @@
+Khởi tạo đối tượng SingleLinkedList mới, là danh sách rỗng.
+Khởi tạo đối tượng SingleLinkedList mới từ một array of Object.
+list.size() - trả về số phần tử có mặt trong danh sách
+list.find(Object o) trả về tham chiếu tới nút đầu tiên chứa dữ liệu là đối tượng o.
+list.first() trả về tham chiếu tới nút đầu tiên trong danh sách
+list.last() trả về tham chiếu tới nút cuối cùng trong danh sách
+list.append(Object data)- cho phép thêm một đối tượng vào cuối danh sách
+list.insertFirst(Object data)- cho phép thêm một đối tượng vào đầu danh sách
+list.before(Node n) trả về tham chiếu tới nút liền trước nút n (nếu có)
+list.after(Node n) trả về tham chiếu tới nút liền sau nút n (nếu có)
+list.insertAfter(Node n, Object o) - chèn một phần tử mới chứa o vào sau nút n của danh sách
+list.delete(Node n) - xóa nút n khỏi danh sách
+
