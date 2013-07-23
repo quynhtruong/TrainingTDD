@@ -17,7 +17,4 @@ public class SingleLinkedListTest
         SingleLinkedList singleLinkedList = new SingleLinkedList();
         assertEquals(singleLinkedList.getSize(),0);
     }
-
-
-
 }

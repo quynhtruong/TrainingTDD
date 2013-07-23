@@ -86,7 +86,7 @@
       <file leaf-file-name="SingleLinkedListTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/SingleLinkedListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="50" selection-start="252" selection-end="252" vertical-scroll-proportion="0.5079086">
+            <state line="17" column="51" selection-start="372" selection-end="372" vertical-scroll-proportion="0.59753954">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,7 +97,7 @@
       <file leaf-file-name="SingleLinkedList.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/SingleLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="18" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
+            <state line="25" column="16" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -125,8 +125,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/todoList" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/LinkedListNode.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/qsoft/SingleLinkedListTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/SingleLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/qsoft/SingleLinkedListTest.java" />
       </list>
     </option>
   </component>
@@ -537,14 +537,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/SingleLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="18" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
+        <state line="25" column="16" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/SingleLinkedListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="50" selection-start="252" selection-end="252" vertical-scroll-proportion="0.5079086">
+        <state line="17" column="51" selection-start="372" selection-end="372" vertical-scroll-proportion="0.59753954">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

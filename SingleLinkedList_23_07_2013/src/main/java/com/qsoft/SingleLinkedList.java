@@ -23,7 +23,7 @@ public class SingleLinkedList
     //other methods
     public int getSize()
     {
-        return -1;
+        return 0;
     }
 
 }
