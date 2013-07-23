@@ -60,4 +60,9 @@ public class SingleLinkedList
         }
         return null;
     }
+
+    public LinkedListNode getLastNode()
+    {
+        return null;
+    }
 }
