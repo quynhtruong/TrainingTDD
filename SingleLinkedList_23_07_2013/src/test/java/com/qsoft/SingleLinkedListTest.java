@@ -2,6 +2,9 @@ package com.qsoft;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static junit.framework.Assert.assertEquals;
 
 /**
@@ -16,5 +19,17 @@ public class SingleLinkedListTest
     {
         SingleLinkedList singleLinkedList = new SingleLinkedList();
         assertEquals(singleLinkedList.getSize(),0);
+    }
+
+    @Test
+    public void testInitializeFromAnArray()
+    {
+        List<Object> objectList= new ArrayList<Object>();
+        objectList.add(new Object());
+        objectList.add(new Object());
+        objectList.add(new Object());
+
+        SingleLinkedList singleLinkedList = new SingleLinkedList();
+        assertEquals(singleLinkedList.getFirstNode(),objectList.get(2));
     }
 }

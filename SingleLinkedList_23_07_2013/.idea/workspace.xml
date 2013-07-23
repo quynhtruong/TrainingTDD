@@ -4,7 +4,7 @@
     <list default="true" id="f31b42b6-50d6-4f5f-a882-16ac2e0e4157" name="Default" comment="" />
     <ignored path="SingleLinkedList_23_07_2013.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/SingleLinkedListTest.java" changelist="f31b42b6-50d6-4f5f-a882-16ac2e0e4157" time="1374561281730" ignored="false" />
+    <file path="/SingleLinkedListTest.java" changelist="f31b42b6-50d6-4f5f-a882-16ac2e0e4157" time="1374561471181" ignored="false" />
     <file path="/LinkedListNode.java" changelist="f31b42b6-50d6-4f5f-a882-16ac2e0e4157" time="1374561162083" ignored="false" />
     <file path="/SingleLinkedList.java" changelist="f31b42b6-50d6-4f5f-a882-16ac2e0e4157" time="1374561302744" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -86,9 +86,10 @@
       <file leaf-file-name="SingleLinkedListTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/SingleLinkedListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="51" selection-start="372" selection-end="372" vertical-scroll-proportion="0.59753954">
+            <state line="29" column="51" selection-start="663" selection-end="663" vertical-scroll-proportion="0.93565685">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#538#546#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -281,7 +282,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.SingleLinkedListTest.testInitializeEmptyLinkList">
+  <component name="RunManager" selected="JUnit.SingleLinkedListTest.testInitializeFromAnArray">
     <configuration default="false" name="SingleLinkedListTest.testInitializeEmptyLinkList" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -295,6 +296,34 @@
       <option name="PACKAGE_NAME" value="com.qsoft" />
       <option name="MAIN_CLASS_NAME" value="com.qsoft.SingleLinkedListTest" />
       <option name="METHOD_NAME" value="testInitializeEmptyLinkList" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SingleLinkedListTest.testInitializeFromAnArray" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.qsoft.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SingleLinkedList_23_07_2013" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.qsoft" />
+      <option name="MAIN_CLASS_NAME" value="com.qsoft.SingleLinkedListTest" />
+      <option name="METHOD_NAME" value="testInitializeFromAnArray" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -401,12 +430,14 @@
       <patterns />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JUnit.SingleLinkedListTest.testInitializeEmptyLinkList" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.SingleLinkedListTest.testInitializeFromAnArray" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.SingleLinkedListTest.testInitializeEmptyLinkList" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SingleLinkedListTest.testInitializeFromAnArray" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SingleLinkedListTest.testInitializeEmptyLinkList" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -446,7 +477,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -544,9 +575,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/SingleLinkedListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="51" selection-start="372" selection-end="372" vertical-scroll-proportion="0.59753954">
+        <state line="29" column="51" selection-start="663" selection-end="663" vertical-scroll-proportion="0.93565685">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#538#546#0" expanded="true" />
           </folding>
         </state>
       </provider>
